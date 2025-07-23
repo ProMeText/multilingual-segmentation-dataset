@@ -1,7 +1,11 @@
-# ✂️ Segmentation Corpus Documentation
 
-A multilingual corpus for sentence segmentation in historical prose (13th–16th c.), covering 7 Romance and Latin languages, with manually curated segment boundaries reflecting medieval syntactic and editorial norms.
 
+# ✂️ Multilingual Segmentation Dataset
+
+> **From manuscripts to models: a multilingual corpus for sentence segmentation in historical prose.**
+
+This dataset gathers carefully segmented excerpts from a wide range of textual genres — including narrative, didactic, legal, theological, and scholarly prose — spanning seven Romance and Latin languages (13th–16th c.).  
+Segment boundaries reflect both historical syntax and editorial conventions, making the corpus suitable for training and evaluating sentence segmentation models, as well as for cross-linguistic and diachronic analysis in NLP and digital philology.
 
 
 ## 📖 Overview
