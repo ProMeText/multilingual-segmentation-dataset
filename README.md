@@ -1,3 +1,10 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Multilingual Segmentation Dataset Banner" width="100%">
+</p>
+
+# ✂️ Multilingual Segmentation Dataset
+
+> **From manuscripts to models: a multilingual corpus for sentence segmentation in historical prose.**
 
 
 # ✂️ Multilingual Segmentation Dataset
