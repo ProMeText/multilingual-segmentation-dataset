@@ -47,16 +47,13 @@ Reliable segmentation is essential for:
 - enhancing the **accessibility** and reusability of medieval sources,
 - enabling **cross-linguistic comparison** and advancing **philological and historical-linguistic research**.
 
-## 🔄 Processing Pipeline
-
-This segmentation pipeline prepares historical texts for machine learning tasks, particularly sentence boundary detection and multilingual alignment.
 
 ## 🔄 Processing Pipeline
 
 The segmentation pipeline involves the following steps, from raw historical texts to segmented training data.
 
 <p align="center">
-  <img src="docs/assets/pipeline_diagram.png" alt="Processing pipeline" width="80%">
+  <img src="docs/assets/segmentation_pipeline2.png" alt="Processing pipeline" width="80%">
 </p>
 
 See [docs/processing_pipeline.md](docs/processing_pipeline.md) for full details on each step.
