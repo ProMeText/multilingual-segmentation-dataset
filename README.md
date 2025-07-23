@@ -2,10 +2,6 @@
   <img src="assets/banner.png" alt="Multilingual Segmentation Dataset Banner" width="100%">
 </p>
 
-# ✂️ Multilingual Segmentation Dataset
-
-> **From manuscripts to models: a multilingual corpus for sentence segmentation in historical prose.**
-
 
 # ✂️ Multilingual Segmentation Dataset
 
@@ -15,45 +11,57 @@ This dataset gathers carefully segmented excerpts from a wide range of textual g
 Segment boundaries reflect both historical syntax and editorial conventions, making the corpus suitable for training and evaluating sentence segmentation models, as well as for cross-linguistic and diachronic analysis in NLP and digital philology.
 
 
+
 ## 📖 Overview
 
-This corpus was developed as part of **Phase II of the Multilingual Alignment Project**, expanding on the foundational work introduced in [*Textual Transmission without Borders*](https://2024.computational-humanities-research.org/papers/paper104/).
+This dataset was developed to train a multilingual sentence segmentation model used as a pre-processing step in the automatic alignment of historical texts with [**Aquilign**](https://github.com/ProMeText/aquilign), a multilingual alignment tool developed by our team.  
+Once the BERT-based models are trained and selected, they are integrated into the alignment workflow to segment texts based on learned boundary recognition — a critical step preceding the alignment itself.
 
-While **Phase I** focused on aligning texts in *Castilian (`es`), French (`fr`), and Italian (`it`)*, this second phase introduces four additional languages: **Portuguese (`pt`), Catalan (`ca`), Latin (`la`), and English (`en`)**, broadening the project’s linguistic and cultural scope.
+The segmented excerpts serve as input for Aquilign, enabling multilingual alignment across structurally and editorially diverse texts. A first study applying this pipeline — focused on *Lancelot en prose* — was presented in the 2024 article [*Textual Transmission without Borders*](https://2024.computational-humanities-research.org/papers/paper104/), published as part of the Computational Humanities Research (CHR) conference proceedings.
 
-The segmentation corpus provides training and evaluation data for **sentence-level segmentation** in **historical, multilingual prose texts** from the **13th to 16th centuries**. These texts were selected for their **thematic and formal diversity** to support robust and transferable segmentation models. Our aim is to capture a **heterogeneous set of textual forms**, reflecting **editorial**, **orthographic**, and **linguistic variation** across time and space.
+
+As the project evolved, the segmentation corpus was gradually expanded alongside the tool. Initially limited to three Romance languages — *Castilian (`es`), French (`fr`), and Italian (`it`)* — it was later enriched with **Portuguese (`pt`)**, **Catalan (`ca`)**, **Latin (`la`)**, and **English (`en`)**, increasing linguistic diversity and enhancing the robustness of cross-linguistic alignment.
+
+To support reproducibility and multilingual evaluation, the dataset is organized by work: each text is stored in a dedicated folder containing the source (`raw/`) and segmented (`segmented/`) versions.
+
+
+The corpus provides training and evaluation material for **sentence-level segmentation** in **historical prose** from the **13th to 16th centuries**. Texts were selected for their **genre diversity**, as well as their capacity to reflect **editorial**, **orthographic**, and **linguistic variation** across time, geography, and scribal practices.
 
 ## 🧾 Summary
 
-| Category           | Info                                                                 |
-|-------------------|----------------------------------------------------------------------|
-| **Languages**      | Latin (`la`), French (`fr`), English (`en`), Portuguese (`pt`), Catalan (`ca`), Italian (`it`), Castilian (`es`) |
-| **Period Covered** | 13th–16th centuries                                                  |
-| **Text Formats**   | TXT, XML (some HTML/PDF conversions)                                 |
-| **Segmentation**   | Manual sentence segmentation using language-specific rules           |
-| **License**        | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (annotations and segmentation metadata only) |
+| Category           | Details                                                                 |
+|--------------------|-------------------------------------------------------------------------|
+| **Languages**       | Latin (`la`), French (`fr`), English (`en`), Portuguese (`pt`), Catalan (`ca`), Italian (`it`), Castilian (`es`) |
+| **Period Covered**  | 13th–16th centuries                                                    |
+| **Text Formats**    | Plain text (TXT), XML, with some material converted from HTML or PDF   |
+| **Segmentation**    | Manual sentence segmentation using language-specific criteria          |
+| **License**         | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) – annotations and segmentation metadata only |
 
 
 ## 🎯 Purpose
 
-The primary goal of this corpus is to enable the training of machine learning models capable of identifying **sentence or segment boundaries** in **non-standardized historical texts**.  
-Accurate segmentation supports:
+The primary goal of this dataset is to support the training of machine learning models capable of identifying **sentence and segment boundaries** in **non-standardized historical texts**.  
+Reliable segmentation is essential for:
 
-- downstream NLP tasks (e.g. **parsing**, **translation**, **alignment**),
-- improving the **accessibility** of medieval sources,
-- and facilitating **cross-linguistic comparison** and **philological research**.
+- downstream NLP tasks such as **parsing**, **translation**, and **alignment**,
+- enhancing the **accessibility** and reusability of medieval sources,
+- enabling **cross-linguistic comparison** and advancing **philological and historical-linguistic research**.
 
----
 ## 🔄 Processing Pipeline
 
-**Processing steps:**
+This segmentation pipeline prepares historical texts for machine learning tasks, particularly sentence boundary detection and multilingual alignment.
 
-1. 📥 Get raw texts (TXT, XML, HTML, PDF)  
-2. 🧹 Clean & normalize content (punctuation, spacing, markup)  
-3. ✂️ Apply manual and heuristic rules for segmentation  
-4. 🏷️ Annotate segment boundaries using `£` delimiter  
-5. 📂 Store in `no_split/` (segmented excerpts, not yet split)  
-6. 🔀 Split into `train/dev/test` in `split/` (available as `.json` and `.txt` with `£`-marked segments)
+## 🔄 Processing Pipeline
+
+The segmentation pipeline involves the following steps, from raw historical texts to segmented training data.
+
+<p align="center">
+  <img src="docs/assets/pipeline_diagram.png" alt="Processing pipeline" width="80%">
+</p>
+
+See [docs/processing_pipeline.md](docs/processing_pipeline.md) for full details on each step.
+
+
 
 ## 🌐 Data Collection Variability Across Languages
 
