@@ -4,6 +4,31 @@ This `docs/` folder contains the complete documentation for the multilingual seg
 It aims to ensure clarity, reproducibility, and transparency in the construction and usage of the segmented corpora.
 
 ---
+---
+
+## 📁 Folder Structure
+
+### `raw/`  
+📄 **Cleaned, unsegmented texts**
+
+- UTF-8, markup removed  
+- No segmentation applied
+
+### `no_split/`  
+🧾 **Manually segmented excerpts**
+
+- Randomly selected text chunks annotated with `£` markers
+- Not split into train/dev/test
+
+### `split/`  
+🔀 **Ready for training**
+
+- Monolingual folders (`ca/`, `fr/`, etc.)  
+- Train/dev/test splits  
+- `.json` files with `£`-marked segmented examples
+- Multilingual versions for cross-lingual training
+
+---
 
 ## 🛠️ Data Preparation
 
