@@ -97,31 +97,7 @@ An internal **application form** was created to standardize the collection proce
 - 📊 [Compiled Data CSV](https://github.com/carolisteia/mulada/blob/main/data.csv)
 
 
----
 
-## 📁 Folder Structure
-
-### `raw/`  
-📄 **Cleaned, unsegmented texts**
-
-- UTF-8, markup removed  
-- No segmentation applied
-
-### `no_split/`  
-🧾 **Manually segmented excerpts**
-
-- Randomly selected text chunks annotated with `£` markers
-- Not split into train/dev/test
-
-### `split/`  
-🔀 **Ready for training**
-
-- Monolingual folders (`ca/`, `fr/`, etc.)  
-- Train/dev/test splits  
-- `.json` files with `£`-marked segmented examples
-- Multilingual versions for cross-lingual training
-
----
 ## 📊 Corpus Size
 
 The current version of the corpus includes segmented excerpts in **seven historical languages**, prepared for sentence segmentation tasks.
