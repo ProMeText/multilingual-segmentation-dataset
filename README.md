@@ -56,7 +56,7 @@ The segmentation pipeline involves the following steps, from raw historical text
   <img src="assets/segmentation_pipeline2.png" alt="Processing pipeline" width="50%">
 </p>
 
-See [docs/processing_pipeline.md](docs/segmentation_processing_pipeline.md) for full details on each step.
+See [segmentation pipeline documentation](docs/segmentation_processing_pipeline.md) for full details on each step.
 
 
 
@@ -74,143 +74,17 @@ This variability demanded a **flexible, language-sensitive approach** to both **
 
 [Jump to Source Tracking & Metadata for more detailed information ⤵️](#source-tracking--metadata)
 
----
+## 🌐 Data Collection Variability Across Languages
 
-## 🛠️ Data Preparation
+The process of acquiring texts varied significantly from one language to another, depending on the availability and structure of existing resources.
 
-Texts were collected in various formats—preferably **TXT** or **XML**, though **HTML** and **PDF** sources were also used.  
-All files were **cleaned using regular expressions** to normalize:
+- For languages such as **French**, acquisition was relatively straightforward thanks to well-organized repositories like the [**BFM Corpus**](https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/tree/main/TXT?ref_type=heads).
 
-- punctuation  
-- whitespace and line breaks  
-- markup and non-content tags
+- For **Portuguese**, **English**, and **Italian**, we relied on structured corpora such as [**CTA**](https://teitok.clul.ul.pt/teitok/cta/index.php?action=home), [**LAEME**](http://amc.ppls.ed.ac.uk/laeme/texts.html), and the [**Biblioteca Italiana**](http://www.bibliotecaitaliana.it/percorsi/19). While these resources provided valuable data, they required **more intensive preparation** and cleaning.
 
-**Segmentation** was applied using a mix of **rule-based heuristics** and **manual correction**. For certain languages, **custom scripts** addressed specific editorial or typographic issues.
+- In contrast, for languages like **Catalan** and some varieties of **Italian**, resources such as **CICA** and **OVI** had limited public access, which led us to recover texts from **printed critical editions** or, when necessary, through **web scraping**.
 
-### 🔎 Example of Manual Segmentation
-
-To prepare training data for segmentation models, we first **manually annotate sentence or segment boundaries** using the **pound sign (`£`)**. Each `£` indicates the end of a sentence or segment. This annotated format is then used as a reference for **model training and evaluation**. These annotations reflect syntactic and rhetorical units rather than strict modern sentence rules.
-
-Below are examples from three languages in the corpus.
-
-### 🇵🇹 Portuguese
-
-**Raw annotated with `£`:**
-
-```text
-E entom se espedyo dom Lourenço del rey.£E, en se hindo,£tornou a elle£e disselhe:£- Senhor, ainda venho a vos£por vos avisar do que vos compre:£mandaae logo fazer esta noite£e as outras duas ou tres seguintes£muytos fogos batalhas contra seus Jrmããos .£e contra outros seus contrayros
-```
-
-**→ Segments:**
-
-1. E entom se espedyo dom Lourenço del rey.  
-2. E, en se hindo,  
-3. tornou a elle  
-4. e disselhe:  
-5. -- Senhor, ainda venho a vos  
-6. por vos avisar do que vos compre:  
-7. mandaae logo fazer esta noite  
-8. e as outras duas ou tres seguintes  
-9. muytos fogos batalhas contra seus Jrmããos .  
-10. e contra outros seus contrayros
-
-### 🇮🇹 Italian
-
-**Raw annotated with `£`:**
-
-```text
-Maus frutto, cioè musa.£Questo frutto è molto gentile e dolce,£della grandezza de' cetriuoli piccoli,£e nasce di piccola pianta,£e ha le foglie grande, larghe e lunghe un braccio.£Dicono i timore e maraviglia ne' cuori umani.£E nondimeno è a queste genti così associabile e commune£che non solamente il tengono figurato in una parte della casa,£ma ne' banchi anco dove seggono, volendo significare£che colui che siede non sta solo,£ma siede insieme con l'aversario di tutti;
-```
-
-
-**→ Segments:**
-
-1. Maus frutto, cioè musa.
-2. Questo frutto è molto gentile e dolce,
-3. della grandezza de' cetriuoli piccoli,
-4. e nasce di piccola pianta,
-5. e ha le foglie grande, larghe e lunghe un braccio.
-6. Dicono i timore e maraviglia ne' cuori umani.
-7. E nondimeno è a queste genti così associabile e commune
-8. che non solamente il tengono figurato in una parte della casa,
-9.  ma ne' banchi anco dove seggono, volendo significare
-10. che colui che siede non sta solo,
-11. ma siede insieme con l'aversario di tutti;
-
-### 🇪🇸 Castilian
-
-**Raw annotated with `£`:**
-
-```text
-Por tal lo tengo yo£dixo don Duardos£& no puedo yo creer£que yo le sobrasse£pidole por merced£que me perdone que mi desseo es de seruille.£Señor£dixo la reyna£mal contado seria a tan grande hombre como vos.
-```
-
-**Segments:**
-
-1. Por tal lo tengo yo  
-2. dixo don Duardos  
-3. & no puedo yo creer  
-4. que yo le sobrasse  
-5. pidole por merced  
-6. que me perdone que mi desseo es de seruille.  
-7. Señor  
-8. dixo la reyna  
-9. mal contado seria a tan grande hombre como vos.
-
-
-## ✂️ Segmentation Criteria
-
-The segmentation of texts in this corpus follows a hybrid approach, combining **rule-based heuristics**, **philological insight**, and **language-specific patterns**. The aim is to identify boundaries between meaningful textual units—typically clauses or sentences—without imposing rigid modern standards on medieval prose.
-
-### ✅ Guiding Principles
-
-Segmentation is guided by the following core principles:
-
-- **Structural segmentation**: A new segment is created when a text introduces a new syntactic unit, often marked by punctuation (e.g. `.`, `:`, `;`, `?`, `!`, `¶`) or coordinating/subordinating markers.
-- **Functional coherence**: Segments generally contain a complete verbal unit. We avoid breaking inside syntactic constituents unless justified by strong cues.
-- **Philological sensitivity**: Medieval usage is respected. Editorial norms (e.g. punctuation or spacing) are interpreted cautiously, especially in texts where these features are not standardized.
-
-### 🌍 Language-Specific Heuristics
-
-Each language in the corpus has its own set of **typical delimiters**, drawn from recurrent **conjunctions**, **relative pronouns**, **discourse markers**, and **prepositional phrases**. These were defined empirically and encoded in [`main-word-delimiters.json`](https://github.com/ProMeText/Multilingual_Aegidius/blob/main/data/segmentation_data/no_split/main-word-delimiters.json)).
-
-Some representative examples:
-
-- **Latin**: `quod`, `cum`, `ut`, `et`, `sed`, `aut`  
-- **French**: `car`, `mais`, `ains`, `quant`, `donc`, `si`  
-- **Castilian**: `pues`, `porque`, `aunque`, `cuando`, `entonces`, `si`  
-- **Italian**: `che`, `perché`, `dunque`, `anzi`, `ma`, `poi`  
-- **Catalan**: `que`, `car`, `per això`, `adonchs`, `pus que`, `emperò`  
-- **English**: `þat`, `and þat`, `also`, `whan`, `so þat`
-- **Portuguese**: `porquuoanto`, `desy`, `todavya`, `outrossy`, `bẽ assy como` ...
-
-### 🧠 Annotation Guidelines
-
-We segment:
-
-- At **conjunctions** that introduce a finite clause  
-- Before **relative or interrogative pronouns** when they mark syntactic rupture  
-- At **discourse openings**, especially after speech verbs  
-- After **adverbs** (e.g. *tant*, *or*, *lors*, *atant* in Middle French), when they mark the beginning of a new clause
-- At **prepositions** followed by a relative pronoun  
-
-We avoid segmentation:
-
-- Inside **enumerations** without verbal structure  
-- On ambiguous markers used mid-clause (*et*, *ne*, *si*)  
-- On **truncated fragments** unless the completion is clear  
-
-> Example:  
-> In “*Et quant il voit cele par cui*...”, the segment begins with “*Et*” only.  
-> In “*Si tost com il la vit, il s’enfuit*”, the tokenized segment starts at “*Si*”.
-
-### ⚠️ Edge Cases
-
-- **Agglutinated forms** (e.g. *quil*, *sil*, *tantqu’il*) are valid triggers  
-- Only the **first** of successive potential delimiters is used  
-- In absence of punctuation, **syntactic cues** guide the split
-
----
+This variability called for a **flexible, language-sensitive approach** to both sourcing and preprocessing.
 
 ## 🧾 Source Tracking & Metadata
 
