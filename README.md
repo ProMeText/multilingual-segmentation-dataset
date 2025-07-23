@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Multilingual Segmentation Dataset Banner" width="100%">
+  <img src="assets/banner.png" alt="Multilingual Segmentation Dataset Banner" width="80%">
 </p>
 
 
@@ -53,7 +53,7 @@ Reliable segmentation is essential for:
 The segmentation pipeline involves the following steps, from raw historical texts to segmented training data.
 
 <p align="center">
-  <img src="docs/assets/segmentation_pipeline2.png" alt="Processing pipeline" width="80%">
+  <img src="assets/segmentation_pipeline2.png" alt="Processing pipeline" width="50%">
 </p>
 
 See [docs/processing_pipeline.md](docs/processing_pipeline.md) for full details on each step.
