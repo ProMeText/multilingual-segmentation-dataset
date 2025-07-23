@@ -56,7 +56,7 @@ The segmentation pipeline involves the following steps, from raw historical text
   <img src="assets/segmentation_pipeline2.png" alt="Processing pipeline" width="50%">
 </p>
 
-See [docs/processing_pipeline.md](docs/processing_pipeline.md) for full details on each step.
+See [docs/processing_pipeline.md](docs/segmentation_processing_pipeline.md) for full details on each step.
 
 
 
