@@ -1,3 +1,4 @@
+
 <p align="center">
   <img src="assets/banner.png" alt="Multilingual Segmentation Dataset Banner" width="80%">
 </p>
@@ -64,7 +65,7 @@ See [segmentation pipeline documentation](docs/segmentation_processing_pipeline.
 
 The process of text acquisition varied considerably depending on the language.
 
-- For some languages, such as **Middle French**, acquisition was straightforward thanks to well-structured resources like the [**BFM Corpus**](https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/tree/main/TXT?ref_type=heads).
+- For some languages, such as **French**, acquisition was straightforward thanks to well-structured resources like the [**BFM Corpus**](https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/tree/main/TXT?ref_type=heads).
 
 - For **Portuguese**, **English**, and **Italian**, we used structured corpora such as the [**CTA**](https://teitok.clul.ul.pt/teitok/cta/index.php?action=home), [**LAEME**](http://amc.ppls.ed.ac.uk/laeme/texts.html), and [**Biblioteca Italiana**](http://www.bibliotecaitaliana.it/percorsi/19). These provided valuable data, though required **more intensive preparation**.
 
@@ -72,30 +73,45 @@ The process of text acquisition varied considerably depending on the language.
 
 This variability demanded a **flexible, language-sensitive approach** to both **sourcing** and **preprocessing**.
 
-[Jump to Source Tracking & Metadata for more detailed information ⤵️](#source-tracking--metadata)
+- ## 🧾 Source Tracking & Metadata
 
-## 🌐 Data Collection Variability Across Languages
+To ensure **transparency and reproducibility**, an internal application form was used to standardize metadata collection for each text in the segmentation corpus.  
+This form captured key information such as:
 
-The process of acquiring texts varied significantly from one language to another, depending on the availability and structure of existing resources.
+- the **source and edition** (including bibliographic reference),
+- the **linguistic variety** and **chronological span**,
+- the **genre** and **text type**,
+- and the **location and format** of the digital file.
 
-- For languages such as **French**, acquisition was relatively straightforward thanks to well-organized repositories like the [**BFM Corpus**](https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/tree/main/TXT?ref_type=heads).
+While the form itself is not public, we share the compiled metadata in CSV format, aligned with the structure used during collection.
 
-- For **Portuguese**, **English**, and **Italian**, we relied on structured corpora such as [**CTA**](https://teitok.clul.ul.pt/teitok/cta/index.php?action=home), [**LAEME**](http://amc.ppls.ed.ac.uk/laeme/texts.html), and the [**Biblioteca Italiana**](http://www.bibliotecaitaliana.it/percorsi/19). While these resources provided valuable data, they required **more intensive preparation** and cleaning.
+**Available resources:**
 
-- In contrast, for languages like **Catalan** and some varieties of **Italian**, resources such as **CICA** and **OVI** had limited public access, which led us to recover texts from **printed critical editions** or, when necessary, through **web scraping**.
+- 📂 [Code Repository]](https://github.com/carolisteia/mulada): contains the Streamlit app developed to collect, structure, and validate metadata during corpus compilation
+- 📊 [Compiled Metadata CSV](https://github.com/carolisteia/mulada/blob/main/data.csv): includes text ID, language, source edition, date range, type, genre, and file references
 
-This variability called for a **flexible, language-sensitive approach** to both sourcing and preprocessing.
+
 
 ## 🧾 Source Tracking & Metadata
 
-An internal **application form** was created to standardize the collection process. It allowed for the **documentation, organization, and traceability** of every text included in the corpus.
+To ensure transparency, consistency, and reproducibility, an internal **application form** was developed to standardize the documentation of each text included in the segmentation corpus.  
+This form collected detailed metadata on:
+
+- the **source** of the text (digital edition, manuscript, OCR, etc.)
+- the **edition or manuscript** used and its bibliographic reference
+- the **linguistic variety** and **chronological coverage**
+- the **format and structure** of the original file
+- any **preprocessing** applied (e.g., manual corrections, conversion tools)
+- and the **licensing conditions** for reuse
+
+Each contribution to the corpus was validated through this form to guarantee traceability and compatibility across contributors and languages.
+
+Although the form itself is not publicly released, we provide access to the processed metadata and scripts used to structure the dataset.
 
 **Resources:**
 
-<!-- - 📄 Application Form (internal, not publicly released)   -->
-- 📂 [Code Repository](https://github.com/carolisteia/mulada)  
-- 📊 [Compiled Data CSV](https://github.com/carolisteia/mulada/blob/main/data.csv)
-
+- 📂 [Data Processing Repository (`mulada`)](https://github.com/carolisteia/mulada): scripts and tools used for format conversion, cleanup, and metadata compilation  
+- 📊 [Compiled Metadata CSV](https://github.com/carolisteia/mulada/blob/main/data.csv): detailed table listing all segmented texts with source, edition, format, language, and license information
 
 
 ## 📊 Corpus Size
