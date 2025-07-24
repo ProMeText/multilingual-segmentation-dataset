@@ -38,15 +38,17 @@ The corpus provides training and evaluation material for **sentence-level segmen
 | **Segmentation**    | Manual sentence segmentation using language-specific criteria          |
 | **License**         | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) – annotations and segmentation metadata only |
 
-
 ## 🎯 Purpose
 
-The primary goal of this dataset is to support the training of machine learning models capable of identifying **sentence and segment boundaries** in **non-standardized historical texts**.  
+This dataset aims to support the training of machine learning models that can detect sentence and segment boundaries in non-standardized historical texts.
+
 Reliable segmentation is essential for:
 
 - downstream NLP tasks such as **parsing**, **translation**, and **alignment**,
 - enhancing the **accessibility** and reusability of medieval sources,
 - enabling **cross-linguistic comparison** and advancing **philological and historical-linguistic research**.
+
+📄 For full segmentation principles, see the detailed [Segmentation Guidelines](docs/segmentation_criteria_en.md).
 
 
 ## 🔄 Processing Pipeline
@@ -118,9 +120,33 @@ Each excerpt is annotated using the pound sign (`£`) to mark **segment boundari
 - **Segments (`£`)** = total number of `£` delimiters → i.e. segments  
 - **Train/Dev/Test?** = indicates whether `train.json`, `dev.json`, and `test.json` are all present
 
-
-
 > ℹ️ This corpus focuses on **sentence segmentation only**. It does **not include POS tagging, syntactic trees, or named entity annotations**.
+
+## 🧠 Model Availability
+
+We provide a **pretrained multilingual BERT-based sentence segmentation model**, fine-tuned on the full **Multilingual Segmentation Corpus** (13th–16th c., Catalan, Castilian, English, French, Italian, Latin, Portuguese), optimized for **historical prose**.
+
+🔍 **Model architecture & training**  
+The model uses Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or syntactic segment boundaries.  
+Training focused on *French*, *Castilian*, and *Italian*, with successful cross-lingual generalization to the full language set.
+
+---
+
+### 📊 Performance Highlights
+
+**The following results are from evaluations on the _Lancelot en prose_ corpus** (used during initial development).  
+**Results from the expanded _Multilingual Aegidius_ corpus will be made available soon.**
+
+| Language   | Regex F1 | BERT F1 | Δ F1 |
+|------------|----------|---------|------|
+| French     | 0.706    | 0.906   | +0.20 |
+| Italian    | 0.606    | 0.846   | +0.24 |
+| Castilian  | 0.636    | 0.866   | +0.23 |
+
+The model significantly improves **segment boundary detection** and reduces **alignment errors** in downstream multilingual alignment using [Aquilign](https://github.com/ProMeText/aquilign).
+
+📄 For model details and evaluation, see the paper:  
+➡️ [*Textual Transmission without Borders* (CHR 2024)](https://ceur-ws.org/Vol-3834/paper104.pdf)
 
 
 ## 🚧 Project Status
