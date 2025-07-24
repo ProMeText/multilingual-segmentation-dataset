@@ -1,9 +1,13 @@
 # 🔎 Annotated Segmentation Examples
 
 This page presents representative examples of sentence segmentation using the `£` delimiter across multiple languages included in the corpus.
-Segments correspond to syntactic or rhetorical units based on historical usage, not modern punctuation rules.
 
-Each excerpt shows the raw annotated version, followed by the extracted segments.
+To prepare training data for segmentation models, we first **manually annotate sentence or segment boundaries** using the **pound sign (`£`)**. Each occurrence of `£` marks the **end of a sentence or discourse unit**.  
+These annotations serve as the **ground truth** for model training and evaluation, and reflect **syntactic and rhetorical structure** rather than strictly modern sentence conventions.
+
+Below are representative examples from three languages in the corpus.
+
+> 🔍 *The examples below are shortened excerpts selected for illustration purposes only. They do not represent full source texts.*
 
 ---
 
@@ -69,8 +73,7 @@ Por tal lo tengo yo£dixo don Duardos£& no puedo yo creer£que yo le sobrasse£
 - mal contado seria a tan grande hombre como vos
 
 ---
+These examples illustrate how segmentation reflects **internal syntactic cues** and **rhetorical structuring**, rather than relying on punctuation alone.
 
-These examples illustrate how segmentation reflects internal syntactic cues and rhetorical structuring, rather than punctuation alone.
-
-For full segmentation principles, see [annotation_guidelines/segmentation_criteria.md](annotation_guidelines/segmentation_criteria.md).
+For full segmentation principles, see [docs/annotation_guidelines/segmentation_criteria.md](annotation_guidelines/segmentation_criteria.md).
 
