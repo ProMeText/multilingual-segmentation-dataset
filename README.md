@@ -73,45 +73,25 @@ The process of text acquisition varied considerably depending on the language.
 
 This variability demanded a **flexible, language-sensitive approach** to both **sourcing** and **preprocessing**.
 
-- ## 🧾 Source Tracking & Metadata
-
-To ensure **transparency and reproducibility**, an internal application form was used to standardize metadata collection for each text in the segmentation corpus.  
-This form captured key information such as:
-
-- the **source and edition** (including bibliographic reference),
-- the **linguistic variety** and **chronological span**,
-- the **genre** and **text type**,
-- and the **location and format** of the digital file.
-
-While the form itself is not public, we share the compiled metadata in CSV format, aligned with the structure used during collection.
-
-**Available resources:**
-
-- 📂 [Code Repository]](https://github.com/carolisteia/mulada): contains the Streamlit app developed to collect, structure, and validate metadata during corpus compilation
-- 📊 [Compiled Metadata CSV](https://github.com/carolisteia/mulada/blob/main/data.csv): includes text ID, language, source edition, date range, type, genre, and file references
-
-
-
 ## 🧾 Source Tracking & Metadata
 
-To ensure transparency, consistency, and reproducibility, an internal **application form** was developed to standardize the documentation of each text included in the segmentation corpus.  
-This form collected detailed metadata on:
+To ensure **transparency**, **consistency**, and **reproducibility**, an internal application form was created to standardize metadata collection for each text in the segmentation corpus.  
+This form captured key details such as:
 
-- the **source** of the text (digital edition, manuscript, OCR, etc.)
-- the **edition or manuscript** used and its bibliographic reference
-- the **linguistic variety** and **chronological coverage**
-- the **format and structure** of the original file
-- any **preprocessing** applied (e.g., manual corrections, conversion tools)
-- and the **licensing conditions** for reuse
+- 📌 **Source type** (digital edition, manuscript, OCR, etc.)  
+- 📚 **Edition or manuscript reference** (bibliographic citation)  
+- 🌍 **Linguistic variety** and **chronological range**  
+- 🗂️ **Format and structure** of the original file  
+- 📝 **Reuse/licensing conditions**
 
-Each contribution to the corpus was validated through this form to guarantee traceability and compatibility across contributors and languages.
+Although the form itself is not public, we provide access to the processed metadata and scripts used during compilation:
 
-Although the form itself is not publicly released, we provide access to the processed metadata and scripts used to structure the dataset.
+**🔗 Resources:**
 
-**Resources:**
-
-- 📂 [Data Processing Repository (`mulada`)](https://github.com/carolisteia/mulada): scripts and tools used for format conversion, cleanup, and metadata compilation  
-- 📊 [Compiled Metadata CSV](https://github.com/carolisteia/mulada/blob/main/data.csv): detailed table listing all segmented texts with source, edition, format, language, and license information
+- 📂 [Data Processing Repository (`mulada`)](https://github.com/carolisteia/mulada):  
+  Streamlit app and scripts used to structure, validate, and convert incoming texts and metadata  
+- 📊 [Compiled Metadata CSV (`data.csv`)](https://github.com/carolisteia/mulada/blob/main/data.csv):  
+  Central table listing all texts with language, edition, source, format, license, and file references
 
 
 ## 📊 Corpus Size
