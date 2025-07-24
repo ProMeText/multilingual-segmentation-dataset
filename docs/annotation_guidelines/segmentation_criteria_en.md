@@ -1,174 +1,213 @@
-# ✂️ Segmentation Guidelines
+# ✂️ Segmentation Criteria
 
 This document outlines the main segmentation principles used to mark sentence or discourse unit boundaries in the corpus. These guidelines are based on syntactic and rhetorical structures rather than purely on punctuation or orthographic features.
 
 Each language follows language-specific patterns and exceptions. Below are the general rules and examples categorized by part of speech and function.
 
----
-
-## 1. Segments Without Delimiters
-
-Some segments may appear without any clear delimiting token. This happens when the segment is truncated or randomly extracted from a longer clause, making it difficult to determine whether it begins or ends at a valid segmentation point.
-
-> Example: *nos couvenoit aler dusqu’a outrance, car il est preuz et vistes et...* — the final "et" may be coordinating another adjective (no mark) or another clause (mark). When uncertain, do **not** annotate.
-
-When context clearly reconstructs the missing part of the clause, segmentation should be applied.
-> Example: *qui ilz ont tant de maulx souffers* — introduced by a preposition → do **not** segment.
+> 📝 Note: The lists and examples throughout the guidelines include some **graphical variants** from Medieval French and Castilian but are **not exhaustive**.
 
 ---
 
-## 2. Relative Pronouns
 
-Relative pronouns like `que`, `qui`, `cui`, `dont`, `quod`, etc. are **not** used as segmentation points unless **preceded by a preposition**. In that case, the **preposition** is annotated.
 
-> ✅ *par ou il passoit* → mark `par`  
-> ❌ *de ce que...* → do not mark `de` if followed by `ce que`
+## 🚫 1. Segments Without Delimiters
+
+Some segments do **not contain any valid segmentation marker**. For example:
+
+> *fut filz au plus recreant homme. et au plus failli de cueur.*
+
+To avoid adding noise to the dataset, **do not mark** elements that often appear at the beginning of a sentence **but also frequently occur mid-sentence**, such as:
+
+- 👤 **Personal pronouns**  
+  _Ex: `Si li anoia moult li cheualliers Il oste son` → `Si` is not marked._
+
+- 📍 **Prepositions** at the beginning of a segment  
+  _Ex: `Au mains sil seussent celes` → `Au` is not marked._
+
+- 🗣️ **Speech markers / vocatives**  
+  _Ex: `Sire fet elle iou men priserai de miex...` → `Sire` is not marked._
+
+Some segments, particularly at the beginning or end of randomly extracted passages, may lack a clear delimiter due to truncation. If the syntactic structure cannot be confidently completed, **do not mark** segmentation.
+
+> ⚠️ Example: *nos couvenoit aler dusqu’a outrance, car il est preuz et vistes et...* → Last `et` is ambiguous (adjective or clause? → no segmentation)
+
+
+## 🔗 2. Relative Pronouns
+
+Relative pronouns are **not marked** unless they are preceded by a **preposition**, in which case the **preposition is the segmentation marker**.
+
+| Structure                        | Segment? | Notes                              |
+|----------------------------------|----------|------------------------------------|
+| `par ou il passoit au chastel`   | ✅ `par`  | Preposition + relative             |
+| `de ce que...`                  | ❌ No     | Intervening demonstrative `ce`     |
 
 A relative clause may not initiate a new segment unless it begins a new syntactic unit or follows a strong delimiter.
 
 > ❌ *et les hommes que il vit...* — do not segment on `que`  
 > ✅ *par qui ses frères furent tués* — segment on `par`
 
+> **que**, **qui**, **dont**, **où**, **(le)quel** can also function as **interrogative pronouns**.  
+> In such cases, they are **also used as segmentation markers**.  
+> *Ex: —où est-il donc ?*
+
 ---
+# 🔁 3. Conjunctions
 
-## 3. Conjunctions
+### 🇪🇸 3.1 Medieval Castilian
 
-### 3.1 Medieval Castilian
+**Coordinating conjunctions** are used as delimiters, except in **enumerations**:
 
-#### Coordinating Conjunctions
-Used as delimiters **except** in enumerations:
-- `e`, `et`, `y`, `&`
-- Negations: `ni`
-- Alternatives: `o`, `u`
+- `e`, `et`, `y`, `&`, `ni`, `o`, `u`
+- `pues`, `ca`, `que` (causal), `pero`, `sino`, `mas` (adversative)
 
-#### Other Conjunctions
-- `pues`
-- `ca`, `que` (when causal)
-- `pero`, `sino`, `mas` (when adversative)
+> ✅ *E fuemos a surgir... / e deçendimos en tierra...*\
+> ❌ *pero tiene buen puerto e muchas tierras...*
 
-> ✅ Example: *E fuemos a surgir... / e deçendimos en tierra...* (Yes)
-> ❌ Example: *pero tiene buen puerto e muchas tierras...* (No, enumeration)
+### 🇫🇷 3.2 Medieval French
 
-### 3.2 Medieval French
+Used **only when linking full clauses with verbs**:
 
-#### Coordinating Conjunctions
-Used when linking clauses with explicit verbs.
-- `et` → *et il dient* ✅; *flatir et a debatre* ❌ (only second 'et' marked if it starts a clause)
-- `ou`, `o`
-- `mais`, `car`, `kar`, `quar`, `ains`, `ne`
+- `et`, `ou`, `o`, `mais`, `car`, `kar`, `quar`, `ains`, `ne`
+- Subordinating: `que`, `se`
 
-> `ne` is marked only when coordinating full clauses, not adjectives or nouns.
+> ❗ `ne` is marked **only when coordinating clauses**, not phrases or adjectives.
 
-#### Subordinating Conjunctions
-- `que` (complement or consecutive)
-- `se` (conditional with expressed verb)
+### 🇮🇹 3.3 Medieval Italian
 
-### 3.3 Medieval Italian
-
-#### Coordinating Conjunctions
-- `e`, `ed`
-- `o`
-- `né`
-- `ma`
-- `ché`
-
-#### Subordinating Conjunctions
-- `che`
-- `se`
-- `sicché`
+- Coordinating: `e`, `ed`, `o`, `né`, `ma`, `ché`
+- Subordinating: `che`, `se`, `sicché`
 
 ---
 
-## 4. Direct Speech Introducers
+## 🗣️ 4. Direct Speech Introducers
 
-### 4.1 Medieval Castilian
+Speech verbs and discourse initiators.
 
-Verbs like `decir`, `preguntar` are segmenters, whether for direct or indirect discourse.
-- If the subject is postposed, split after it.
-- Embedded speech verbs: keep within segment.
+### 🇪🇸 Castilian
 
-> Example: *dixo el Rey: ¿Commo fue eso?* → segment after `Rey:`
+- Verbs like `decir`, `preguntar` → segment **after** subject if postposed\
+  *Ex: **`dixo el Rey: ¿Commo fue eso?`*
 
-### 4.2 Medieval French
+### 🇫🇷 French
 
-Includes formulaic openers and speech verbs:
-- `haa`, `hee`, `he`, `certes`, `oil`, `oy`, `voire`, `naie`
-- Preposition `par` (when introducing direct speech)
+- Openers: `haa`, `hee`, `he`, `certes`, `oil`, `oy`, `voire`, `naie`, `par`
 
-### 4.3 Medieval Italian
+### 🇮🇹 Italian
 
-- `vere`, `certo`
-- Preposition `Per` (used similarly to French `par`)
+- Openers: `vere`, `certo`, `Per` (used as in French `par`)
 
 ---
 
-## 5. Adverbs as Delimiters
+## 🕰️ 5. Adverbs as Delimiters
 
-### 5.1 Medieval Castilian
+Adverbs at the beginning of new clauses or discourse units.
 
-Examples that often begin clauses:
+### 🇪🇸 Castilian
+
 - `ahora`, `cuando`, `entonces`, `luego`, `otrosí`, `como`, `tanto que`, `según que`
 
-### 5.2 Medieval French
+### 🇫🇷 French
 
-- `si`, `or`, `ores`, `lors`, `alors`, `puis`, `après`, `ainsi`, `anci`, `devant`, `quant`, `quand`, `comment`, `comme`, `tandis`, `tant`, `atant`, `maintenant`, `orendroit`, `toutesfois`, `car`
+- `si`, `or`, `ores`, `lors`, `alors`, `puis`, `après`, `ainsi`, `devant`, `quant`, `quand`, `comment`, `comme`, `tandis`, `tant`, `atant`, `maintenant`, `orendroit`, `toutesfois`, `car`
 
-### 5.3 Medieval Italian
+### 🇮🇹 Italian
 
 - `si`, `anzi`, `altresi`, `dunque`, `poscia`, `quando`, `allor`, `atanto`, `tanto`, `or`, `inanzi`, `immantanente`, `mantanente`, `perché`, `come`
 
 ---
 
-## 6. Prepositions
+## 📍 6. Prepositions
 
-Used as delimiters **only** in specific syntactic roles:
+Used **only in specific clause-introducing contexts**.
 
-### 6.1 Castilian
-- `por`, `para` → when introducing infinitive clauses
-- `hasta`
+### 🇪🇸 Castilian
 
-### 6.2 French
-- `pour`, `par`, `de`, `a`, `en` → when preceding relative or demonstrative pronouns
-- `jusque` → only when followed by relative clause
+- `por`, `para`, `hasta` → introduce infinitive clauses
 
-### 6.3 Italian
-- `per` → when introducing infinitive or direct speech
-- `de`, `a`, `per`, `in` → before relative or adverbial clauses
+### 🇫🇷 French
+
+- `pour`, `par`, `de`, `a`, `en`, `jusque` → only when preceding relative or demonstrative pronouns
+
+### 🇮🇹 Italian
+
+- `per`, `de`, `a`, `in` → same rules as above
 
 ---
 
-## 7. Special Cases
+## ⚠️ 7. Special Cases
 
 ### 7.1 Agglutinated Forms
-Tokenize compound forms like:
-- `quil`, `quilz`, `quelle`, `quelles`, `sil`, `silz`, `selle`, `selles`
 
-### 7.2 Uncertain Segmentation
-If a fragment is truncated and its syntactic role is unclear, **do not mark**.
-> Example: *nos couvenoit aler dusqu’a outrance...* → unclear if `et` is coordinating or not
+Always segment compounds like:
 
-### 7.3 Tokenization Conflicts
-When two potential segmenters follow each other, mark **only the first**.
-> Example: *et quant il voit cele par cui...* → mark `et`, not `quant`
+- `quil`, `quilz`, `quelle`, `sil`, `selle`
 
-### 7.4 `que` Not to be Marked
-Avoid marking `que` in:
-- Restrictive relative clauses
-- When preceded by tokens like `si`, `devant`, `ainsi`
-- Coordinating value
-- Redundant `que que`
-- Exclamative/interrogative uses without clause initiation
+### 7.2 Uncertain Boundaries
 
-### 7.5 Complex Structures
-- Prefer the **first** delimiting token in a cluster.
-- For coordinated elements or embedded relatives, apply judgment based on structure.
+When unsure due to truncation, **do not segment**.
 
-> Example: *sera moult ioyeuse si tost comment elle laura ueu* → mark `si`, not `comment`
+> Ex: *nos couvenoit aler dusqu’a outrance...*
 
-- Relative pronouns after prepositions: mark the **preposition**.
-> Example: *par ou il passoit* ✅; *de ce que...* ❌ (do not mark if `ce` intervenes)
+### 7.3 Marker Clashes
+
+When multiple segmentation markers follow each other, mark **only the first**.
+
+> Ex: *et quant il voit cele par cui...* → ✅ `et`, ❌ `quant`
+
+### 7.4 `que` Not to Segment
+
+| Usage                     | Segment? | Reason                 |
+| ------------------------- | -------- | ---------------------- |
+| Restrictive clause        | ❌        | Too embedded           |
+| Preceded by `si`, `ainsi` | ❌        | Structural dependency  |
+| `que que` (redundant)     | ❌        | Collapse redundancy    |
+| Exclamatory/interrogative | ❌        | Not a clause initiator |
+
+### 7.5 Complex Sequences
+
+Segment **only the leading marker** in clusters or embedded relatives.
+
+> Ex: *sera moult ioyeuse si tost comment elle laura ueu* → mark `si`, not `comment`
 
 ---
 
-These rules aim to guide segmentation based on linguistic structure, prioritizing coherence and consistency across languages. Refer to language-specific examples and test cases in `word_delimiters.md` for further clarification.
+## 📊 Visual Summary
+
+### 🔄 Segmentation Flow
+
+```
+[Clause Start?] 
+   ↓
+[Verb Present?] → Yes → ✓ Segment
+                 → No  → Check if it's an enumeration → ✗
+```
+
+### ✅ Proper Segmentation
+
+```diff
++ Et quant il vit la dame£
++ il s'avança£
++ & parla£
+```
+
+### ❌ Enumeration (No segmentation)
+
+```
+Incorrect:
+Il prit du pain£, du vin£, et du miel£.
+
+Correct:
+Il prit du pain, du vin, et du miel£.
+```
+
+---
+## 🧠 Tip
+
+Focus on **syntactic ruptures**, **speech verbs**, and **clause-openers** — not just punctuation.
+
+These rules aim to guide segmentation based on linguistic structure, prioritizing coherence and consistency across languages.
+
+For implementation details and language-specific heuristics, see the companion file:  
+[`word_delimiters.md`](word_delimiters.md).
+
 
