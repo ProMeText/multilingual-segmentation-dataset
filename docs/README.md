@@ -55,11 +55,17 @@ This ensures proper metadata registration and traceability of new materials.
 
 ## 📁 Available Documentation
 
-- [`segmentation_criteria.md`](segmentation_criteria.md) – Guidelines and heuristics used for sentence segmentation  
-- [`word_delimiters.md`](word_delimiters.md) – Rules for identifying word boundaries across languages  
-- [`corpora_overview.csv`](metadata/corpora_overview.csv) – Overview of all corpora, languages, and segmentation types  
-- [`editions_used.md`](sources/editions_used.md) – Bibliographic references for the source editions  
-- [`changelog.md`](changelog.md) – Log of dataset structure updates and versioning  
-- [`segmentation_processing_pipeline.md`](segmentation_processing_pipeline.md) – Step-by-step description of the data preparation workflow  
-- [`exemples.md`](exemples.md) – Annotated examples of segmentation across languages  
+### 📝 Annotation Guidelines
+- [`annotation_guidelines/segmentation_criteria_en.md`](annotation_guidelines/segmentation_criteria_en.md) – Main principles and heuristics for sentence segmentation  
+- [`annotation_guidelines/main-word-delimiters.json`](annotation_guidelines/main-word-delimiters.json) – Language-specific clause delimiters (used in rule-based preprocessing)
 
+### ⚙️ Processing & Examples
+- [`segmentation_processing_pipeline.md`](segmentation_processing_pipeline.md) – Step-by-step description of the preprocessing and data formatting pipeline  
+- [`segmentation_exemples.md`](segmentation_exemples.md) – Annotated segmentation examples across languages
+
+### 📊 Metadata
+- [`data.csv`](https://github.com/carolisteia/mulada/blob/main/data.csv) – Centralized summary of all source texts, including language, date, genre, edition, and other metadata
+> 📍 This file is maintained at the root of the main repository (`mulada/`) and not in the `docs/` folder.
+
+### 🏷️ Repository Structure
+- [`README.md`](README.md) – Main documentation index for `docs/`
