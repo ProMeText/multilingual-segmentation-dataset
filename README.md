@@ -180,7 +180,7 @@ This command fine-tunes the `bert-base-multilingual-cased` model with the follow
 - **Precision**: `bf16` mixed precision  
 - **Checkpointing**: model saved every 2 epochs  
 - **Early stopping**: after 10 epochs without improvement
-
+```
 ---
 
 ### 🗂 Input Format
@@ -238,6 +238,7 @@ which is used for **regex-based baseline segmentation**.
 
 ```bash
 multilingual-segmentation-data/data/Multilingual_Aegidius/segmented/split/
+```
 
 ## 🚧 Project Status
 
