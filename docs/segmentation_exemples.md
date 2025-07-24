@@ -75,6 +75,6 @@ Por tal lo tengo yo£dixo don Duardos£& no puedo yo creer£que yo le sobrasse£
 ---
 These examples illustrate how segmentation reflects **internal syntactic cues** and **rhetorical structuring**, rather than relying on punctuation alone.
 
-See [segmentation_criteria.md](annotation_guidelines/segmentation_criteria.md) for full guidelines.
+See [segmentation_criteria.md](docs/annotation_guidelines/segmentation_guidelines_fr-v0.pdf) for full guidelines.
 
 
