@@ -1,37 +1,94 @@
+# 🛠️ Segmentation Processing Pipeline
 
-## 🔄 Processing Pipeline
+This document describes the data preparation pipeline used to build the multilingual segmentation dataset.  
+It details the steps taken from raw text collection to the production of segmented, model-ready files.
 
-This document describes the step-by-step workflow used to prepare historical texts for sentence segmentation and alignment tasks.
+---
+
+## 📥 1. Collect Raw Texts
+
+Texts were collected from a wide range of sources, including digital editions, OCR outputs, and manually transcribed files.  
+Preferred formats included:
+
+- `.txt` (plain text)
+- `.xml` (TEI, custom formats)
+- `.html` / `.pdf` (converted to plain text using external tools)
 
 ---
 
-### **Processing Steps**
+## 🧹 2. Clean and Normalize
 
-1. 📥 **Collect raw texts**  
-   - Formats: `.txt`, `.xml`, `.html`, `.pdf` (converted to plain text)  
-   - Source: digital editions, OCR outputs, or manually transcribed files
+All files underwent **basic cleaning**, mostly using **regular expressions**, to normalize:
 
-2. 🧹 **Clean and normalize**  
-   - Remove unwanted markup, fix inconsistent spacing or encoding  
-   - Standardize structural formatting across files (e.g. paragraph markers, metadata)  
-   - ⚠️ This step does **not** involve orthographic normalization: original spelling, punctuation, and diacritics are preserved to reflect source variation
+- markup and tags (removal or replacement)
+- inconsistent whitespace and line breaks
+- encoding anomalies (e.g., non-UTF-8)
 
-3. ✂️ **Segment manually or heuristically**  
-   - Annotators apply language-specific rules for sentence or unit segmentation  
-   - Mixed approach: hand segmentation + rule-based assistance
-
-4. 🏷️ **Annotate boundaries**  
-   - Use the `£` symbol to mark segment boundaries within the text  
-   - This delimiter is used across formats for consistency
-
-5. 📂 **Organize into `pre_split/`**  
-   - Files in this folder are segmented, but not split into ML subsets  
-   - Available in `.txt` and `.json` formats
-
-6. 🔀 **Partition into `train/`, `dev/`, `test/`**  
-   - Files in `split/` contain the same content, distributed for model training  
-   - Structure: parallel `.json` and `.txt` files with `£` delimiters
+> ⚠️ **Note:** This step does **not** involve orthographic normalization.  
+Original spelling, punctuation, and diacritics were preserved to maintain historical variation.
 
 ---
+
+## ✂️ 3. Segment Texts
+
+Segmentation was performed using a **hybrid approach** combining:
+
+- **manual annotation** by trained annotators  
+- **rule-based heuristics** to accelerate the process (e.g., splitting at discourse markers; see [`word_delimiters.md`](word_delimiters.md))
+
+---
+
+## 🏷️ 4. Annotate Boundaries
+
+Segment boundaries are marked using the `£` symbol.  
+The `£` delimiter is consistent across formats (`.txt`, `.json`) and enables straightforward tokenization for machine learning tasks.  
+It also supports binary labeling of tokens: `1` for a segmentation point (i.e., when a token is followed by `£`), and `0` otherwise.
+
+---
+
+## 📂 5. Organize in `pre_split/`
+
+Files with annotated segments (using `£`) are stored in the `pre_split/` folder.  
+They are **not yet split** into `train/dev/test`.  
+Formats:
+
+- `.txt` (plain text with `£`)
+- `.json` (structured format for ML input)
+
+---
+
+## 🔀 6. Split into Train/Dev/Test
+
+Files are then partitioned into the `split/` folder, with the following structure:
+
+- `train/`, `dev/`, and `test/` subfolders per language
+- Each subfolder contains:
+  - `.txt` files with `£` delimiters
+  - `.json` files with segmented data in ML-friendly format
+
+---
+
+## 🖼️ Visual Summary
+
+<p align="center">
+  <img src="assets/segmentation_pipeline2.png" alt="Segmentation pipeline" width="60%">
+</p>
+
+---
+
+## 📁 Output Folder Summary
+
+- `raw/`: Cleaned, unsegmented text
+- `segmented/pre_split/`: Fully segmented excerpts, not partitioned
+- `segmented/split/`: Segmented and partitioned into ML subsets
+
+---
+
+## 📎 Related Files
+
+- [`word_delimiters.json`](word_delimiters.json) – Language-specific word boundary rules  
+- [`segmentation_criteria.md`](segmentation_criteria.md) – Sentence segmentation principles and heuristics  
+- [`segmentation_exemples.md`](segmentation_exemples.md) – Annotated examples in multiple languages
+
 
 🔙 Back to [README](../README.md)
