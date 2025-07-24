@@ -185,9 +185,8 @@ Segment **only the leading marker** in clusters or embedded relatives.
 ### ✅ Proper Segmentation
 
 ```diff
-+ Et quant il vit la dame£
-+ il s'avança£
-+ & parla£
++ E dixo el Rey£
++ ¿Commo fue eso ?
 ```
 
 ### ❌ Enumeration (No segmentation)
