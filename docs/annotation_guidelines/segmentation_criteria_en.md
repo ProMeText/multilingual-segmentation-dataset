@@ -1,14 +1,13 @@
+
 # ✂️ Segmentation Criteria
 
-This document outlines the main segmentation principles used to mark sentence or discourse unit boundaries in the corpus. These guidelines are based on syntactic and rhetorical structures rather than purely on punctuation or orthographic features.
+This document outlines the core principles for segmenting sentence or discourse boundaries in the corpus. Segmentation is based on **syntactic structure** and **rhetorical cues**, rather than punctuation alone.
 
-Each language follows language-specific patterns and exceptions. Below are the general rules and examples categorized by part of speech and function.
+Each language follows its own specific conventions, with exceptions and language-specific adaptations. The general segmentation logic is organized below by **grammatical category** and **function in the sentence**, accompanied by examples.
 
-> 📝 Note: The lists and examples throughout the guidelines include some **graphical variants** from Medieval French and Castilian but are **not exhaustive**.
+> ⚠️ **Note:** This is **version 0** of the segmentation guidelines. These rules may evolve as the dataset grows and new languages are incorporated.
 
----
-
-
+--
 
 ## 🚫 1. Segments Without Delimiters
 
