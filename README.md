@@ -128,14 +128,13 @@ We provide a **pretrained multilingual BERT-based sentence segmentation model**,
 
 🔍 **Model architecture & training**  
 The model uses Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or syntactic segment boundaries.  
-Training focused on *French*, *Castilian*, and *Italian*, with successful cross-lingual generalization to the full language set.
+The model was first trained on **French**, **Castilian**, and **Italian**, and subsequently shown to generalize effectively across **all seven languages** in the corpus.
 
----
 
 ### 📊 Performance Highlights
 
 **The following results are from evaluations on the _Lancelot en prose_ corpus** (used during initial development).  
-**Results from the expanded _Multilingual Aegidius_ corpus will be made available soon.**
+Results from the expanded _Multilingual Aegidius_ corpus will be made available soon.
 
 | Language   | Regex F1 | BERT F1 | Δ F1 |
 |------------|----------|---------|------|
