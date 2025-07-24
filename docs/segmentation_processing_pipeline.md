@@ -71,7 +71,7 @@ Files are then partitioned into the `split/` folder, with the following structur
 ## 🖼️ Visual Summary
 
 <p align="center">
-  <img src="assets/segmentation_pipeline2.png" alt="Segmentation pipeline" width="60%">
+<img src="../assets/segmentation_pipeline2.png" alt="Segmentation pipeline" width="60%">
 </p>
 
 ---
