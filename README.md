@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/banner.png" alt="Multilingual Segmentation Dataset Banner" width="80%">
+  <img src="assets/segmentation_banner_final_clean_rebuilt.png" alt="Multilingual Segmentation Dataset Banner" width="80%">
 </p>
 
 
