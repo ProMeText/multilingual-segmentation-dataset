@@ -50,6 +50,9 @@ Reliable segmentation is essential for:
 
 📄 For full segmentation principles, see the detailed [Segmentation Guidelines](docs/segmentation_criteria_en.md).
 
+➡️ For model training instructions, architecture, and evaluation, see  
+[**Model Documentation**](docs/segmentation_model.md).
+
 
 ## 🔄 Processing Pipeline
 
@@ -172,6 +175,24 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 > Please cite as:  
 > Macedo, C., Ing, L., & Gille Levenson, M. (2025). *Multilingual Segmentation Corpus for Historical Prose (13th–16th c.)*. GitHub repository, ongoing.  
 > 📌 Formal publication and DOI pending.  
+
+
+## 📚 Documentation
+
+- ✂️ **Segmentation Criteria**  
+  ➡️ [`docs/annotation_guidelines/segmentation_criteria_en.md`](docs/annotation_guidelines/segmentation_criteria_en.md)
+
+- 🧪 **Model Architecture & Training**  
+  ➡️ [`docs/segmentation_model.md`](docs/segmentation_model.md)
+
+- 🔧 **Processing Pipeline (Raw → Segmented)**  
+  ➡️ [`docs/segmentation_processing_pipeline.md`](docs/segmentation_processing_pipeline.md)
+
+- 🧾 **Annotated Examples**  
+  ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
+
+- 🔤 **Delimiter Configuration (per language)**  
+  ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
 
 
 ## 📄 Licensing
