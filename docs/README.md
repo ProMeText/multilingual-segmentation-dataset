@@ -77,5 +77,9 @@ To contribute new corpora or enrich existing ones, please open an issue in the
 - [`data.csv`](https://github.com/carolisteia/mulada/blob/main/data.csv) – Metadata for all source texts (languages, genres, editions, etc.)  
 > 📍 Maintained at the root of the `mulada` repository.
 
+### 🌐 Data Collection & Source Tracking  
+- [`data_collection_and_source_tracking.md`](data_collection_and_source_tracking.md) – Language-specific sourcing notes, access challenges, and metadata compilation practices across the corpus
+
+
 ### 🏷️ Repository Structure
 - [`README.md`](README.md) – 📌 This file
