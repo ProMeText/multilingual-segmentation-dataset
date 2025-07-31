@@ -163,7 +163,7 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 - 🧾 **Annotated Examples**  
   ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
 
-  - 🌍 **Data Collection & Source Tracking**  
+- 🌍 **Data Collection & Source Tracking**  
   ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_and_source_tracking.md)
 
 - 🔤 **Delimiter Configuration (per language)**  
