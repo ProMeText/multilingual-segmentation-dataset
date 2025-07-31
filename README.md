@@ -122,123 +122,6 @@ Each excerpt is annotated using the pound sign (`£`) to mark **segment boundari
 
 > ℹ️ This corpus focuses on **sentence segmentation only**. It does **not include POS tagging, syntactic trees, or named entity annotations**.
 
-## 🧠 Model Availability
-
-We provide a **pretrained multilingual BERT-based sentence segmentation model**, fine-tuned on the full **Multilingual Segmentation Corpus** (13th–16th c., Catalan, Castilian, English, French, Italian, Latin, Portuguese), optimized for **historical prose**.
-
-🔍 **Model architecture & training**  
-The model uses Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or syntactic segment boundaries.  
-The model was first trained on **French**, **Castilian**, and **Italian**, and subsequently shown to generalize effectively across **all seven languages** in the corpus.
-
-### 📊 Performance Highlights
-
-**The following results are from evaluations on the _Lancelot en prose_ corpus** (used during initial development).  
-Results from the expanded _Multilingual Aegidius_ corpus will be made available soon.
-
-| Language   | Regex F1 | BERT F1 | Δ F1 |
-|------------|----------|---------|------|
-| French     | 0.706    | 0.906   | +0.20 |
-| Italian    | 0.606    | 0.846   | +0.24 |
-| Castilian  | 0.636    | 0.866   | +0.23 |
-
-The model significantly improves **segment boundary detection** and reduces **alignment errors** in downstream multilingual alignment using [Aquilign](https://github.com/ProMeText/aquilign).
-
-📄 For model details and evaluation, see the paper:  
-➡️ [*Textual Transmission without Borders* (CHR 2024)](https://ceur-ws.org/Vol-3834/paper104.pdf)
-
----
-
-## 🏋️‍♀️ Training the Segmenter
-
-The segmenter is based on a trainable `BertForTokenClassification` model from Hugging Face’s `transformers` library.
-
-We fine-tune this model to detect custom sentence delimiters (`£`) in historical texts from the **Multilingual Segmentation Corpus**.
-
----
-
-### 🔧 Example Command
-
-```bash
-python3 train_tokenizer.py \
-  -m google-bert/bert-base-multilingual-cased \
-  -t ../Multilingual_Aegidius/data/segmentation_data/split/multilingual/train.json \
-  -d ../Multilingual_Aegidius/data/segmentation_data/split/multilingual/dev.json \
-  -e ../Multilingual_Aegidius/data/segmentation_data/split/multilingual/test.json \
-  -ep 100 \
-  -b 128 \
-  --device cuda:0 \
-  -bf16 \
-  -n multilingual_model \
-  -s 2 \
-  -es 10
-
-This command fine-tunes the `bert-base-multilingual-cased` model with the following configuration:
-
-- **Epochs**: 100  
-- **Batch size**: 128  
-- **Device**: GPU (`cuda:0`)  
-- **Precision**: `bf16` mixed precision  
-- **Checkpointing**: model saved every 2 epochs  
-- **Early stopping**: after 10 epochs without improvement
-```
----
-
-### 🗂 Input Format
-
-The training data must follow a specific **JSON structure** and is validated against a schema.
-
-Example
-{
-  "metadata": {
-    "lang": ["la", "it", "es", "fr", "en", "ca", "pt"],
-    "centuries": [13, 14, 15, 16],
-    "delimiter": "£"
-  },
-  "examples": [
-    {
-      "example": "que mi padre me diese £por muger a un su fijo del Rey",
-      "lang": "es"
-    },
-    {
-      "example": "Per fé, disse Lion, £i v’andasse volentieri, £ma i vo veggio £qui",
-      "lang": "it"
-    }
-  ]
-}
-The `metadata` block is **required** and must include:
-
-- `"delimiter"`: the segmentation marker (`£`)  
-- `"lang"`: list of ISO 639-1 language codes used in the examples  
-- `"centuries"`: chronological coverage of the corpus (used for tracking)
-
-The `"examples"` list contains individual sentences with inserted delimiters and language tags.
-
----
-
-### 📌 Language Codes
-
-We recommend using **ISO 639-1** codes for all supported languages:
-
-| Language    | Code |
-|-------------|------|
-| Latin       | `la` |
-| Italian     | `it` |
-| Castilian   | `es` |
-| French      | `fr` |
-| English     | `en` |
-| Catalan     | `ca` |
-| Portuguese  | `pt` |
-
-The language codes must **match those defined in**  
-[`/docs/annotation_guidelines/main-word-delimiters.json`](https://github.com/carolisteia/multilingual-segmentation-data/blob/main/docs/annotation_guidelines/main-word-delimiters.json),  
-which is used for **regex-based baseline segmentation**.
-
----
-📎 **Note**: This training setup assumes access to the prepared segmentation data under:
-
-```bash
-multilingual-segmentation-data/data/Multilingual_Aegidius/segmented/split/
-```
 
 ## 🚧 Project Status
 
@@ -250,6 +133,22 @@ Please note:
 - Metadata and annotations are subject to enhancement.
 - Additional languages and texts will be added as the project evolves.
 
+## 🔗 Related Projects
+
+This repository is part of a broader ecosystem of tools and corpora developed for the study of medieval multilingual textual traditions:
+
+- [Aquilign](https://github.com/ProMeText/Aquilign)  
+  A clause-level multilingual alignment engine based on contextual embeddings (LaBSE), designed specifically for premodern texts.
+
+- [Multilingual Segmentation Data](https://github.com/ProMeText/multilingual-segmentation-data)  
+  Source texts and segmented versions in multiple medieval Romance languages, as well as Latin and English, used for training and evaluating clause segmentation models.
+
+- [Lancelot par maints langages](https://github.com/carolisteia/lancelot-par-maints-langages)  
+  A parallel corpus of translations of the *Lancelot en prose* in medieval French, Castilian, and Italian, segmented and aligned using the Aquilign pipeline.
+
+- [Multilingual Aegidius](https://github.com/ProMeText/Multilingual_Aegidius)  
+  A parallel corpus of translations of Aegidius Romanus’ *De regimine principum* in Latin, medieval Romance languages, and English, processed using the same segmentation and alignment workflow.
+
 
 ## 🔮 Future Directions
 
@@ -260,15 +159,12 @@ Please note:
 
 ---
 
-## 📄 Licensing
+## 📫 Contact & Contributions
+- [Open an issue or pull request](https://github.com/ProMeText/Multilingual_Aegidius/issues)
 
-All annotations, segmentations, and metadata are released under [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-> ⚠️ Original textual content may be subject to source-specific licenses. Refer to the `sources` and `corpus` columns in the metadata CSV.   
+- For academic collaboration, please reach out via GitHub Discussions
 
-[Jump to compiled data CSV ⤵️](https://github.com/carolisteia/mulada/blob/main/data.csv)
-
-
-
+  
 ---
 ## 📚 How to Cite This Corpus
 
@@ -277,7 +173,12 @@ All annotations, segmentations, and metadata are released under [**CC BY-NC-SA 4
 > Macedo, C., Ing, L., & Gille Levenson, M. (2025). *Multilingual Segmentation Corpus for Historical Prose (13th–16th c.)*. GitHub repository, ongoing.  
 > 📌 Formal publication and DOI pending.  
 
-## 📫 Contact & Contributions
-- [Open an issue or pull request](https://github.com/ProMeText/Multilingual_Aegidius/issues)
 
-- For academic collaboration, please reach out via GitHub Discussions
+## 📄 Licensing
+
+All annotations, segmentations, and metadata are released under [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
+> ⚠️ Original textual content may be subject to source-specific licenses. Refer to the `sources` and `corpus` columns in the metadata CSV.   
+
+[Jump to compiled data CSV ⤵️](https://github.com/carolisteia/mulada/blob/main/data.csv)
+
+
