@@ -67,36 +67,8 @@ See [segmentation pipeline documentation](docs/segmentation_processing_pipeline.
 
 
 ## 🌐 Data Collection Variability Across Languages
-
-The process of text acquisition varied considerably depending on the language.
-
-- For some languages, such as **French**, acquisition was straightforward thanks to well-structured resources like the [**BFM Corpus**](https://gitlab.huma-num.fr/bfm/bfm-textes-diffusion/-/tree/main/TXT?ref_type=heads).
-
-- For **Portuguese**, **English**, and **Italian**, we used structured corpora such as the [**CTA**](https://teitok.clul.ul.pt/teitok/cta/index.php?action=home), [**LAEME**](http://amc.ppls.ed.ac.uk/laeme/texts.html), and [**Biblioteca Italiana**](http://www.bibliotecaitaliana.it/percorsi/19). These provided valuable data, though required **more intensive preparation**.
-
-- In contrast, resources like the **OVI** (Italian) and **CICA** (Catalan) offered limited public access, prompting recovery from **critical editions** or **web scraping** when necessary.
-
-This variability demanded a **flexible, language-sensitive approach** to both **sourcing** and **preprocessing**.
-
-## 🧾 Source Tracking & Metadata
-
-To ensure **transparency**, **consistency**, and **reproducibility**, an internal application form was created to standardize metadata collection for each text in the segmentation corpus.  
-This form captured key details such as:
-
-- 📌 **Source type** (digital edition, manuscript, OCR, etc.)  
-- 📚 **Edition or manuscript reference** (bibliographic citation)  
-- 🌍 **Linguistic variety** and **chronological range**  
-- 🗂️ **Format and structure** of the original file  
-- 📝 **Reuse/licensing conditions**
-
-Although the form itself is not public, we provide access to the processed metadata and scripts used during compilation:
-
-**🔗 Resources:**
-
-- 📂 [Data Processing Repository (`mulada`)](https://github.com/carolisteia/mulada):  
-  Streamlit app and scripts used to structure, validate, and convert incoming texts and metadata  
-- 📊 [Compiled Metadata CSV (`data.csv`)](https://github.com/carolisteia/mulada/blob/main/data.csv):  
-  Central table listing all texts with language, edition, source, format, license, and file references
+📦 For notes on text acquisition, sourcing variation, and metadata standardization, see  
+➡️ [docs/data_collection_notes.md](docs/data_collection_notes.md)
 
 
 ## 📊 Corpus Size
@@ -169,11 +141,11 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 
   
 ---
-## 📚 How to Cite This Corpus
+## 📚 How to Cite This dataset
 
 > **Citation (draft)**  
 > Please cite as:  
-> Macedo, C., Ing, L., & Gille Levenson, M. (2025). *Multilingual Segmentation Corpus for Historical Prose (13th–16th c.)*. GitHub repository, ongoing.  
+> Macedo, C., Ing, L., & Gille Levenson, M. (2025). *Multilingual Segmentation Dataset for Historical Prose (13th–16th c.)*. GitHub repository, ongoing.  
 > 📌 Formal publication and DOI pending.  
 
 
@@ -193,6 +165,16 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 
 - 🔤 **Delimiter Configuration (per language)**  
   ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
+  
+
+## 💰 Funding
+
+This work benefited from national funding managed by the **Agence Nationale de la Recherche** under the *Investissements d'avenir* programme with the reference **ANR-21-ESRE-0005 (Biblissima+)**.
+
+> Ce travail a bénéficié d'une aide de l’État gérée par l’**Agence Nationale de la Recherche** au titre du programme d’**Investissements d’avenir** portant la référence **ANR-21-ESRE-0005 (Biblissima+)**.
+
+
+<img src="img/logo_biblissima.png" alt="Biblissima+ Logo" width="700"/>
 
 
 ## 📄 Licensing
