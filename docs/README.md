@@ -78,8 +78,7 @@ To contribute new corpora or enrich existing ones, please open an issue in the
 > 📍 Maintained at the root of the `mulada` repository.
 
 ### 🌐 Data Collection & Source Tracking  
-- [`data_collection_and_source_tracking.md`](data_collection_and_source_tracking.md) – Language-specific sourcing notes, access challenges, and metadata compilation practices across the corpus
-
+- [`data_collection_and_source_tracking.md`](data_collection_notes.md) – Language-specific sourcing notes, access challenges, and metadata compilation practices across the corpus
 
 ### 🏷️ Repository Structure
 - [`README.md`](README.md) – 📌 This file
