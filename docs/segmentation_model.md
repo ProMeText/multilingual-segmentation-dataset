@@ -1,47 +1,40 @@
 # 🧠 Multilingual Sentence Segmenter for Historical Texts
 
-This page documents a pretrained **BERT-based sentence segmentation model** developed for **historical prose** in Latin and medieval Romance languages (13th–16th c.).  
-The model is used to improve clause-level alignment performance in multilingual corpora such as [Parallelium](https://github.com/ProMeText/parallelium-scriptures-alignment-dataset) and [Aquilign](https://github.com/ProMeText/Aquilign).
+This document introduces a pretrained **BERT-based sentence segmentation model**, fine-tuned on the *Multilingual Segmentation Dataset* (13th–16th c.).  
+The model is specifically designed for **historical prose texts** in **medieval Romance languages**, **Latin**, and **Middle English**, and is used to improve segmentation quality in downstream alignment tasks (e.g. with [Aquilign](https://github.com/ProMeText/Aquilign)).
 
-It was fine-tuned on the **Multilingual Segmentation Corpus**, which includes annotated texts in **Catalan**, **Castilian**, **English**, **French**, **Italian**, **Latin**, and **Portuguese**.  
-Performance is evaluated against regex baselines, with significant improvements in segmentation quality and downstream alignment accuracy.
+It supports **seven historical languages** — **Catalan**, **Castilian**, **English**, **French**, **Italian**, **Latin**, and **Portuguese** — and has been evaluated on two benchmark corpora:
 
-This document provides:
+- 📘 [**Lancelot en prose**](https://github.com/carolisteia/lancelot-par-maints-langages)  
+- 📗 [**De regimine principum**](https://github.com/ProMeText/Multilingual_Aegidius)  
+
+In both cases, the BERT-based approach outperforms regex-based segmentation baselines, substantially reducing error propagation in alignment and collation workflows.
+
+---
+
+### 📄 This document provides:
 
 - 🔧 Model architecture and training setup  
 - 🏋️ Training instructions and command-line usage  
-- 📁 Input format and JSON schema  
-- 🌐 Language codes and delimiter conventions
+- 📁 Input format and data schema  
+- 🌐 Language codes and delimiter conventions  
 
-> 📎 For annotation guidelines, see the [documentation]((https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/docs/annotation_guidelines)).
-
-# 🧠 Multilingual Sentence Segmenter for Historical Texts
-
-This document introduces a pretrained **BERT-based sentence segmentation model** fine-tuned on the *Multilingual Segmentation Corpus* (13th–16th c.).  
-It is specifically designed for **historical prose texts** in **medieval Romance and Latin languages**, and used to improve alignment quality in downstream tasks (e.g. [Aquilign](https://github.com/ProMeText/Aquilign)).
-
-The model supports **seven languages** — Catalan, Castilian, English, French, Italian, Latin, Portuguese — and has been evaluated on **[Lancelot en prose](https://github.com/carolisteia/lancelot-par-maints-langages)** and **[De regimine principum](https://github.com/ProMeText/Multilingual_Aegidius)**, achieving strong improvements over regex-based baselines.
-
-You’ll find below:
-
-- Model architecture and performance  
-- Training instructions and command-line usage  
-- Input format and data schema  
-- Language codes and delimiter conventions
-
-> 📎 For training data, see the [Multilingual Segmentation Data repository](https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/data).
+> 📎 For annotation principles, see the [Segmentation Guidelines](https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/docs/annotation_guidelines)  
+> 📎 For access to training data, consult the [Multilingual Segmentation Data repository](https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/data)
 
 ---
 
 ## 🧠 Model Availability
 
-We provide a **pretrained multilingual BERT-based sentence segmentation model**, fine-tuned on the full **Multilingual Segmentation Corpus** (13th–16th c., Catalan, Castilian, English, French, Italian, Latin, Portuguese), optimized for **historical prose**.
+We provide a **pretrained multilingual BERT-based sentence segmentation model**, fine-tuned on the full *Multilingual Segmentation Corpus* (13th–16th c.), covering **seven historical languages** and optimized for **prose texts**.
 
-🔍 **Model architecture & training**  
-The model uses Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or syntactic segment boundaries.  
-It was initially trained on **French**, **Castilian**, and **Italian**, and shown to generalize across all **seven supported languages**.
+### 🔍 Model Architecture & Training
+
+The model is implemented with Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or clause boundaries.  
+Initial training focused on **French**, **Castilian**, and **Italian**, and was later generalized across the full language set.
 
 ---
+
 
 ### 📊 Performance Highlights
 
