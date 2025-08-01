@@ -33,6 +33,12 @@ We provide a **pretrained multilingual BERT-based sentence segmentation model**,
 The model is implemented with Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or clause boundaries.  
 Initial training focused on **French**, **Castilian**, and **Italian**, and was later generalized across the full language set.
 
+📦 Available on Hugging Face:  
+👉 [`ProMeText/aquilign-multilingual-segmenter`](https://huggingface.co/ProMeText/aquilign-multilingual-segmenter)
+
+> Looking for **monolingual models**?  
+> 👉 See our [Hugging Face model hub](https://huggingface.co/ProMeText) for language-specific variants.
+
 ---
 
 
