@@ -13,14 +13,14 @@ This document provides:
 - 📁 Input format and JSON schema  
 - 🌐 Language codes and delimiter conventions
 
-> 📎 For training data and annotation guidelines, see the [Multilingual Segmentation Data repository](https://github.com/ProMeText/multilingual-segmentation-data).
+> 📎 For annotation guidelines, see the [documentation]((https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/docs/annotation_guidelines)).
 
 # 🧠 Multilingual Sentence Segmenter for Historical Texts
 
 This document introduces a pretrained **BERT-based sentence segmentation model** fine-tuned on the *Multilingual Segmentation Corpus* (13th–16th c.).  
 It is specifically designed for **historical prose texts** in **medieval Romance and Latin languages**, and used to improve alignment quality in downstream tasks (e.g. [Aquilign](https://github.com/ProMeText/Aquilign)).
 
-The model supports **seven languages** — Catalan, Castilian, English, French, Italian, Latin, Portuguese — and has been evaluated on **Lancelot en prose** and **Multilingual Aegidius**, achieving strong improvements over regex-based baselines.
+The model supports **seven languages** — Catalan, Castilian, English, French, Italian, Latin, Portuguese — and has been evaluated on **[Lancelot en prose](https://github.com/carolisteia/lancelot-par-maints-langages)** and **[De regimine principum](https://github.com/ProMeText/Multilingual_Aegidius)**, achieving strong improvements over regex-based baselines.
 
 You’ll find below:
 
@@ -29,7 +29,7 @@ You’ll find below:
 - Input format and data schema  
 - Language codes and delimiter conventions
 
-> 📎 For training data, see the [Multilingual Segmentation Data repository](https://github.com/ProMeText/multilingual-segmentation-data).
+> 📎 For training data, see the [Multilingual Segmentation Data repository](https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/data).
 
 ---
 
