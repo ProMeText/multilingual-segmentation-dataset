@@ -97,6 +97,14 @@ Each excerpt is annotated using the pound sign (`£`) to mark **segment boundari
 
 > ℹ️ This corpus focuses on **sentence segmentation only**. It does **not include POS tagging, syntactic trees, or named entity annotations**.
 
+## 🙏 Credits
+
+We gratefully acknowledge the following scholars for their contributions of source material or expertise:
+
+- **Peter Stokes & Mark Faulkner** – Guidance on available Middle English corpora  
+- **Sadurní Martí** – Support in identifying Medieval Catalan corpora  
+- **Andrea Menozzi** – Insights into available Medieval Italian corpora
+
 
 ## 🚧 Project Status
 
