@@ -110,11 +110,11 @@ The corpus does **not include part-of-speech tagging or syntactic annotation** �
 
 | Language         | Texts | Segmented Tokens | Segments (`£`) | Train/Dev/Test? |
 |------------------|-------|------------------|----------------|-----------------|
-| **Latin** (`la`)       | 557   | 85,888              | 8,366          | ✅              |
+| **Latin** (`la`)       | 557   | 59,403              | 11,463          | ✅              |
 | **French** (`fr`)      | 1,526 | 160,472             | 11,774         | ✅              |
 | **English** (`en`)     | 152   | 27,072              | 2,315          | ✅              |
 | **Portuguese** (`pt`)  | 987   | 101,565             | 10,477         | ✅              |
-| **Catalan** (`ca`)     | 388   | 38,441              | 2,879          | ✅              |
+| **Catalan** (`ca`)     | 388   | 47,835              | 7,586          | ✅              |
 | **Italian** (`it`)     | 2,649 | 85,290              | 6,347          | ✅              |
 | **Castilian** (`es`)   | 1,436 | 111,811             | 8,091          | ✅              |
 | **Total**              | 7,695 | 610,539             | 50,249         | ✅              |
