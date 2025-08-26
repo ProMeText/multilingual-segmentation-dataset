@@ -15,6 +15,25 @@
 This dataset gathers carefully segmented excerpts from a wide range of textual genres — including narrative, didactic, legal, theological, and scholarly prose — spanning seven Romance and Latin languages (13th–16th c.).  
 Segment boundaries reflect both historical syntax and editorial conventions, making the corpus suitable for training and evaluating sentence segmentation models, as well as for cross-linguistic and diachronic analysis in NLP and digital philology.
 
+## 📚 Documentation
+
+- ✂️ **Segmentation Criteria**  
+  ➡️ [`docs/annotation_guidelines/segmentation_criteria_en.md`](docs/annotation_guidelines/segmentation_criteria_en.md)
+
+- 🧪 **Model Architecture & Training**  
+  ➡️ [`docs/segmentation_model.md`](docs/segmentation_model.md)
+
+- 🔧 **Processing Pipeline (Raw → Segmented)**  
+  ➡️ [`docs/segmentation_processing_pipeline.md`](docs/segmentation_processing_pipeline.md)
+
+- 🧾 **Annotated Examples**  
+  ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
+
+- 🌍 **Data Collection & Source Tracking**  
+  ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_and_source_tracking.md)
+
+- 🔤 **Delimiter Configuration (per language)**  
+  ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
 
 
 ## 📖 Overview
@@ -77,9 +96,13 @@ See [segmentation pipeline documentation](docs/segmentation_processing_pipeline.
 
 ## 📊 Corpus Size
 
-The current version of the corpus includes segmented excerpts in **seven historical languages**, prepared for sentence segmentation tasks.
+Below we present the data corresponding to the most recent version of the corpus size.  
+Older versions can be consulted in the [release tags](https://github.com/ProMeText/multilingual-segmentation-dataset/releases).
+The current version of the corpus includes segmented excerpts in **seven historical languages**, prepared for sentence segmentation tasks.  
 
-Each excerpt is annotated using the pound sign (`£`) to mark **segment boundaries**, typically corresponding to sentences or syntactic units. The corpus does **not include part-of-speech tagging or syntactic annotation**—only sentence-level segmentation.
+Each excerpt is annotated using the pound sign (`£`) to mark **segment boundaries**, typically corresponding to sentences or syntactic units.  
+The corpus does **not include part-of-speech tagging or syntactic annotation** — only sentence-level segmentation.
+
 
 | Language         | Texts | Segmented Tokens | Segments (`£`) | Train/Dev/Test? |
 |------------------|-------|------------------|----------------|-----------------|
@@ -101,8 +124,17 @@ Each excerpt is annotated using the pound sign (`£`) to mark **segment boundari
 
 > ℹ️ This corpus focuses on **sentence segmentation only**. It does **not include POS tagging, syntactic trees, or named entity annotations**.
 
-## 🙏 Credits
+## 📂 Data Location
 
+The most up-to-date segmented data are stored in the repository under:
+
+```bash
+data/segmented/
+```
+- This folder contains the **current working version** of the segmented texts.  
+- For **frozen snapshots** corresponding to published versions (e.g. baseline, augmented), please refer to the [release tags](https://github.com/ProMeText/multilingual-segmentation-dataset/releases).
+
+## 🙏 Credits
 We gratefully acknowledge the following scholars for their contributions of source material or expertise:
 
 - **Peter Stokes & Mark Faulkner** – Guidance on available Middle English corpora  
@@ -121,7 +153,6 @@ Please note:
 - Additional languages and texts will be added as the project evolves.
 
 ## 🔗 Related Projects
-
 This repository is part of a broader ecosystem of tools and corpora developed for the study of medieval multilingual textual traditions:
 
 - [Aquilign](https://github.com/ProMeText/Aquilign)  
@@ -138,7 +169,6 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 
 
 ## 🔮 Future Directions
-
 - Extend language coverage  
 - Evaluate segmentation models  
 - Broaden genre and period diversity  
@@ -159,27 +189,6 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 > Please cite as:  
 > Macedo, C., Ing, L., & Gille Levenson, M. (2025). *Multilingual Segmentation Dataset for Historical Prose (13th–16th c.)*. GitHub repository, ongoing.  
 > 📌 Formal publication and DOI pending.  
-
-
-## 📚 Documentation
-
-- ✂️ **Segmentation Criteria**  
-  ➡️ [`docs/annotation_guidelines/segmentation_criteria_en.md`](docs/annotation_guidelines/segmentation_criteria_en.md)
-
-- 🧪 **Model Architecture & Training**  
-  ➡️ [`docs/segmentation_model.md`](docs/segmentation_model.md)
-
-- 🔧 **Processing Pipeline (Raw → Segmented)**  
-  ➡️ [`docs/segmentation_processing_pipeline.md`](docs/segmentation_processing_pipeline.md)
-
-- 🧾 **Annotated Examples**  
-  ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
-
-- 🌍 **Data Collection & Source Tracking**  
-  ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_and_source_tracking.md)
-
-- 🔤 **Delimiter Configuration (per language)**  
-  ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
   
 
 ## 💰 Funding
