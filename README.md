@@ -30,26 +30,30 @@ Segment boundaries reflect both historical syntax and editorial conventions, mak
   ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
 
 - 🌍 **Data Collection & Source Tracking**  
-  ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_and_source_tracking.md)
+  ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_notes.md)
 
 - 🔤 **Delimiter Configuration (per language)**  
   ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
 
-
 ## 📖 Overview
 
-This dataset was developed to train a multilingual sentence segmentation model used as a pre-processing step in the automatic alignment of historical texts with [**Aquilign**](https://github.com/ProMeText/aquilign), a multilingual alignment tool developed by our team.  
-Once the BERT-based models are trained and selected, they are integrated into the alignment workflow to segment texts based on learned boundary recognition — a critical step preceding the alignment itself.
+This dataset was developed to train a multilingual sentence segmentation model, used as a pre-processing step in the automatic alignment of historical texts with [**Aquilign**](https://github.com/ProMeText/aquilign), a multilingual alignment tool developed by our team.  
+Once the BERT-based models are trained and selected, they are integrated into the alignment workflow to segment texts based on learned boundary recognition — a critical step preceding alignment itself.
 
-The segmented excerpts serve as input for Aquilign, enabling multilingual alignment across structurally and editorially diverse texts. A first study applying this pipeline — focused on *Lancelot en prose* — was presented in the 2024 article [*Textual Transmission without Borders*](https://2024.computational-humanities-research.org/papers/paper104/), published as part of the Computational Humanities Research (CHR) conference proceedings.
+The segmented excerpts serve as input for Aquilign, enabling multilingual alignment across structurally and editorially diverse texts.  
+A first study applying this pipeline — focused on *Lancelot en prose* — was presented in the 2024 article [*Textual Transmission without Borders*](https://2024.computational-humanities-research.org/papers/paper104/), published in the Computational Humanities Research (CHR) conference proceedings.
 
+As the project evolved, the segmentation corpus was gradually expanded alongside the tool. Initially limited to three Romance languages — *Castilian (`es`), French (`fr`), and Italian (`it`)* — it was later enriched with **Portuguese (`pt`)**, **Catalan (`ca`)**, **Latin (`la`)**, and **English (`en`)**, thereby increasing linguistic diversity and strengthening the robustness of cross-linguistic alignment.
 
-As the project evolved, the segmentation corpus was gradually expanded alongside the tool. Initially limited to three Romance languages — *Castilian (`es`), French (`fr`), and Italian (`it`)* — it was later enriched with **Portuguese (`pt`)**, **Catalan (`ca`)**, **Latin (`la`)**, and **English (`en`)**, increasing linguistic diversity and enhancing the robustness of cross-linguistic alignment.
+The corpus provides training and evaluation material for **sentence-level segmentation** in **historical prose** from the **13th to 16th centuries**.  
+Texts were selected for their **genre diversity** and their ability to reflect **editorial**, **orthographic**, and **linguistic variation** across time, geography, and scribal practices.
 
-To support reproducibility and multilingual evaluation, the dataset is organized by work: each text is stored in a dedicated folder containing the source (`raw/`) and segmented (`segmented/`) versions.
+To support **reproducibility and multilingual evaluation**, the dataset is structured by language.  
+Segmented data are stored under `data/segmented/`, with language-specific files organized as follows:
+- `data/segmented/pre_split/<lang>/` — complete segmented lines per language  
+- `data/segmented/split/monolingual/<lang>/` — train/dev/test JSON and TXT files  
+- `data/segmented/split/multilingual/` — multilingual train/dev/test splits  
 
-
-The corpus provides training and evaluation material for **sentence-level segmentation** in **historical prose** from the **13th to 16th centuries**. Texts were selected for their **genre diversity**, as well as their capacity to reflect **editorial**, **orthographic**, and **linguistic variation** across time, geography, and scribal practices.
 
 ## 🧾 Summary
 
