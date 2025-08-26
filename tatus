@@ -1,0 +1,93 @@
+* [33m8b8f366[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m reorganising data folder
+[31m|[m * [33m0afc04e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update README.md
+[31m|[m *   [33m2983895[m Merge branch 'main' of github.com:ProMeText/multilingual-segmentation-dataset
+[31m|[m [33m|[m[31m\[m  
+[31m|[m [33m|[m[31m/[m  
+[31m|[m[31m/[m[33m|[m   
+* [33m|[m [33ma455919[m Update README.md
+* [33m|[m [33m94e49af[m Update README.md
+* [33m|[m [33mf19f179[m Update README.md
+* [33m|[m [33mc2cbd6a[m Update README.md
+* [33m|[m [33m080b812[m Create CHANGELOG.md
+* [33m|[m [33m744269d[m[33m ([m[1;33mtag: segmented-baseline-2025[m[33m)[m reorganising data/lancelot folder
+* [33m|[m [33m19bc126[m Update README.md
+[34m|[m * [33mc4a3bc7[m improve english corpus
+[34m|[m[34m/[m  
+* [33m688c634[m Update README.md
+* [33md1f423b[m Update segmentation_model.md
+* [33mc22853c[m Update segmentation_model.md
+* [33ma79c6c2[m Update segmentation_model.md
+* [33mc10fabc[m Update README.md
+* [33m4c258e5[m Update README.md
+* [33m17daf4f[m Update README.md
+* [33m949d959[m Add files via upload
+* [33m2d8a5cf[m Update README.md
+* [33mc03443a[m Update README.md
+*   [33m8f2a916[m Merge branch 'main' of github.com:carolisteia/multilingual-segmentation-data
+[35m|[m[36m\[m  
+[35m|[m * [33m7001724[m Update README.md
+* [36m|[m [33m4b6465e[m adding new data_collection file into docs folder
+[36m|[m[36m/[m  
+* [33m599110e[m Update README.md
+* [33md5da0da[m reorganizing readme files and documentation
+* [33m903d5ed[m Update README.md
+* [33m43e0f95[m Update README.md
+* [33m1a02675[m Update README.md
+* [33m846ca3b[m Add files via upload
+* [33m1fe08a6[m Update README.md
+* [33m053d0d9[m Add files via upload
+* [33m027488d[m Update README.md
+* [33mada8e6c[m Add files via upload
+* [33mcaa5593[m Update README.md
+* [33mccae974[m Update README.md
+* [33mc344a03[m Update README.md
+* [33m0b13b11[m Update README.md
+* [33m571caa6[m Update README.md
+* [33m281dbf5[m Update README.md
+* [33m5e4c518[m Delete docs/# 🧩 Multilingual Segmentation Corpus.md
+* [33m97479d4[m Delete docs/annotation_guidelines/segmentation_guidelines_fr-v0.pdf
+* [33m3440f9a[m Update segmentation_criteria_en.md
+* [33m0f85f4a[m Update segmentation_criteria_en.md
+* [33m8c4b59a[m Update segmentation_criteria_en.md
+* [33mb78285b[m adding criteria guidelines, en version
+* [33m0b09a8a[m Update segmentation_exemples.md
+* [33m0dce582[m Update segmentation_exemples.md
+* [33m8e4e20e[m Update segmentation_exemples.md
+* [33m2a5e49a[m Update segmentation_exemples.md
+* [33m526254a[m Update segmentation_processing_pipeline.md
+* [33m222cab1[m Update segmentation_processing_pipeline.md
+* [33mf012405[m Update README.md
+*   [33m5a44fec[m Merge branch 'main' of github.com:carolisteia/multilingual-segmentation-data
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m84c6750[m Update README.md
+[1;31m|[m * [33m207855b[m Update README.md
+[1;31m|[m * [33m5d55def[m Update README.md
+[1;31m|[m * [33md6a0528[m Update README.md
+[1;31m|[m * [33m8139e6e[m Update README.md
+[1;31m|[m * [33m34e9f67[m Update README.md
+[1;31m|[m * [33m2ae7c02[m Update README.md
+[1;31m|[m * [33mc7eaf24[m Update README.md
+* [1;32m|[m [33m8c70758[m adding segmentation ex. file
+[1;32m|[m[1;32m/[m  
+*   [33m9bb6b5d[m Merge branch 'main' of github.com:carolisteia/multilingual-segmentation-data
+[1;33m|[m[1;34m\[m  
+[1;33m|[m * [33m835ee3c[m Update README.md
+[1;33m|[m * [33mbf815be[m Update README.md
+* [1;34m|[m [33m88e48ac[m adding new files
+[1;34m|[m[1;34m/[m  
+* [33m8bc7881[m redimensioning banner pic
+*   [33m7dd2ec3[m Merge branch 'main' of github.com:carolisteia/multilingual-segmentation-data
+[1;35m|[m[1;36m\[m  
+[1;35m|[m * [33m67fb2b6[m Update README.md
+* [1;36m|[m [33m5b9cad9[m changing banner pic
+[1;36m|[m[1;36m/[m  
+* [33m4cfd895[m fixing issue with banner pic
+*   [33md6ebd2a[m Merge branch 'main' of github.com:carolisteia/multilingual-segmentation-data
+[31m|[m[32m\[m  
+[31m|[m * [33m8ce2f0b[m Update README.md
+[31m|[m * [33m48a96a0[m Rename segmentation_corpus.md to README.md
+* [32m|[m [33m5980955[m adding banner img
+[32m|[m[32m/[m  
+* [33mf5476f8[m restructuring data files
+* [33m146ecf2[m adding recovered data
+* [33mdeb84d4[m Initial commit
