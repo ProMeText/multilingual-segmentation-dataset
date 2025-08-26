@@ -30,7 +30,7 @@ Segment boundaries reflect both historical syntax and editorial conventions, mak
   ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
 
 - 🌍 **Data Collection & Source Tracking**  
-  ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_and_source_tracking.md)
+  ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_notes.md)
 
 - 🔤 **Delimiter Configuration (per language)**  
   ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
