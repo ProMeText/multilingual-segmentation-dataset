@@ -106,25 +106,26 @@ The current version of the corpus includes segmented excerpts in **seven histori
 
 Each excerpt is annotated using the pound sign (`£`) to mark **segment boundaries**, typically corresponding to sentences or syntactic units.  
 The corpus does **not include part-of-speech tagging or syntactic annotation** — only sentence-level segmentation.
+| Language       | Tokens   | Segments (`£`) | Avg. Tokens per Segment |
+|----------------|----------|----------------|--------------------------|
+| **Latin**      | 59,403   | 11,463         | 5.18                     |
+| **Portuguese** | 54,201   | 10,477         | 5.17                     |
+| **Castilian**  | 62,383   | 9,887          | 6.31                     |
+| **French**     | 66,227   | 9,669          | 6.85                     |
+| **Italian**    | 50,645   | 7,743          | 6.54                     |
+| **Catalan**    | 45,215   | 7,586          | 5.96                     |
+| **English**    | 36,138   | 6,107          | 5.92                     |
+| **Total**      | 374,212  | 62,932         | 5.95*                    |
 
+---
 
-| Language         | Texts | Segmented Tokens | Segments (`£`) | Train/Dev/Test? |
-|------------------|-------|------------------|----------------|-----------------|
-| **Latin** (`la`)       | 557   | 59,403              | 11,463          | ✅              |
-| **French** (`fr`)      | 1,526 | 160,472             | 11,774         | ✅              |
-| **English** (`en`)     | 152   | 36,153              | 6,107          | ✅              |
-| **Portuguese** (`pt`)  | 987   | 101,565             | 10,477         | ✅              |
-| **Catalan** (`ca`)     | 388   | 47,835              | 7,586          | ✅              |
-| **Italian** (`it`)     | 2,649 | 85,290              | 6,347          | ✅              |
-| **Castilian** (`es`)   | 1,436 | 111,811             | 8,091          | ✅              |
-| **Total**              | 7,695 | 610,539             | 50,249         | ✅              |
+### 🗒️ Legend:
+- **Tokens**: Total number of tokens (excluding the `£` symbol and punctuation).
+- **Segments (`£`)**: Number of segment boundaries marked by `£`.
+- **Avg. Tokens per Segment**: Average number of tokens per segment (`Tokens ÷ Segments`).
 
-**Legend:**
+\* **Note**: The total average is the overall tokens divided by the total number of segments, **not** the average of column averages.
 
-- **Texts** = total number of annotated examples (i.e. segmented lines)  
-- **Segmented Tokens** = total number of tokens (excluding `£`)  
-- **Segments (`£`)** = total number of `£` delimiters → i.e. segments  
-- **Train/Dev/Test?** = indicates whether `train.json`, `dev.json`, and `test.json` are all present
 
 > ℹ️ This corpus focuses on **sentence segmentation only**. It does **not include POS tagging, syntactic trees, or named entity annotations**.
 
