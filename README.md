@@ -189,13 +189,26 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 
   
 ---
-## 📚 How to Cite This dataset
+## 📚 How to Cite this Dataset
 
-> **Citation (draft)**  
-> Please cite as:  
-> Macedo, C., Ing, L., & Gille Levenson, M. (2025). *Multilingual Segmentation Dataset for Historical Prose (13th–16th c.)*. GitHub repository, ongoing.  
-> 📌 Formal publication and DOI pending.  
-  
+Please cite as:  
+
+**APA**  
+Ing, L., Gille Levenson, M., & Macedo, C. (2025). *Multilingual Segmentation Dataset for Historical Prose (13th–16th c.)* (Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16992629  
+
+**BibTeX**  
+```bibtex
+@dataset{ing2025multilingual,
+  author       = {Ing, L. and Gille Levenson, M. and Macedo, C.},
+  title        = {Multilingual Segmentation Dataset for Historical Prose (13th--16th c.)},
+  year         = {2025},
+  publisher    = {Zenodo},
+  version      = {1.0},
+  doi          = {10.5281/zenodo.16992629},
+  url          = {https://doi.org/10.5281/zenodo.16992629},
+  license      = {Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International}
+}
+
 
 ## 💰 Funding
 
