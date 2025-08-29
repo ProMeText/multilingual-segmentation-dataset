@@ -208,7 +208,7 @@ Ing, L., Gille Levenson, M., & Macedo, C. (2025). *Multilingual Segmentation Dat
   url          = {https://doi.org/10.5281/zenodo.16992629},
   license      = {Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International}
 }
-
+```
 
 ## 💰 Funding
 
