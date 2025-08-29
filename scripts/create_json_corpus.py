@@ -91,7 +91,7 @@ def produce_stats(corpus:list[tuple[str]], delimiter:str) -> dict:
 			"delimiters_number": delimiters_number}
 
 
-def read_texts(paths) -> list[tuple[str]]:
+def read_texts(paths, delimiter) -> list[tuple[str]]:
 	all_texts = []
 	langs = []
 	for path in paths:
@@ -100,15 +100,23 @@ def read_texts(paths) -> list[tuple[str]]:
 		langs.append(lang)
 		with open(path, 'r') as f:
 			current_text = [item.replace("\n", "") for item in f.readlines()]
-			current_text = [(text, lang) for text in current_text]
+			current_text = [item for item in current_text if item not in [None, ""]]
+			current_text = [(clean_text(text, delimiter=delimiter), lang) for text in current_text]
 			all_texts.extend(current_text)
 	langs = list(set(langs))
 	return all_texts, langs
 
+def clean_text(example, delimiter):
+	if example[-1] == delimiter:
+		example = example[:-1]
+
+	return example
+
+
 
 def create_corpus(delimiter:str, path:str, out_dir:str):
 	all_texts = glob.glob(path)
-	corpus, langs = read_texts(all_texts)
+	corpus, langs = read_texts(all_texts, delimiter)
 	random.shuffle(corpus)
 	proportion = {"train": .8, "test": .1, "dev": .1}
 	train, dev, test = split_texts(corpus, proportion)
