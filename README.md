@@ -106,17 +106,18 @@ The current version of the corpus includes segmented excerpts in **seven histori
 
 Each excerpt is annotated using the pound sign (`£`) to mark **segment boundaries**, typically corresponding to sentences or syntactic units.  
 The corpus does **not include part-of-speech tagging or syntactic annotation** — only sentence-level segmentation.
-| Language       | Tokens   | Segments (`£`) | Avg. Tokens per Segment |
-|----------------|----------|----------------|--------------------------|
-| **Latin**      | 59,403   | 11,463         | 5.18                     |
-| **Portuguese** | 54,201   | 10,477         | 5.17                     |
-| **Castilian**  | 62,383   | 9,887          | 6.31                     |
-| **French**     | 66,227   | 9,669          | 6.85                     |
-| **Italian**    | 50,645   | 7,743          | 6.54                     |
-| **Catalan**    | 45,215   | 7,586          | 5.96                     |
-| **English**    | 36,138   | 6,107          | 5.92                     |
-| **Total**      | 374,212  | 62,932         | 5.95*                    |
 
+
+| Language | Tokens | Segments (`£`) | Avg. Tokens per Segment |
+|----------|--------|----------------|--------------------------|
+| **Latin** | 68,058.0 | 13,387.0 | 5.08 |
+| **French** | 80,907.0 | 12,168.0 | 6.65 |
+| **Castilian** | 72,750.0 | 11,605.0 | 6.27 |
+| **Portuguese** | 54,201.0 | 10,477.0 | 5.17 |
+| **Catalan** | 49,891.0 | 7,983.0 | 6.25 |
+| **Italian** | 50,943.0 | 7,783.0 | 6.55 |
+| **English** | 36,138.0 | 6,107.0 | 5.92 |
+| **Total** | 412,888.0 | 69,510.0 | 5.94 |
 ---
 
 ### 🗒️ Legend:
