@@ -4,6 +4,7 @@
 </p>
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16992629.svg)](https://doi.org/10.5281/zenodo.16992629)
 [![GitHub release](https://img.shields.io/github/v/release/ProMeText/multilingual-segmentation-dataset?include_prereleases&label=Release)](https://github.com/ProMeText/multilingual-segmentation-dataset/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/commits/main)
 [![Issues](https://img.shields.io/github/issues/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/issues)
