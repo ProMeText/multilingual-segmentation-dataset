@@ -110,7 +110,7 @@ def clean_text(example, delimiter):
 	example = example.replace("“", "«")
 	example = example.replace("”", "»")
 	example = example.replace("—", "-")
-	punctuation_regex = re.compile(rf"{delimiter}([\.,;:\?!’'”«»“/\-])")
+	punctuation_regex = re.compile(rf"{delimiter}([\.,;:\?!’'”«\"»“/\-])")
 	example = re.sub(punctuation_regex, rf"\1{delimiter}", example)
 	spaces_regex = re.compile(fr"{delimiter}\s+")
 	example = re.sub(spaces_regex, delimiter, example)
