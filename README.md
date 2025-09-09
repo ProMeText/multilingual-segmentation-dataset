@@ -8,7 +8,7 @@
 [![GitHub release](https://img.shields.io/github/v/release/ProMeText/multilingual-segmentation-dataset?include_prereleases&label=Release)](https://github.com/ProMeText/multilingual-segmentation-dataset/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/commits/main)
 [![Issues](https://img.shields.io/github/issues/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/issues)
-[![Slides](https://img.shields.io/badge/slides-Llcd2025-blue)](./docs/proposition_llcd25-1.pdf)
+[![Slides](https://img.shields.io/badge/slides-Llcd2025-blue)](./docs/slides-llcd2025.pdf)
 
 # ✂️ Multilingual Segmentation Dataset
 
@@ -217,7 +217,7 @@ Ing, L., Gille Levenson, M., & Macedo, C. (2025). *Multilingual Segmentation Dat
 ### 🎤 *Colloque Langues et Langage à la croisée des Disciplines (LLcD 2025)*  
 **_Training Sentence Segmenters on Medieval Languages_**  
 👥 *Lucence Ing, Matthias Gille Levenson, Carolina Macedo*  
-📽️ [View presentation slides (PDF)](docs/proposition_llcd25-1.pdf)
+📽️ [View presentation slides (PDF)](./docs/slides_llcd25-1.pdf)
 
 ## 💰 Funding
 
