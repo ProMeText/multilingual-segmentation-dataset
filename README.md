@@ -214,9 +214,9 @@ Ing, L., Gille Levenson, M., & Macedo, C. (2025). *Multilingual Segmentation Dat
 ----
 ## 🧾 Talks & Slides 
 
-### 🎤 *Congrès Langues et Langage à la croisée des Disciplines (LLcD 2025)*  
+### 🎤 *Colloque Langues et Langage à la croisée des Disciplines (LLcD 2025)*  
 **_Training Sentence Segmenters on Medieval Languages_**  
-👥 *Matthias Gille Levenson, Lucence Ing, Carolina Macedo*  
+👥 *Lucence Ing, Matthias Gille Levenson, Carolina Macedo*  
 📽️ [View presentation slides (PDF)](docs/proposition_llcd25-1.pdf)
 
 ## 💰 Funding
