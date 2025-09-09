@@ -8,7 +8,8 @@
 [![GitHub release](https://img.shields.io/github/v/release/ProMeText/multilingual-segmentation-dataset?include_prereleases&label=Release)](https://github.com/ProMeText/multilingual-segmentation-dataset/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/commits/main)
 [![Issues](https://img.shields.io/github/issues/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/issues)
-[![Slides](https://img.shields.io/badge/slides-Llcd2025-blue)](docs/proposition_llcd25-1.pdf)
+[![Slides](https://img.shields.io/badge/slides-Llcd2025-blue)](./docs/proposition_llcd25-1.pdf)
+)
 
 # ✂️ Multilingual Segmentation Dataset
 
