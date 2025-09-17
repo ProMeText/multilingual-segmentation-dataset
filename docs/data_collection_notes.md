@@ -40,7 +40,7 @@ Although the form itself is not public, we provide access to the **processed met
 
 ## 🔗 Resources
 
-- 📂 **Data Processing Repository – [`mulada`](https://github.com/ProMeText/CorpusTemporis)**  
+- 📂 **Data Processing Repository – [`Corpus Temporis App`](https://github.com/ProMeText/CorpusTemporis)**  
   Streamlit app and scripts used to structure, validate, and convert incoming texts and metadata.
 
 - 📊 **Compiled Metadata Table – [`data.csv`](https://github.com/ProMeText/CorpusTemporis/blob/main/data.csv)**  
