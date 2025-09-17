@@ -40,10 +40,10 @@ Although the form itself is not public, we provide access to the **processed met
 
 ## 🔗 Resources
 
-- 📂 **Data Processing Repository – [`mulada`](https://github.com/carolisteia/mulada)**  
+- 📂 **Data Processing Repository – [`mulada`](https://github.com/ProMeText/CorpusTemporis)**  
   Streamlit app and scripts used to structure, validate, and convert incoming texts and metadata.
 
-- 📊 **Compiled Metadata Table – [`data.csv`](https://github.com/carolisteia/mulada/blob/main/data.csv)**  
+- 📊 **Compiled Metadata Table – [`data.csv`](https://github.com/ProMeText/CorpusTemporis/blob/main/data.csv)**  
   A centralized CSV listing all processed texts with:
   - Language  
   - Title  
