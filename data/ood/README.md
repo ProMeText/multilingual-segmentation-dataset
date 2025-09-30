@@ -8,11 +8,9 @@ They are used exclusively to test the model’s **robustness** and **generalizat
 - **Galician–Portuguese** (`opo`)  
   The medieval common language from which both modern Galician and Portuguese descend.  
   Used as a proxy to test robustness with respect to **Portuguese**.  
-  The texts come from Galician–Portuguese sources.
 
 - **Medieval Occitan** (`pro`)  
   Used as a proxy to test robustness with respect to **Catalan**.  
-  The texts come from Medieval Occitan / Old Provençal sources.
 
 ## Textual sources
 
