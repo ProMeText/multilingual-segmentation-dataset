@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "name": "test",
+    "delimiter": "£",
+    "examples_number": 1,
+    "segments": 11,
+    "chars": 320,
+    "words": 58,
+    "langs": [
+      "pro"
+    ]
+  },
+  "examples": [
+    {
+      "example": "£Et adonc els se·n anero latz hun fluvi de una aygua, £en laqual moltas gens trebalhavo £per hun gran perilh £que hi sufrian. £Et aqui els feyro hun gran ospital £per so que hi fezesso penedensa, £que totz aquels £que hi volrian passar lo fluvi, £que·l passesso en perdo, £e que receupesso en lor ostal totz los paupres.",
+      "lang": "pro"
+    }
+  ]
+}
