@@ -18,7 +18,7 @@ They are used exclusively to test the model’s **robustness** and **generalizat
 - ****  
 
 ### Medieval Occitan
-- **Legenda aurea (Sanh Julia Martir), Jacques de Voragine**  
+- **Legenda aurea (Sanh Julia Martir), Giacomo da Varazze (Iacobus de Voragine)**  
   Religious prose, Occitan translation (Version B), 15th century.
   Monika Tausend (ed.), *Die altokzitanische Version B der «Legenda aurea» (Ms. Paris, Bibl. Nat., n. acq. fr. 6504)*, Tübingen, Niemeyer, 1995 (Beihefte zur Zeitschrift für romanische Philologie, 262), pp. 291-295.  
   Available online: [RIALTO – Prosa religiosa](https://www.rialto.unina.it/prosa_religiosa/la73/)  
