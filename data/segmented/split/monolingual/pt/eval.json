@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "name": "eval",
+    "delimiter": "£",
+    "examples_number": 98,
+    "segments": 1720,
+    "chars": 49948,
+    "words": 8089,
+    "langs": [
+      "pt"
+    ]
+  },
+  "examples": [
+    {
+      "example": "[..][..]que [....] scpritura[..] [..]õ o d[..]tremin[..........] [..]ode assy ve[..........] [..]uy[......]£acerca de ssy seg[....]do [..]iz C[..................]£que aqu[..]l homẽ p[........]ia sanct[..] .£E os sanct[..]s ajnda qu[..] [..]õ [..........] de gulla som ven[....]do[..] d[..] vãã gloria£E p[..]rtanto tomo[..] o .£E leuo[..] ho aa [..]ancta Cidade .£scilicet . de Jhrlm que era [..]hamada sancta£porque era l[....]pa [..]e Jdollatria .£E porque ally s[..]aua o templo . E a sanc[..]a sanctoru[..] comsi[..]ra aquj a benidade do se[..]hor C[..]nsintio£por a sua humil[..]osa paci[....]cia£E nõ por mỹguaa de poder£que o [..]euasse [......]lla cruel b[..]sta£a q[..]al beue[..]",
+      "lang": "pt"
+    },
+    {
+      "example": "sacta resoluant .£Angelicis manib sinuat tenui sepulchris .£Et cubi pprijs codutur mote celis£Naq tene regnum o ducete sup sp .£Que qr dizer .£E logo q nosso snor ouue ẽuiado ãte sy£a grande craridade do çeo .£veo hy çercado de grãdes cõpahas d ãjos£estãdo antre os corpos dos santos£na metade do mõte .£E alegrauã se eles£aly estãdo çercados d muj grã cõfortamẽto .£E aly o nosso senhor£q auia dado as almas ao çeeo£deu os corpos aa terra .£ca tremeo de cabo o mõte .£e sacodyo",
+      "lang": "pt"
+    },
+    {
+      "example": ": posto o rosto em o chaão .£E disse .£Padre todas as cousas som possiuees a ty .£Passa este vaso de amargura de my .£Mas faça se nom o que eu quero .£mas o que tu .£E bolueo se aos disçipolos .£E achou os dormindo .£e disse a Pedro . Symon .£e dormes .£nom podeste nem huũa hora vellar comigo ?£Uelay .£e oray .£Por que nom emtres em temptaçiom .£Que ho spiritu prompto :£e viuo esta .£Mas a carne emferma . e fraca .",
+      "lang": "pt"
+    },
+    {
+      "example": ". he que guardasse£Eu bẽ Roma he meu emperio£que así faria elle a jherusalem£de mi he de todollos outros cõtrayros .£he ajnda he mais culpado£emquanto nõ justamẽte julgou o santo profeta jhesu christo£o que os judeus tomarõ con direito .£he esto sabía elle muy bẽ£que nenhuũ mall nõ merecía£he quiseo con sentẽça julgar aa morte .£he elle os liurou£vẽdo que os judeus lhe leuãtauã falsos testimunhos .£he como elle teuesse lugar de senhorio£poder tinha de asoluer he de cõdenar£que o deuera d’asoluer£pois que o achou",
+      "lang": "pt"
+    },
+    {
+      "example": "os guardauã jaziam dormindo aquela ora .£senõ tam solamente o carçeleiro£que os estaua escuytando£de que guisa orauã .£e entendeo em aquelas palauras que eles deziam£que o que fora ao banho£q era morto£e via como eles£que estauam na agoa veuiã ajnda .£E quãdo vio o lume tam grande£açerca dos santos martires£oulhou contra o çeo£por ver dõde vinha .£e vio coroas hu desçẽdiam do çeo£sobre os santos martires .£xxxix . per conta£e pensou antre sy mesmo£e disse .£Quarenta sam eles como faleçe aly hũa",
+      "lang": "pt"
+    },
+    {
+      "example": "vem primeiro ẽno nome de Myonha.£Mas agora leixaremos aquy esta razom£e tornaremos de como foy o conde dom Sancho lidar cõ os mouros.£Como o conde dom Sancho foy correr e roubar o reyno de Tolledo e de Cordova.£Andados treze annos do reynado del rey dom Afomso de Leom -£e esto foy na era de mil e vĩĩte e cinquo annos£e o anno da encarnaçom de Nosso Senhor Jhesu Cristo£em novecentos e oyteenta e sete annos -£o conde dom Sancho,£nõ podendo sofrer o torto que os mouros",
+      "lang": "pt"
+    },
+    {
+      "example": "enssynança de boos custumes£e syguymento das virtudes,£devem seer vistos e enssynados,£e bem praticadas todallas cousas a ella perteecentes.£E os da enssynança da guerra£com as cronycas aprovadas£he muito perteecente leitura£pera os senhores e cavalleiros,£e seus filhos,£de que se tiram grandes e boos exempros£e sabedorias que muyto prestam,£com a graça do senhor,£aos tempos da necessydade.£Todas boas manhas do corpo£que perteecem a cada hũũ£segundo aquel stado que tever,£nunca devem seer leixadas,£specialmente cavalgar e luytar,£que som fundamento£de que se percalçom as mays das outras;£ca",
+      "lang": "pt"
+    },
+    {
+      "example": "hῦῦ he aqle q ministra toda cousas£[ ... ... ... ... ... ... ... ... ... ... . . ] e aa lua . [ ... ... ... ... . . ] terras e as s[......................]ça [ ... . . ] r ẽn [ ... ... ... ... ... ... ... ] geeraçõ geerou a [ ... ... ... ... . . ] taa [ ... ... ... ]£Pois porq curades [ ... ... ... . ] da geeraçõ e dos auoos .£se [ ... ... ... ... ] mentes aos uosos começos e a ds que",
+      "lang": "pt"
+    },
+    {
+      "example": "a outro virgem.£Pois esto£Josefes disse a Galaaz,£tornou a Persival e beijou-o.£E pois Galaaz er disse a Boorz:– £Saudade-mim muito a dom Lançalot,£meu padre e meu senhor,£tam toste que o virdes.£Entom se tornou ante a távoa£e ficou seus geolhos.£E nom esteve i se pouco£nom quando caeu em terra£e a alma se lhi saiu do corpo£e levarom-na os angeos£fazendo gram ledice£e beenzendo Nosso Senhor.£Como o Santo Vaso se foi contra o ceu.£Tam toste que el foi morto£avẽo ũa gram maravilha£que Boorz",
+      "lang": "pt"
+    },
+    {
+      "example": "perfidus ille magus .£Martir ad haec placidus :£cui dux fuerat via christi .£Continuis precibus :£martir ad haec placidus .£O deus omnipotens :£iam nunc esto mihi clemens .£Auxilium referens :£o deus omnipotens .£Agmen et aggrediens praefecto sic ait :£omnes Jnuitas praeses :£agmen et aggrediens .£Si velis interitum proceris non credere :£christum .£Orabis surdum :£si velis interitum .£Sed mea iussa caue :£si vis perducere suaue :£Dic o rector aue :£sed mea iussa caue .£Idola proijtiens .£sanctorum vernula florens :£Esto deum",
+      "lang": "pt"
+    },
+    {
+      "example": "carne de bestas.£E, se algũa besta morrya,£vallia a libra da carne della #III marcos.£E cada dia se dobrava o seu mal,£e esto por a grande fame£e combatimẽto que avyam.£E tanta era em elles a fraqueza£que os cristããos se chegavã ao muro£e deitavõ as pedras dentro£e nõ avya quẽ os arredasse ende.£O Cide, com a grãde voontade que avya£de tomar a cidade,£pos hũũ engenho aa porta da villa£e fazia grande dampno aos mouros.£Mas elles fezerõ logo outro£e britarom o do Cide.£E elle, com",
+      "lang": "pt"
+    },
+    {
+      "example": "companhas.£E, quando o Cide vio este recado,£prouguelhe muito£e foisse logo pera Murvedro£e apoderousse do castello.£E esto foy a #XXVI dias£despois da morte del rei de Vallença.£Estando Abemaffa ẽ Vallença,£pos seu amor cõ dous cavalleiros da vylla£que forõ vassallos del rei£e mandou por outros£que se foron pera Denya,£ẽ guisa que ajuntou trezentos cavalleiros na villa;£e mãteveos cõ o pã do Cide£e com as rendas e algo£que foron dos officiaaes del rey£que erã fogidos do almoxarifado.£E todo esto£elle fazia sẽ consselho do alcaide",
+      "lang": "pt"
+    },
+    {
+      "example": "toda Espanha.£E, des os dez e seis ãnos do reynado deste rey dom Vermudo,£nõ achamos nem hũa cousa£que de contar seja,£se nõ tanto que nõ podyã aver augua polla grande seca.£De como Deus deu auga na terra;£e da morte del rei dom Vermudo£Andados dez e sete annos do reynado deste rey dom Vermudo de Leon- £e foy esto na era de mil e dez e sete ãnos£e andava o ãno da encarnaçõ de Nosso Senhor Jhesu Cristo£em novecentos e sateenta e oito e o de",
+      "lang": "pt"
+    },
+    {
+      "example": "que o porco delle non ha,£nunca pode fazer mal,£assi como dissemos£no capitulo xii de este livro ii.£Porende os moços que en tal lugar estiverem£en que se o porco estê ladrando£e lhe quiser entrar£façam en esta guisa£que lhes aqui escrevemos£de levarem hum pee no carreiro£e o mais do corpo no mato£e assi sempre mataram o porco£as mais das vezes a seu salvo.£E ainda mais que,£posto que o porco non seja tam sanhudo£quando acha o carreiro desembargado,£posto que aja o sentimento do monteyro,£non leixa de",
+      "lang": "pt"
+    },
+    {
+      "example": "e mostrar-vos-ei ũũ cavaleiro da Mesa Redonda£que aqui jaz doente? –£Vaamos,£disserom eles,£ca de grado o queremos veer.£E ele se foi diante£e levou-os até a torre;£e foi a ũa porta pequena de ferro e abriu-a£e disse-lhis:– £Entrade e atendede-me alá dentro£e pois amostrar-vos-ei o que vos prometi.£E eles, que se nom guardavam da traiçom, entrarom.£E el tirou a si a porta e çarrou-a.£E pois disse-lhis:£Ora fazede o milhor que poderdes,£ca ja mais nom sairedes daqui£se nom mortos.£E esta é a postumeira vossa aventura.",
+      "lang": "pt"
+    },
+    {
+      "example": "cõta sco agostinho .£q mayor he a actoridade da sca escptura .£ca todo o antpeujgiamto do engenho huanal .£e por ẽ nõ a pode o homẽ£de todo conphender .£Capitulo [ ... ... . . ] .£A sancta escptura contem£em sy toda sabedoria .£Onde diz sco agostinho£q qlquer cousa q o homẽ apnder fora da sca escptura .£se cousa he danossa q empeeça .£aly achara p q seya condẽnada .£ẽna sca escriptura a achara .£E diz outrosy£q nõ ha hi leteras£q seiam conpadas aos dous pceptos",
+      "lang": "pt"
+    },
+    {
+      "example": "dormir em aquelle cãpo hu jazia soterrado .£e dscobrio lhe o seu corpo .£e todo o feito da sua payxam .£grande dereito£nom quis nosso senhor Jhesu christo soffrer£que longo tempo jouuesse aly escõdido£aquele thesouro tam preçado .£Ca aueo assy depois a grande sazom£que aqla terra toda veeo a poder de cristaãos .£E auia hy huũ rico homẽ£de muy grãde guisa£que auia muy grande guerra .£grãde tempo auia sobre huũ seu herdamento .£e nunca podera vẽçer aquelles£com quẽ auia a contenda .£Mas antes auia ja emna",
+      "lang": "pt"
+    },
+    {
+      "example": "Entom lhes disse Danubre:– £Senhores, porque nos cometeredes?£Perjurados e desleaes seredes ende,£ca nós somos da Mesa Redonda como vós.£E por em nom devedes£a meter mão em nós a niũa guisa.– £Todo esso nom val rem,£disserom eles,£ca tanto nos errastes£que vos nom podedes de nós partir sem batalha.– £Pesa-me,£disse Danubre,£mais pois assi é£nós nos defenderemos a nosso poder.£Entom se leixarom ir ũũs aos outros£e Danubre deu ũa tam grande lançada a Amatim£que o meteu morto em terra.£E quando Arpiam vio seu irmão morto£meteo",
+      "lang": "pt"
+    },
+    {
+      "example": "diz por todalas outras Cousas .£decimo mandamto de ds he£nom queyras cobijcar as cousas de teu ujzinho£nen nenhũa cousa do teu ãão£nem as casas nen a herdade£nem a ujnha nen o boy£nen as bestas nen os seru£nem as seruas nen nenhũa das outrs cousas£Majs deue se homẽ teer por contento£das cousas q lhe ds qujser dar£de boa parte e de boo guanho£e nom querer nenhũa cousa de maao gaanho£E se de lhe der pouco das cousas deste mũdo£de a ds muytas gracas e mujtos louuores£Segũdo diz",
+      "lang": "pt"
+    },
+    {
+      "example": "força,£por que nos averyã que dizer,£a vos e a myn£e a quantos vehessem despois de mỹ,£se eu alleyve fezesse;£e demais que nõ sõõ eu homẽ£pera me alçar com terra,£ca os Castellããos taaes feitos como estes£nõ os soyam de fazer.£E, quando fosse soado per Spanha£que nos alçaramos£cõ a terra a el rey de Leon,£todos quantos bõõs feitos fezemos,£todos seeriã perdidos por esto,£ca, se ho homẽ faz cem bẽẽs£e depois fezer hũũ erro pequeno,£ante lhe contarõ ho erro£que todollos outros bẽẽs que a feitos.£E",
+      "lang": "pt"
+    },
+    {
+      "example": "E disserõ lhes ẽtõ ãbos os emperadores .£Uos sodes os q dspçades os nossos mãdamẽtos .£e q os tẽdes por nada .£E os santos martires lhes respõderom sem falla .£E diserom os empadores mansamẽte .£Sofremos nos os tortos .£que nos vos dzedes .£mas sacrificade ao ds Hercules . e a Jupiter .£e nõ queirades dstruyr£a hõrra do nosso linhagẽ .£E os bẽ auenturados martires diserõ .£Nos a ds damos sacrifiçios de folgamẽto . e d louuor .£E nom cõsentimos as obras das teebras£d quẽ vos outros sodes",
+      "lang": "pt"
+    },
+    {
+      "example": "emtravão o luguar,£com temor de morte começarão de fogir£e naõ sabiaõ per omde.£Ho alvoroço hera muy gramde,£e com tal torvação de sospeita£fogião, deles pelos muros,£outros per desvairados luguares,£cada huũ como melhor podia.£E os que não avião vaguar de se vestir£metião se nas igreijas,£por poderem aly melhor escapar.£E esto se fez asy£porque poucos sabião£parte da vimda del Rey£e partida como fora,£e isso mesmo do alcaide,£e jazião todos desegurados nas camas.£Hos portugueses matavão algũs£e premdião delles£quoantos podião achar,£mas em roubar o que",
+      "lang": "pt"
+    },
+    {
+      "example": "diz sam gregorio .£Que qlqr homẽ tanto se desJũta£e arreda do amor celestal .£qnto sse de ẽnas cousas de baixo .£E bem assy certamẽte£qlqr homẽ tanto mais he enbargado de falar£de dent ẽ sua aalma cõ os santos .£qnto se deleita falando con as creaturas treaes de bayxo .£E por ẽ nõ se deue homẽ gliar de au sua boca£na sua lingoa sãã e enteyra .£nẽ outsy os outros mẽbro do corpo .£assy como das maaos e dos pees e dos outros mẽbros .£porq muytas vezes som aazo",
+      "lang": "pt"
+    },
+    {
+      "example": "porco non alevanta,£ca, se lha posessem passo,£sendo o monte piqueno£poderia seer que o porco sentiria aquelles£que hiam filhando a vozaria£e poder-se-hia alevantar£e lançar-se no monte grande,£e per aquella guisa£ficaria o monte por correr,£o qual seria pollo contrayro£e que, se lho filhassem aginha e calado,£non se lhe poderia£tam toste alevantar nem perder£e por esto he esta cousa boa£de se lhe fazer assi.£A outra cousa que assi he bem£de lhe fallarem logo rijo,£ante que lhe ponham os caães,£he por fazerem espertar o porco e",
+      "lang": "pt"
+    },
+    {
+      "example": "o nõ poderia tam agynha conquerer.£Mas Freneo e Petreo,£que erã em aquella comarca,£ajuntarom ally seus poderes£e pararõ suas aazes£pera lidar con Julyo Cesar.£E Julyo Cesar ajuntou suas companhas£e forom hy ajuntados£grandes poderes d'amballas partes.£E, quando se vyrom as hostes,£como erã parentes naturaaes,£pesoulhes muyto da contenda£que avyam começada.£E, por que sabyam£que aquella batalha era dos Romããos,£seendo elles todos hũũs contra outros,£pesavalhes muyto£por averem de contẽder sobre Spanha£que era do senhorio de Roma£e usavam de suas leis£e dos seus privilegios,£que",
+      "lang": "pt"
+    },
+    {
+      "example": "seer falsas pela traladaçom caldaica,£que he autentica antre eles,£porque aly onde diz Sam Jeronimo£'ataa que venha aquele£que ha-de seer enviado'£em que diz a verdade hebraica£'ataa que venha Sillo'.£E em este lugar da profiçia£diz a treladaçom caldaica£'ataa que venha o Miçias'£porque aquelo que era ouscuro£quise-o declarar per esta guysa,£e asy se prova£que a dita autoridade£nom se entende de Nabucadonosor£nem de Roboam nem doutro alghũu,£senom de Christo,£que he Misias verdadeiro.¦ £E aquelo que se diz na dita profiçia,csegundo a verdade do hebraico,'£e",
+      "lang": "pt"
+    },
+    {
+      "example": "dos Romããos£e ouve cõ el batalha sobre o mar e vẽceuho,£de guysa que ouve per força£de tornar pera Affrica,£vençudo e con grande deshonrra.£Como Remismũdo, rey dos Unus, guerreou Espanha£Andados treze annos do reynado de Teuderigo- £que foy na era de quynhentos e sete annos£e do emperyo de Leo em doze£e de Remismundo, rey dos Suevos arryanos, em cinque£e o de Teudemiro, rey dos Estrogodos, em oyto£e o de Genserigo, rey dos Vuandallos, em trynta£e o de Zeliobes, rey dos Unus, em oyto -aveo",
+      "lang": "pt"
+    },
+    {
+      "example": "das Regras, de seu comselho,£que trautasem o que por seu serviço£e bem do Regno£sobre tall feito emtemdesem.£E avemdo pouco mais de dous meses£que elles cheguaram,£aos quimze dias de Maio,£hũa quimta feira,£na feesta dAscemçaom,£foi pubricada hũa escritura£em que o dito Bispo e Pero Lopez e aquelle Doutor£outorguavam em nome del Rei seu senhor,£ao dito Prioll e Doutor Joham das Regras,£que as por el Rei dom Joham recebiam,£boas e leaees e firmes treguoas,£gerallmemte per maar e per terra,£duradoiras amtre os Reis e seus sobcesores daquele dia",
+      "lang": "pt"
+    },
+    {
+      "example": ". mas som acõpanhado .£a cõpaha dos anjos .£e a seu seruiço£bẽ assy como tu a cõpaha dos diaboos .£Mas porque o saybas£adorarey eu ao meu snor jesu o .£q ha d julgar os viuos . e os mortos .£E o teu reyno . e tu adora aos diaboos .£e veremos qual sera de nos ouuido .£E respondeo emtõ Juliaão . o empador .£e disse£emsandeçes .£Emtõ sã Fausto fincou os geolhos .£e começou a rogar a nosso snor .£e sayo le logo a alma estando ali",
+      "lang": "pt"
+    },
+    {
+      "example": "Afomso trager ãte sy£e mandouho todo cortar em peças a olho dos da vylla.£E despois mãdou ajũtar as peças£e fazer hũũ grande fogo e queimallo.£E mandou trager os mais honrrados mouros£que ally forõ presos£e queymarõnos com elle.£E os da villa,£quando aquello virõ, forõ mui spantados£e firmarõ logo seu preito cõ elle£e a el rei prougue,£ca lhe derõ muito ouro£e muyta prata e muytas doas de grande preço£e ficarõ por seus vassallos.£Depois que esto ouve acabado,£entẽdeu que leixava aquelle mouro bẽ pagado£e entõ se",
+      "lang": "pt"
+    },
+    {
+      "example": "dom Nuno Fernandez£Andados quarẽẽta e tres annos£do reynado deste rey dom Afonsso, o Magno -£e foi esto enna era de #DCCCXXXVII annos£e andava o anno da encarnaçom£do Nosso Senhor Jhesu Cristo em #DCCCLXXVIII annos£e o imperio de Carlos, emperador de Roma, em #XVI -£depois que el rei dom Afonso£acabou todas estas cousas£que avemos ditas,£sayusse d'Ovedo£e veosse a Çamora£e prendeo o ifante dom Garcia, seu filho.£E meteuho ẽ ferros£e mandouho deitar no castello de Gozõ.£E esto foy por sospeita que del ouve,£que se",
+      "lang": "pt"
+    },
+    {
+      "example": "pertẽẽça se nom esto:£que, enno quynto ãno,£entrou hũũ judeu em hũa igreja,£nõ estando hy nem hũũ,£e vyo hũũ crucifixo pequeno£que estava em hũũ logar escuso£e ẽvyoulhe o dardo£e deulhe hũa ferida.£E desy foy logo tomar escondidamente£e levouho pera sua casa pera ho aver de queymar.£E, quando foy em sua pousada£e o tirou de so sy,£achou todollos panos cheos de sangue.£E elle, quando esto vyo,£foy sobejamente espantado e,£cõ grande pavor que ouve,£nõ no ousou de queymar£mas escõdeuho ẽ o mais escuso logar que pode.",
+      "lang": "pt"
+    },
+    {
+      "example": "seus homẽs£e seu mãdado que lhe dissesem Galicano£ou sacrifica aos deuses .£ou te parte de toda terra de ytalia .£E elle emtõ leixou logo todas suas casas£e foy pera alexandria .£e achou se hy aos cõfessores de nosso senhor jhu o .£E a cabo de hũ ãno£desque andou visitando£e vẽdo todolos confessores e os santos£que morauã pelos hermos£prende o huũ conde dos tẽplos£q auia nome Rabciano£e porque desprezou d sacrificar aos ydolos£foy ferido cõ huũa espada pelo coraçom .£E desta guisa foy martir de o",
+      "lang": "pt"
+    },
+    {
+      "example": "q aguardarem sua ley .£todos sejam costrãgidos£de fazer por força£sacrifiçio aos deuses .£e se non moyrã tados£d departidas mortes .£e percã todas as riquezas que ham .£e sejam achegadas ao thisouro do emperador .£E padre ds te salue .£dada a lej o postumeiro dia do mes d’abril .£De como Uenustiano fez premder sam Sauino o bpo .£e trager ãte sy .£e se razoou cõ ele .£Uenustiano . o adiamtado de Tussia£ouue reçebida esta ley .£e este mandamẽto d maxi . o emperador .£Começou andar",
+      "lang": "pt"
+    },
+    {
+      "example": "non queremos en ello falar£porque son semelhantes a estas ditas,£en como quer que do porco£que vay polla erecta acima£mais perigoso lhe he£que outro nenhum que seja,£polo ficar que o porco fica£junto con elle£quando he ferido.£Capitulo xiii,£de como os moços am-de matar o porco de remesa£Nescessario he aos monteyros£de matarem o porco de remesa e,£porque lhes he compridouro£de o assi matarem,£pollo saberem fazer,£pois que nos dispoemos£a lho ensinar,£queremos escrever os modos£que devem a teer aquelles monteyros£que o quiserem",
+      "lang": "pt"
+    },
+    {
+      "example": "tornar pera dentro.£E quem o provar,£achara´ certo esto que digo,£e porem nom compre outras razõões£pera mostrar por que se assy faz.£E nom digo que sejam£em cada hũa guysa muyto pera fora,£ou pera dentro,£mes com algũa deferença.£E aquesto he pera seer forte,£ainda que pera bem parecer,£segundo se dira,£o pee dereitamente trazido£nom aponta pera dentro ou fora,£segundo nosso custume me parece melhor.£Do proveito que he saber geito£que requere cada hũa sella.£Per estas cousas suso scriptas£se pode bem veer como do geito",
+      "lang": "pt"
+    },
+    {
+      "example": "na peleja£e achegou quanto pôde£pera láe achou£que tinham já a donzela presa£e que tolheram a Persival o elmo£e lhe quiriam talhar a cabeça.£Quando Galaaz esto vio£alevantou a voce e disse:– £Leixade o cavaleiro, gente maa,£todos sodes mortos e presos.£E meteu-se antre eles£e começou a dirrubá-los£e dar-lhes da espada talhador£de tam grandes colpes£que nom acalçava homem£que nom fezesse ir a terra.£Nem havia tal que trouxesse£tam boo elmo£nem tam boa arma£que podesse durar contra sua espada.£E el era tam vivo e tam",
+      "lang": "pt"
+    },
+    {
+      "example": "se pôde teer£que nom dissesse ao com que se combatia:– £Certas, cavaleiro,£ora posso eu bem dizer£que se tanta bondade de cavalaria houvesse em mim£como em tal cavaleiro qual eu vejo£eu vos haveria conquisto a pouca d’hora£ainda que vós houvéssedes bondade d’armas£de taes #IIII cavaleiros como vós.£Artur o Pequeno foi maravilhado£quando lhe aquelo ouvio£ca nom podia cuidar£que no mundo tal cavaleiro houvesse£como lhe el dizia.£E por esso£disse logo:– £Qual é esse que vós dizedes?£E el lho mostrou.– £Mala aventura haja eu,£disse",
+      "lang": "pt"
+    },
+    {
+      "example": "me poerá nẽhũũ culpa.– £Amigo,£disse Persival,£vós faredes o que quiserdes,£mas eu ficarei ante esta cela£e de manhãã moverei pós el.– £Pois encomendo-vos eu a Deus,£disse Lancelot,£ca nom sei£porque deixe ir após ele£atá que saiba quem é.£E se nom for de casa del-rei Artur,£haverei batalha com el£em mentre poder firir£com esta minha espada.£Como Lancelot achou ũa ermida£u viviam dous homens bõõs.£Assi se partiram Lancelot e Persival. Persival se foi contra a cela ca havia sabor de ficar; e Lancelot, que era muito",
+      "lang": "pt"
+    },
+    {
+      "example": "bem se acordavam,£mas nas cousas que o Duque pedia£erã em gram desavemça.£Finallmẽte vieram a cõcordar£que o cassamemto fose feito,£e que el Rey de Castella£dese em dote a sua nora£que avia de ser£a cidade de Soria e a villa dAlmanção£e a villa dAtemça e dEça e a vyla de Molina,£e que dese a Duquesa suua madre£em suua vida£Goadalfayara e Medina del Campo e Olmedo.£E que el Rei de Castella dese mais ao Duque em dinheiro,£por as despesas que feito avia,£seis cemtos mill framcos douro£paguados em",
+      "lang": "pt"
+    },
+    {
+      "example": "viinha.£E mandou dizer a seu irmãão£el rey dom Sancho£como viinha£per mãdado do Papa,£non por lhe tolher o regno£nẽ por seer rey,£mas pera lhe governar a terra£e seer feita justiça en ella.£E que lhe conhoceria senhorio£como a seu rey e senhor£afora esto£que o Papa mãdava,£ca elle andava mal aconselhado daquelles£en cuja mãão e poder andava.£E el rey nõ quis catar£por nẽ hũa destas cousas;£ante se foi pera Castella ao iffante dom Affonso£e rogouo que veesse cõ elle a Portugall£e que, despois",
+      "lang": "pt"
+    },
+    {
+      "example": "asperamente do que erão,£ou levar pera Castela£daquele geito que estavão.£Asy que com estes£e outros tais cuidados£çessarão de dormir aquela ora,£não sabemdo que [se] el Rey avia de partir£nem de que guisa via de ser.£E amte que se fose pera a Ribeira£dise Rodrigo Alvarez a el Rey£que pois que sua merçe£era de se loguo partir,£que ele se queria ir com ele,£que não avia geito£de poder ficar na vila£pera defemder aquela sarão,£temdo taõ poucos como comssyguo tinha,£mormente avemdo hy£tamtos portugueses como erão,£que posto",
+      "lang": "pt"
+    },
+    {
+      "example": "e delleitoso Resplẽdor .£q ho padre nõ podia teẽr se olhos e vysta .£ẽp por ho grãde prazer e deleytacã£q sua alma Recebija£ẽ veer tãta excelẽcia£e fremosura do lume e Resplẽdor .£E a coroa e feycã .£abrãdaua ẽ elle ho themor e spãto .£Dizija q a seu Juyzo£staria assy p spaco quarto de ora .£e assy manssam foy£sobyndo p cyma pouco e pouco£atee de todo ha vista ha£nõ pode veer .£E ouuio hũa brãda voz£q disse p duas vezes .£Falleceo e acabado he .",
+      "lang": "pt"
+    },
+    {
+      "example": "de as tangerẽ .£e conhecem aqlls q as afaagam .£e gradecen lho p seus aut .£As bugias qndo he a lũa noua . som alegres .£e qndo he mea e uelha£entom som tstes£. E q a bugia tem dous filhos£trage emnos bracos£o q delles mais ama .£e aqlle q mais pouco ama£trage o aas costas .£E qndo lhe cõuem fugir dos cacadores£qndo os vee chegados hel£he forçado lançar ẽ tra aqlle q mais ama£q leua ant os braços .£mas o q leua aas costas nõ",
+      "lang": "pt"
+    },
+    {
+      "example": "fundo,£que esto era verdade,£mas que tanto tinham de bem£que os fariam seer sem perigo grande£que, quando o porco assi vinha£de cima pera fundo£e o moço o atendia,£que, por rijo que o porco vinha,£assi como lhe deziam£que ora o moço desse£ou lhe non desse,£o porco nunca se podia teer con elle,£posto que derribado fosse.£E, se se algum tivesse con o moço£quando o assi derribasse,£que os demais dos porcos£nunca se tinham con elle£e por aquella cousa£era muyto sem cajom atendê-lo£de fundo pera cima,",
+      "lang": "pt"
+    },
+    {
+      "example": "Certas,£se vos em mal viesse,£ningũũ nom havia haver doo de vós,£nem a mim poer culpa.£E entom se leixou ir a el£a espada em a mão£e deu-lhe ũũ tam gram golpe£per cima do elmo£que o elmo nem o alfmofre£nom lhe guareceu£que lhe nom fizesse sintir£a espada no testo.£Mais d’atanto aveo bem a Sagramor£que nom foi a chaga mortal.£A espada era boa£e o golpe foi grande£e ferido de gram força£e foi em Sagramor tam mal treito£que se nom pôde teer em seela£e caeu",
+      "lang": "pt"
+    },
+    {
+      "example": "o naçer do sol do poer .£e estabeleçeo o dia .£e ordnou os tempos .£e pose a luũa£çerta cousa d andar pelas praças do çeo .£E que afeitou o çeo£de desuairada claridade£de estrelas d mujtas maneiras .£e q pose os mõtes .£e abrio as fontes .£E estẽdeo os cãpos .£e q deu aos ryos virtude£q corressem semp .£e q mandou as aruores leuar fruitos .£e deu as vides razimos .£e aas oliuas virtude d fazer oleo£tambẽ pera fartar come pera alumear .£E q",
+      "lang": "pt"
+    },
+    {
+      "example": "todo confondudo e deitado em servidõe.£Aquel pensar o meteu em tam grande espanto£que nunca foi em maior.£E u jazia em esto pensando disse-lhi ũa voz:– £Nom te espantes, Naciam,£ca Nosso Senhor te acorrerá£e eu te ensinarei£como seerás guarido de tas chagas.£Fica aa manhã ta lança em terra ali£u quiseres que seja a batalha;£e, ao sacar da lança, nacerá ũa fonte£e aquela fonte seerá de tam gram virtude£que todo homem que for chagado£e dela bever logo seerá são;£e por aquela virtude haverá nom Fonte da Guariçom,£Quando",
+      "lang": "pt"
+    },
+    {
+      "example": "loguo em ellas quoamto lhe prouve,£dizemdo que mais largamente lhas emviariam£depois per escrito.£Os de Purtuguall£diseram que tães cousas£nam erã pera emmentar per palavra,£nẽ escripto, nem as reduzir a memoria,£sallvo falar em bem de casamemtos£de hũa parte com outra,£e nos boos dividos que aviam£e semelhamtes cousas£todas emdotivas de paaz£e leixar as chaguas soldadas,£que per taees razoamẽtos£tornariam a deitar samgue.£E elles diseram£que nã podia ser doutra guissa,£por bem e comcordia damballas partes,£por verem mais certo que taees eram;£deshy espediramse hũs dos outros£e",
+      "lang": "pt"
+    },
+    {
+      "example": "Guomçallvez, seu meirinho moor.£E certas remdas em Terra de Basto, e de Penna,£a Alvaro Pirez,£que foi seu veador.£E certas remdas de Barcelos£a hum bom escudeiro£que chamavam Gill Vasquez Fayaom.£E Momtalegre com Terra de Barroso£a Dioguo Gill dAiram, seu alferez.£E Chaves, com todas suas remdas,£a Vasco Machado,£que fora seu page.£E estas terras e remdas£dera o Comde em prestimo a estas XX pesoas,£e cada hũu per ellas£avia de teer certos escudeiros,£pera serviço del Rey e seu,£quoamdo comprise,£como seus vasallos que erã.£E peroo lhe",
+      "lang": "pt"
+    },
+    {
+      "example": "maneira .£scilicet . que aos seus angeos e spiritos administradores deus mando de tẏ .£scilicet . de ty homẽ sancto qualquer que seJas .£que te tenhã nas suas mããos .£scilicet . que te aJudem e soportem com suas aJudas .£E assy te guardem que nõ brites o pee.£scilicet . o de[....]Jo da tua võõtade na pedra .£scilicet . em algũũ ofendimẽto de peccado donde se conhece£que os angeos som ordenados£pera guardar a ujda dos sanctos£mal Jntrepetou ergo o diabo a escpritura |£dizem os dous daquelles tres agnus dey",
+      "lang": "pt"
+    },
+    {
+      "example": "dissemos,£trabalhavãse quanto podiam£con seus amigos e conselheiros£de se alçarem con o reyno£e de o defender£a el rey dõ Fernando.£Mas os prelados£a que perteecia de guardar o reyno,£quando ouvyron dizer£como viinha el rey,£sayrõno a receber muy hõrradamente£e outorgaronlhe logo o reyno.£E os prelados forom estes:£dõ Migueel, bispo de Lugo,£e dom Martinho, bispo de Mõdanhedo,£e dom Migueel, bispo de Coyra.£E feito e outorgado esto£per esses bispos£e outros muitos homeens bõõs,£foisse el rey a Manselha e a Mayorga.£E, logo que hy",
+      "lang": "pt"
+    },
+    {
+      "example": "se hy nõ soar£ou for amẽtado Jhu .£Jhu he mel ẽna boca .£e doçe sóó ẽna orelha .£e alegria spual ẽno coraçõ .£nome manso benigno mjoso .£Exemplo .£caualeyro amaua muyto Jhu o .£e cõ muy gnde amor q lhe auja£foy sse a Jhe .£e andou p todolos scos lugares£hu Jhu o naçeu morreu e resurgiu£e cõusou e fez as outs cousas .£E em fim de todo .£ueeo aql caualeyro ao monte oliuete£hu Jhu o sobiu aos çééos .£e disse asy .£Meu senhor Jhu",
+      "lang": "pt"
+    },
+    {
+      "example": "ty .£Porq parece q os escarnhos do mũdo som tmynad£ẽ boa auẽturança do homẽ .£E muytas uezes£o senhor ds torna os escarnhos em hõrra .£asy como foy fco£ẽ sam Johm aplo£q foy leuado a rroma .£e reparõ lhe a cabeça por escarnho .£asy como o sandeu em redor .£E este rraymẽto tomou depois a egia por hõrra .£e chamã lhe coroa£asy como sinal de dignjdade Real .£E outsy aqlle£q he escarnjdo ẽ este mũdo .£mais lygeiramẽte ouue ds a sua oracõ .£e depois ẽna",
+      "lang": "pt"
+    },
+    {
+      "example": "e evydemtes causas,£maiormemte acerqua das pesoas esplamdecemtes£per linhagem e alteza de homrroso estado;£deshi comsyramdo que tu,£com ajuda do mui alto Deos,£per tua prudemcia e valemtia darmas£livraste os ditos regnnos£das mãos dese Joham Amrriquez,£temdoos pela maior parte ocupados,£cobramdo os luguares£que em seu poder tinha,£os quaes se alegraram£por serem tornados a sua amtigua liberdade,£e delle, perseguidor de Deos e noso e da sua Samta Egreja,£vitoria e trihumffo£per divinall graça perpetraste;£avemdo sobre esto com nosos irmãos£assaaz de falamemto per soblene deliberaçaom,£aas tuas sopricaçoes imclinado,£esguardamdo",
+      "lang": "pt"
+    },
+    {
+      "example": ". e disse lhe .£Sacrifica a estes deuses£que gaba a verdadeira dignidade£Respõdeo emtom sam Uictor .£e disse .£Nõ sacrifico aos deuses dos gentijs .£Ca çuja cousa he para my£que reçebi o bemzimẽto do baptismo .£que o leixe por força£q me faças tu£que hes homem corrompedor .£e posto em grandes presas .£Mas eu nom o farey£E tu faze o q has d fazer .£ca eu bẽ sey£que muyto mais forte he£que ty o que te lida por my£Emtom maximiano . o empador .£e",
+      "lang": "pt"
+    },
+    {
+      "example": "DO RRECADO QUE Os DALLAMQUER EMVIAROM AO MEESTRE,£E DA RREPOSTA QUE LHE SOBRELLO DEU.£Os moradores dAllamquer£quamdo souberom£que a Rainha era presa em Coimbra,£e o geito que elRei de Castella£com ella tevera,£acordarom todos jumtamente£que era bem£de teerem com o Meestre,£e esto com seu rreguardo,£e çertas comdiçoões;£e emviarom a Lixboa seu rrecado£per Vaasco Martĩiz dAltero,£e Alvoro Fernamdez do Rego;£os quaaes chegarom ao Meestre£e ditas suas emcomemdações,£proposerom per esta guisa:£Senhor, aquelles homeẽs boõs dAllamquer£e nos com elles,£comssiiramdo como somos",
+      "lang": "pt"
+    },
+    {
+      "example": "outros,£como ele era ja em Leiria£[e] que el Rey de Portugal£se fazia prestes de lhe poer batalha,£a qual se escusar naõ podia,£partio se cada huũ de huũ de seu logar£cõ as mais das gemtes£que escusar poderaõ£e vynhaõ se pera elle,£por ser com ele na batalha.£E isso mesmo fezeraõ hos capitãis£das guales e das naaos£que sobre Lixboa jaziaõ£que se jumtaraõ os mais deles,£asy homẽis darmas e de pee e besteiros£e foraõ se todos pera el Rey,£aly onde estava.£Hos portugueses,£sabemdo como tantas gemtes se",
+      "lang": "pt"
+    },
+    {
+      "example": "demo em semelhança de donzella .£e deu reposta ao escollar£do q lhe pgũtou .£E estando asy .£passou p aly hũũ saçerdote cõ o corpo de Jhu o .£E qndo o diabóó sintyu a psença do sacramẽto .£ficou os geolhos em tra .£E qndo esto ujo o escolar£disse hora£nõ creeo q este he demo .£ca se o fosse£nõ ficarya os geolhos ao corpo de Jhu o .£E disse o demo .£non sabes q escripto he .£ẽno nome de Jhu o£todo geolho seia ẽclinado das cousas çelestiaaes",
+      "lang": "pt"
+    },
+    {
+      "example": "coraçom£e disselhes:- £Filhos, tornemosnos,£ca estas aves nollo mostrã.£Tornemonos pera vossa madre dona Sancha£e folguemos hy algũũs dias,£ataa que estas aves corregam;£ca ellas nõ nos mostram£se nom todo mal,£se as passamos.£E elles disserom£que nõ quisesse Deus,£ca os atendya seu tyo dous dias avya,£e que pollas aves nõ curasse nada,£ca nõ fazia a elles aquello,£se nõ ao mayor da hoste£com que todos hyam.£Entom forom adyante£e virõ vĩĩr£hũa aguya caudal pello aar,£dando muy grandes gritos.£E veeo pousar em",
+      "lang": "pt"
+    },
+    {
+      "example": "malos q fezeste .£e os q nõ fezeste .£E bẽ fezeste .£porq leixaste o veneo do çujo dragõ .£Pois agora aqixa te chegar a fee de jesu o .£e rogo te q me ouças .£e sey daq adiãte mais mãso .£e torna te ja ao boõ siso .£E amigo çebriã refrea em ty a multidoẽ das lagrimas£e coheçe q es homẽ e sente q erraste .£ca ẽ muyto nõ saber heçeste tu os ẽganos do ẽmigo .£e pois tu castiga a ti mesmo .£e nõ queiras chorar tã",
+      "lang": "pt"
+    },
+    {
+      "example": "de rei Bam.£Mais ora me dezede:£rei Mars é morto ou preso?– £Senhor, disse el, nom,£ca fugiu da batalha.– £Muito me pesa, disse el-rei,£ante eu el quisera que todolos outros,£ca fezera del tam gram justiça£qual deve a seer feita de traedor.£Muito houve rei Artur gram pesar£do que rei Mars assi escapou.£Da outra parte era mui ledo do gram bem£que lhe Deus fezera.£E começou entom per Camaalot a festa tam grande e a lidice,£como se Jesu Cristo decesse entre eles.£E el-rei ar preguntou:– £Veeo Galaaz soo",
+      "lang": "pt"
+    },
+    {
+      "example": "rey Bucar,£ficarõ hy mortos os #XXII.£E el rey Bucar£e os que cõ elle escaparon,£despois que forõ ẽnas naves,£alçarõ as velas£e forõse pera sua terra.£E don Alvaro Fernandez£e todos os outros cristããos,£despois que os mouros forom vençudos,£roubarõ o campo,£en que acharõ muy grãde aver£de que carregarõ cavalos e camelos£de todo o que lhes melhor pareçeu,£ca tãto foy o aver que hy acharon£que o mais pobre dos cristããos£foy aquelle dya rico.£Despois que ouveron roubado o campo£a toda a sua voontade,£tornarõse pera dona",
+      "lang": "pt"
+    },
+    {
+      "example": "principaaes d'Espanha fezeron reis,£assi como Cordova, Sevilha, Tolledo e Merida e Elvyra.£E acolheusse toda a jente de companha en Cordova£e jazia hi tam grande gente que maravilha.£E ora aveo assy,£nõ sei por qual razon,£que toda a gente he ida;£e acolheronsse aas serras.£E nõ ficaron con el rei£se nõ quatrocentos cavalleiros,£seus vassallos,£que elle avya£ãte que o fezessen rey.£E nõ ficaron na villa£se nõ os velhos.£E da villa vos digo£que he muy forte.£E enton lhe disse Mugit:- £Entendes que aja hi logar",
+      "lang": "pt"
+    },
+    {
+      "example": "lhe cortar os pees . e as maãos .£e depois mãdou o dgolar .£e deitar aos caẽs .£E os aãos tomarom o seu corpo£e soterrarõ no muy honrradamente em meo da carreira£que he chamada Apia£emno começo de preçeitaco .£E a sua filha Balbina ficou sẽpre em virgindade .£e estaua semp beyjando o colar da cadea de sam Alexamdre£per quẽ ela foya salua .£E disse lhe emtõ sam Alexamdre .£Leixa aqsta cadea£mais vay e demãda as cadeas do bẽ auẽturado meu snor sã pedro .£e aqlas beija .",
+      "lang": "pt"
+    },
+    {
+      "example": "os fariseus .£e virõ a pylatus£e disserõ lhe .£Senhor lẽbramos nos q aqle enganador disse£quãdo aynda era viuo .£Ao terçeiro dia resusçitarey .£pois q assi he£manda q sejã postas£sobre o muymẽto guardas .£atee o dia terçeiro .£por q nõ venhã£por vẽtura seus diçipolos .£e furtẽ o corpo .£e digã despois ao pouoo q resusçitou .£E sera emtõ o erro derradeiro peor q o primeiro .£Respõdeo pilatus .£ja vos outros tẽdes as guardas .£hide e ponde lhas£como sabes q cũpre .£Forõ se",
+      "lang": "pt"
+    },
+    {
+      "example": "sua terra,£salvo de hũa cidade£en que avya de morrer.£E todallas cousas, senhor,£per que eu ataa hora passey£daquello que me ella disse,£todo foy verdade,£ca foron por myn vossos messegeiros£e trouverõme pera vos£que sooes rey no poente£e ouve de vos os filhos£que ella disse.£E agora, senhor,£vejo que soon prenhe£e cuydo que hey de morrer£como me ella disse.£E, quando hora vy£dom Afonso, nosso filho,£servir ãte nos tam apostamẽte£e assi fremoso como he,£nembroume como avya de seer£deserdado por hũa palavra.£E por esto",
+      "lang": "pt"
+    },
+    {
+      "example": "achei muyto certa per mym,£por que o provei sem o veendo fazer£nem dizer a outro nehũũ cavalgador.£E entendo que£qual quer que sse dello quiser£e souber ajudar,£que lhe sera proveitoso£em o tempo da necessydade;£por que se deve scusar£quando sse fazer poder.£Mas quem se quiser guardar£em todallas ditas cousas£que derribam pera deante,£tenha sempre comssigo avysamento e,£como a besta fezer,£aperte as pernas,£e firme os pees,£e endereite o corpo pera detras£quanto bem poder£em boa e razoada maneira,£com as pernas dereitas ou encolhidas,£segundo a",
+      "lang": "pt"
+    },
+    {
+      "example": "fose pera ela;£e que estamdo ho Comde em Evora,£soube parte como alguũs castelaõs£entravão furtivelmente na terra£a guisa dalmogaveres£e poos em seu desejo£de tornar delo emmemda,£e que esto foy o azo de sua emtrada.£Mas nos avemos£por mais verdadeira outra emtemção£que delo rezoão,£dizemdo que o Comde£como hera homẽ sages e perçebido£e muy avisado nos feitos da guerra,£que vemdo o desbarato e grão trovação£em que el Rey de Castela£e as gemtes de seu reino£por estomçe herão postos,£que emquoanto lhe durava a dor£daquela grão perda,",
+      "lang": "pt"
+    },
+    {
+      "example": "Tristam:– £Cavaleiro, £leixar vos convém o que levades£ca nom havedes i direito,£assi como eu cuido.£E se o nom poderdes, ferir-vos-ei desta lança£e a perda e desonra toda serávossa.£Como Tristam conhoceu Dondignaos£e Asgare o Triste.£Quando Tristam esto ouvio£que lhe o cavaleiro dizia,£embraçou o escudo£e meteo a espada na mão£e tornou a ele.£E Dondinax lhe deu ũũ mui gram golpe da lança£que lhe falsou o escudo£e quebrantou-lhe a lança em meio dos peitos,£mas outro mal lhe nom fez£nem no moveo da sela.£E",
+      "lang": "pt"
+    },
+    {
+      "example": "Alvaro Fernandez.£E, despois que el rey conheceu que fora mal consselhado,£mãdou a hũũ dos filhos de Bubecar£que fezessẽ a custa a dõ Alvaro Fernandez #XXX dias,£por que lhe dera maao cõsselho.£E mãdou prender hũũ judeu£que era almoxarife da vila,£e fezelhe tomar quanto avia£e, ẽquanto lhe durou aquele aver,£folgarõ os de Valẽça.£Como Abũmator pedio acorro a el rei de Denia£e como elle quis aver Vallença£Quando aquelle Abũmator vyo o tallãte ?d?el rey£que avya pera o tomar£e que o apremava quanto mais podia,",
+      "lang": "pt"
+    },
+    {
+      "example": "esto vyo£e como o seu feito fora muy bẽ postado£e que entendeo£que ja el rey seria posto em salvo em sua terra,£partiosse de Bordel£com dom Pellegrĩ de Aunes£e com dõ Pero Martym de Bollea.£E assy andarõ suas jornadas pequenas£ataa que chegarõ a Aragõ.£Como el rey de França£ajuntou sua hoste muy grande£e foy cercar a cidade de Girona;£e de como morreo£Depois que se el rey dom Pedro d'Aragon£partio de Bordel,£per tal arte£como avedes ouvydo,£e el rey de Frãça ouve sabido",
+      "lang": "pt"
+    },
+    {
+      "example": "vos assy o fazee.£E mãdaae logo fazer as cartas£pera que mha tirem£e a mỹ que me saya de vossa terra.£E dizee a elles£que lhes gradecees muyto o que fezerom,£ca filhos d'algo£nõ devẽ peitar£nem ser pera ello.£E, se esto fezerdes,£aversse am por contentes£e seerã theudos a vosso serviço.£E el rey disse£entom a dõ Diogo:- £E o vosso, como seera£se vos ouverdes dhyr fora de Castella?- £Senhor,£disse elle,£de my nõ curees,£ca eu creo que elles me acharã menos de entre",
+      "lang": "pt"
+    },
+    {
+      "example": "cõpaneiros .£e logo de como veo sam valentino a roma£por rogo de Cratõ o philosofo .£o propheta a nosso senhor .£e diz .£Secudu altitu doine tua multiplicasti filios hominum .£Que quer dizer£segundo a tua alteza£fezeste mujtos os filhos dos homẽs£Mas aqueles pertençẽ tam solamente£antre todolos outros a nosso senhor£que pmeterom toda ajuda a seu criador .£de guisa que fizerõ coheçer ao seu corpo .£e a sua alma o nosso senhor jesu o£E porẽ o bẽ auenturado homẽ£sam Ualẽtino o bpo de yterãna£fazendo bõa vida",
+      "lang": "pt"
+    },
+    {
+      "example": "segundo os divydos que antre nos ha,£vos averyam por maao e cruel£e seeryam todos contra vos.£E, assy como sodes de grande sangue£e de bõõ intendimẽto,£catadevos de fazer cousa£que despois nom possades cobrar.£Entõ lhe respõdeu£el rey dom Sancho,£come muy bõõ homẽ que elle era,£dizendo assi:- £Certamẽte, dona,£nũca vos de mỹ receberedes£por o que fezestes£se nõ o que devedes:£muyta honrra.£Ca nũca dona tam bõõ feito fez£como vos fezestes£e sempre este feito seera nomeado pello mundo,£em quanto hy homẽẽs ouver,£e a",
+      "lang": "pt"
+    },
+    {
+      "example": "quis fazer.£E el rey sacou logo sua hoste£e foy sobre elle.£E, por que el rey£non podia cõbater o castello de Çafra£por que era muy forte,£trabalhousse a raynha dona Biringuella£de poer antr'elles avẽeça per cartas£que lhes fez poer antre sy.£E, feitas as avẽẽças,£partiosse el rey dom Fernando de Molina.£E o conde dõ Gõçallo£quando aquello vyo,£tornousse de cabo aos mouros£e esto por que non podia£aver bem fazer del rey dom Fernando£como el queria.£E por esta razon foisse pera Cordova£e os mouros fezeronlhe",
+      "lang": "pt"
+    },
+    {
+      "example": "era feito de obra muy marauilhosa£todo d pedra coral .£e as vestiduras eram d’ouro .£E desq foy tragido nas maãos dos sacerdoes£cõ lampadas e cõ grandes vozes .£e disse venustiano .£ex aqui os nossos ajudadores .£Sorĩdo se emtom sam sauino o bpo .£e disse .£E q louco cõselho .£leixar o ds criador d todalas cousas .£e adorar esta pedra tam çuja ?£E disse emtõ venustiano .£Pois nõ som duses estes ?£E sam sauino o bpo disse .£Nom£mas por q saibas que nom som ds",
+      "lang": "pt"
+    },
+    {
+      "example": "E chegou aa çidade de Leon£e demandou aos monges de sancto Ysidro£que lhe fezessem ajuda.£E elles disseron£que non tiinham que lhe dar.£E ella, con grande sanha,£mandou a seus cavaleiros£que entrassem£e tomassen quanto achassen.£E os cavaleiros£lhe disseron:- £Senhora, entrade vós allo£e dadenolo aca.£E ella, como molher endiabrada chea de soberva,£entrou dentro con suas donas£e tomou quanto achou.£E, en saindo con todo£pella porta da egreja£e teendo hũũ pee fora£e outro dentro,£quebrou per meo do corpo£e morreo maa morte.",
+      "lang": "pt"
+    },
+    {
+      "example": "dizer que se fosse pera seu irmãão£pois que lho ẽvyara dizer;£e ẽvyaronlhe aver.£E elle tomou quantos pode aver£assy de Africa como d'Espanha,£daquelles que com elle tiinham,£e foysse seu camynho contra Lombardia;£e passou per França.£Como se alvoraçarom os Spanhooes£depois que Cepiom se partio delles£e do que lhes aconteceo depois£porem Desque Cipion conquistou a Spanha£e a tirou do poder dos irmããos de Anybal£a que chamavõ Magon e Asdrubal,£os Romããos mandaron por elle£pollas grandes guerras e males£que recebyã de Anybal.£E, como foy",
+      "lang": "pt"
+    },
+    {
+      "example": "pera desputar com os judeus em muitos passos.£Outrosy a trelladaçom dos seteenta e dous entrepetadores£he theuda antre elles por autentica,£almenos antre os estudiosos,£ca aquelles seteenta e dous,£escolheitos d'antre todo o poboo de Israel,£foram asy como excellentes£muyto e muy leterados£e sabhos em lingua ebraica e grega,£segundo diz Josepho£em no duodecimo livro das Antiguidades.£Estes antrepetadores,£quando treladarom o Testamento Velho de abrayco em grego,£nom treladarom senpre hũa palavra da outra palavra,£mais ameude treladarom hũu siso doutro,£mudando alghũas cousas£ou encobrindo-as sagesmente,£a sabendas, as que entendiam que podiam",
+      "lang": "pt"
+    },
+    {
+      "example": "q a manjnha pario muytos .£Quer dizer q a maniha mais pstes he£pa parir muyt filhos£q aqlla q he pa geerar naturalmẽte .£Porq seg diz sam paulo£q a molhr q nõ he cassada£e a ugem cuida aqllas cousas£q som de ds .£E esto se pode entender dos filhos spuaes£q som concebidos ẽno uẽtre da mẽte£ou ẽna camara do coraçom .£Ca estes som os filhos£das scas cuydaçõões .£s .£as obras e os auctos dos bõõs mãtimẽtos .£aos qaes he duujda a herdade do regno celestal .",
+      "lang": "pt"
+    },
+    {
+      "example": "de tam grande força£que se britou a perna a el rey.£E o cavallo steve pera cayr em terra,£pero foy fora£e chegou aos seus.£Mas, des que começarõ a lidar,£nõ o pode soffrer o cavallo,£ca era chegado aa morte do grande golpe£que dera no ferrolho,£e leixousse cayr com elle.£E cayulhe sobre aquella perna£e britoulha toda.£E os seus quyserõno levãtar£e poer ẽ outro cavallo£e non poderom,£ca era a perna britada pella coixa.£E entom chegou el rey dõ Fernãdo e prendeoho£e muytos dos seus cõ elle.",
+      "lang": "pt"
+    },
+    {
+      "example": "dinheiro,£lhe pidiraõ por merçe que tirase de todo,£ca aos reix se seguia dello pouco proveito,£e o povo padeçia muitas sobrançarias dos couteiros,£premdemdo os e levamdo delles gramdes peytas,£asy de dinheiros como doutras cousas£per que eraõ danificados.£Dise ell Rey£que lhe prazia,£e levamtou lhe tall defesa, prometemdo de numca ir comtra ello.£Estas e outras muitas cousas£[que] naõ fazem mimguoa de aquy se escrever outorguou el Rey£com [bom] desejo e vomtade a cidade de Lisboa,£prometemdo e juramdo de os mamter em direito e justiça£e de lhe guoardar todalas graças",
+      "lang": "pt"
+    },
+    {
+      "example": "sua madre as mandou a sinpliciano ;£as quais agost Recebeo de sua maão :£E ẽ a capella de seu moesteyro£afirmou nõ querer rreceber augoa de bautismo .£senam em dia de pascoa .£E assy Jejuando tres dias£ẽ pam e augoa ;£antes que a alua e manhãa Ronpesse se alleuãtou :£E estas pallauras a seu filho adeodato proferindo disse .£Quãdo ha de seer presente aquelle dia ?£Per uẽtura meus olhos careceram daq dia ?£Empero meu muito amado filho ;£chama te conpanhey :£p q nos vaamos£e nos acheguemos ao",
+      "lang": "pt"
+    },
+    {
+      "example": "e pela confisom,£se mostra a ley dos mouros ser falsa\"£Per a pendença outrosy se mostra,£e per a confissom,£sinal que a ley dos mouros he falsa£e a ley dos christaãos verdadeira£porque os christaãos escolhem juizes,£convem a saber,£os saçerdotes a que se confesam,£que dem sobre eles£juizo dos pecados que fezerom.£E o saçerdote he vigairo de Deus£per razom do sacramento saçardotal.£Mais os mouros nom fazem esto,£mais confesam-se àquele£que lhe nom responde,£nem eles nom sabem£nem podem julgar bem sy meesmos£porque nẽhũu homem£nom he desposto",
+      "lang": "pt"
+    },
+    {
+      "example": "morada£e de meus hirmaaos he no deserto de ssanar£E disse lhe o Jnfante padre£a mỹ pareçe que ha tua hydade passa de oytẽta anos .£Respondeo o santo homẽ .£sse tu preguntas pollos anos da vida£e da hydade desque eu naçi .£bem esmaste .£ca Ja passa d’oytenta anos .£que eu despendy em vaydade do mũdo .£ca como quer que eu viuiuesse4 ẽ carne .£pois seruja aos pecados£nom era viuo mais morto .£em a mjnha alma .£E porem eu nunca contarey£os dias da mjnha morte£ẽ o",
+      "lang": "pt"
+    },
+    {
+      "example": "O que a mỹ semelha he esto:£que el rey nõ pode fallecer aa raynha, sua filha.£Mas semelhame cousa de razom£que nosso senhor el rey aja ẽmenda do torto£e sem razon que el rey de Castella fez£em lhe tomar os castellos da sua comquista,£os quaaes lhe ja demandou per muytas vezes.£E agora, pois que o ha mester,£fazello á de boamente.£E, depois que esto ouve dito, callousse.£Entom disse el rei a Fernam Sanchez£que dissesse o que lhe parecesse.£E elle disse:- £Eu outorgo as pallavras que ha",
+      "lang": "pt"
+    },
+    {
+      "example": "como soube que el rey era morto.£Em este anno£outrossi morreo o papa Stevã£e foi posto em seu logar Formosio, ho primeiro,£e foron com elle cento e onze apostolligos.£Aqui se acaba o reynado de dom Fruella,£que foy hũũ dos quinze reis£despois de dom Paayo,£e começasse o reynado de dom Affonsso,£o cĩquo dos reis de Leom,£e em como elle reynou£e de como leixou o reyno a seu irmãão dom Ramiro£e elle entrou em hordem.£Começasse a sua estorya:£Depois que el rey dom Fruella foy morto,",
+      "lang": "pt"
+    },
+    {
+      "example": "sua voontade£que levedes daqui£os corpos das santas virgeens,£por que esta cidade£ha de seer conquistada dos cristããos£e quer que fiquẽ aqui£por louvor da fe catholica.£Mas teende por bem£de levardes o meu corpo,£por honrra del rei dõ Fernãdo,£de que recebe muito serviço,£e outrossi por amor de vos.£E elles,£quando esto ouvirõ,£foron muy spantados£por a mui grãde claridade£e odor que o sancto cõsigo tragya£e esteverõ hũa grande peça£que nõ fallaron nẽ hũa cousa.£E entõ os bẽẽzeo o sancto confessor.£E elles acordarõ e pregũtarõ",
+      "lang": "pt"
+    },
+    {
+      "example": "clerigos,£ca nos non achamos en as cronicas dos reys antigos£que estas cidades e logares£que ditas son ouvessẽ estes nomes,£salvo Sevilha,£a que Hercolles pos nome Ispallis.£Ora vos queremos dizer£como mudaron os bispados de hũũ logar em outro.£Primeiramente, o arcebispado de Merida en Santiago.£E o bispado de Lucena, ẽ Ovedo.£O bispado de Bretona, ẽ Mondenhedo.£E o bispado de Oca, en Burgos.£O bispado de Montanches, ẽ Pallença.£E o bispado de Idanha, ẽ a Guarda.£O bispado de Mentisa, en Geẽ.£E o bispado de Cadis, em Exerez.O",
+      "lang": "pt"
+    },
+    {
+      "example": "de amargura que o padre me deu .£nõ queres que o beba ?£Certo esta£que tod os q cõ cutelo ferirã a cutello ham de morer .£e cuydas q eu nom posso rogar o meu padre ?£me emuiara logo .£mais de doze legiões d anjos .£Mas como se cõprirã has escripturas .£q assi conuem fazer se ?£Disse emtõ Jesu .£deixa chegar ho ferido ca :£e em tocãdo lhe a orelha foy logo saão .£Disse logo jesu aos prinçipes dos saçerdotes q hy vinhã .£e aos offiçiaes do tẽplo",
+      "lang": "pt"
+    },
+    {
+      "example": "uẽẽdo esto maraujlhou se£e ẽtendeo q o diaboo o gurdaua .£E fo sse hu ẽforcauã aqlle homẽ£e começou escõJurar o diaboo£plla utude de Jhu£o q lhe disse£a udade daqlle fco .£porq nõ podia morrer aq||aque homẽ maao .£E o diaboo respondeo£e disse .£Que como qr q elle deseiasse a morte daqlle homẽ .£porq morrya ẽ pccado .£po porq elle fazia hir ao Jnferno tant homẽs .£q ya os diaboos erã cansados£ẽ os leur e receber .£q por ẽ o agurdaua q nõ morresse .£e",
+      "lang": "pt"
+    },
+    {
+      "example": "e mais ugonçosa e de mayor cõfusom .£Ca certamẽte aqlle he mais apmudo .£sobr o ql reynam muytos .£e este tal he mais suo .£E pella mayor pte muytas torpes paixõõs reynã£sobr os senhores .£pa azo da liuridõe .£Ca ells se sõõe leixar uẽcer dellas .£mais q aqlls q sõ temerosos .£E por ẽ som mais suos estes taaes senhores .£Ca diz santo anbrosyo .£Qualqr q sse qbranta cõ medo .£ou se enlaça ẽ deleytaçom .£ou he aduzido . p cobijcas .£ou he aspo p sanha",
+      "lang": "pt"
+    },
+    {
+      "example": "he apartado dos muytos .£dos qaes diz o filosofo gatham .£q uee [ ... . ] muy muyt homẽẽs errã ẽ [ . . ] carrey dos boos custumes .£Mas a carreyra do senhor ds pa o suir esta he .£a vida singular e aptada .£E desta ujda diz o senhor ds pllo salmjsta .£Aqle q anda plla carreyra sem magoa . suya£e mjnjstraua a mỹ .£E esta carrey de ds nõ he vida comũũ .£q muyt fazẽ por au hõrra do mũdo .£Em esta carrey andam os mããos ẽ",
+      "lang": "pt"
+    },
+    {
+      "example": "besta e o que faz.£A quinta, que seja solto em todas cousas que fezer;£e aquy darey brevemente,£segundo bem poder,£avysamento dalgũas manhas que fazem a cavallo.£A sexta, que saibha bem ferir das sporas,£segundo se requere em cada tempo e besta;£e aquy screverei quejandas devem seer as sporas,£e como com paao ou vara se devem governar.£A sse´itema, que traga bem a mãão a todos freos£e bocas de bestas em todo tempo.£A oytava, que sse saibha guardar dos periigoos£que acontecem por as queedas£e topamento das arvores,£de homẽẽs e bestas,",
+      "lang": "pt"
+    },
+    {
+      "example": "enton enleito por arcebispo desse meesmo logar dom Felices,£arcebispo de Sevilha;£e fezerom ẽ aquelle concelho£dom Festino,£que era arcebispo de Bragaa,£arcebispo de Sevilha;£e dom Fellices,£que era bispo do Porto de Portugal,£fezerõno arcebispo de Bragaa.£E, despois que esto ouveron feyto,£trautarom cordamẽte do ordenamento das igrejas.£E por esto parece ben que,£se a igreja de Sevilha fosse mayor que a de Tolledo,£nõ passaria da igreja mayor o arcebispado aa igreja meor.£Mais os escriptos son muytos£e contamnos de muytas guisas.£E, por que a verdade das estorias he aas vezes",
+      "lang": "pt"
+    },
+    {
+      "example": "tal saude£q yamais nõ podera padecer .£E por em diz santo agostinho£Tam poderosa fez ds a alma do homẽ .£q da sua muy cõpda bem auẽturãça£q sera dada ẽna fim aos scos .£sob ẽno corpo o conpmẽto da saude£e a forteleza de nũca seer cõrronpido .£Outrosy o homẽ qndo he saao ẽno corpo£anda folgado pellos canpos udes£e pellos montes e pellas serras£e p matas caçando o ceruos£e os gamos e as outs bestas feras e as aves .£Mas o ẽfermo do corpo nõ pode esto fazer .",
+      "lang": "pt"
+    },
+    {
+      "example": "Anrrique e dom Lourenço Soarez£e Airas Gomez Queixada,£cõ essa pouca cõpanha que consigo tiinhã,£fezeron cõ elles sua esporoada£e forõnos ferir de tal força£e con tanto ardimento£que lhes fezerõ tornar costas e fugir.£E seguirõnos matando£e derribando en elles.£E morreron dos mouros£en aquelle encalço£çinquoẽẽta cavaleiros£e quinhentos peõões,£afora os que se meteron no ryo por escapar,£que morreron hi todos,£ca os cristããos£que andavõ nas barcas os matavõ.£E desta guisa£fezeron en elles gram mortiindade.£Os mouros avyam en costume£de seguir muyto amehude en suas",
+      "lang": "pt"
+    }
+  ]
+}
