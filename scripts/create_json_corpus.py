@@ -7,6 +7,9 @@ import re
 random.seed(1234)
 import glob
 
+lang_dict = {"pro": "ca",
+			 "gapo": "pt"}
+reverse_lang_dict = {value:key for key, value in lang_dict.items()}
 def build_dictionnary(name:str,
 					  examples:list[tuple],
 					  langs:list[str],
@@ -41,7 +44,7 @@ def build_dictionnary(name:str,
 		text, lang = example
 		dictionnary["examples"].append({
 			"example": text,
-			"lang": lang
+			"lang": lang_dict[lang] if lang in lang_dict else lang,
 		})
 
 	return dictionnary
@@ -122,46 +125,60 @@ def clean_text(example, delimiter):
 
 
 
-def create_corpus(delimiter:str, path:str, out_dir:str):
+def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train"):
 	all_texts = glob.glob(path)
 	corpus, langs = read_texts(all_texts, delimiter)
+
+	langs = [lang if lang not in lang_dict else lang_dict[lang] for lang in langs]
+
 	random.shuffle(corpus)
-	proportion = {"train": .8, "test": .1, "dev": .1}
+	if mode == "train":
+		proportion = {"train": .8, "test": .1, "dev": .1}
+	elif mode == "test":
+		proportion = {"train": 0, "test": 1, "dev": 0}
 	train, dev, test = split_texts(corpus, proportion)
 	train_stats = produce_stats(train, delimiter)
 	dev_stats = produce_stats(dev, delimiter)
 	test_stats = produce_stats(test, delimiter)
 	corpus_stats = produce_stats(corpus, delimiter)
 
-	corpus_dict = build_dictionnary(name="full",
-									examples=corpus,
-									langs=langs,
-									delimiter=delimiter,
-									examples_number=corpus_stats["num_examples"],
-									segments_number=corpus_stats["num_segments"],
-									chars=corpus_stats["num_chars"],
-									words=corpus_stats["num_tokens"]
-									)
+	try:
+		os.mkdir(out_dir)
+	except FileExistsError:
+		pass
+	if mode == "train":
+		corpus_dict = build_dictionnary(name="full",
+										examples=corpus,
+										langs=langs,
+										delimiter=delimiter,
+										examples_number=corpus_stats["num_examples"],
+										segments_number=corpus_stats["num_segments"],
+										chars=corpus_stats["num_chars"],
+										words=corpus_stats["num_tokens"]
+										)
+		serialize_json(corpus_dict, out_dir + "/full.json")
 
-	train_dict = build_dictionnary(name="train",
-									examples=train,
-									langs=langs,
-									delimiter=delimiter,
-									examples_number=train_stats["num_examples"],
-									segments_number=train_stats["num_segments"],
-									chars=train_stats["num_chars"],
-									words=train_stats["num_tokens"]
-									)
+		train_dict = build_dictionnary(name="train",
+										examples=train,
+										langs=langs,
+										delimiter=delimiter,
+										examples_number=train_stats["num_examples"],
+										segments_number=train_stats["num_segments"],
+										chars=train_stats["num_chars"],
+										words=train_stats["num_tokens"]
+										)
+		serialize_json(train_dict, out_dir + "/train.json")
 
-	dev_dict = build_dictionnary(name="dev",
-									examples=dev,
-									langs=langs,
-									delimiter=delimiter,
-									examples_number=dev_stats["num_examples"],
-									segments_number=dev_stats["num_segments"],
-									chars=dev_stats["num_chars"],
-									words=dev_stats["num_tokens"]
-									)
+		dev_dict = build_dictionnary(name="dev",
+										examples=dev,
+										langs=langs,
+										delimiter=delimiter,
+										examples_number=dev_stats["num_examples"],
+										segments_number=dev_stats["num_segments"],
+										chars=dev_stats["num_chars"],
+										words=dev_stats["num_tokens"]
+										)
+		serialize_json(dev_dict, out_dir + "/dev.json")
 
 	test_dict = build_dictionnary(name="test",
 									examples=test,
@@ -172,15 +189,8 @@ def create_corpus(delimiter:str, path:str, out_dir:str):
 									chars=test_stats["num_chars"],
 									words=test_stats["num_tokens"]
 									)
-	try:
-		os.mkdir(out_dir)
-	except FileExistsError:
-		pass
 
-	serialize_json(train_dict, out_dir + "/train.json")
-	serialize_json(dev_dict, out_dir + "/dev.json")
 	serialize_json(test_dict, out_dir + "/test.json")
-	serialize_json(corpus_dict, out_dir + "/full.json")
 	return langs
 
 def serialize_json(dictionnary, path):
@@ -189,18 +199,47 @@ def serialize_json(dictionnary, path):
 
 def main():
 	delimiter = "£"
+
+	os.makedirs(f"data/out-of-domain/other_langs/segmented/split/multilingual", exist_ok=True)
+	os.makedirs(f"data/out-of-domain/HTR/segmented/split/multilingual", exist_ok=True)
+	create_corpus(delimiter=delimiter,
+						  path='data/out-of-domain/other_langs/segmented/pre_split/*/*.txt',
+						  out_dir="data/out-of-domain/other_langs/segmented/split/multilingual",
+				  mode="test")
+	create_corpus(delimiter=delimiter,
+						  path='data/out-of-domain/HTR/segmented/pre_split/*/*.txt',
+						  out_dir="data/out-of-domain/HTR/segmented/split/multilingual",
+				  mode="test")
+
+
 	langs = create_corpus(delimiter=delimiter,
-						  path='data/segmented/pre_split/*/segmented*.txt',
-						  out_dir="data/segmented/split/multilingual")
+						  path='data/in-domain/segmented/pre_split/*/segmented*.txt',
+						  out_dir="data/in-domain/segmented/split/multilingual")
 
 	for lang in langs:
-		try:
-			os.mkdir(f"data/segmented/split/monolingual/{lang}")
-		except FileExistsError:
-			pass
+
+		os.makedirs(f"data/in-domain/segmented/split/monolingual/{lang}", exist_ok=True)
 		create_corpus(delimiter = delimiter,
-					  path=f'data/segmented/pre_split/{lang}/segmented*.txt',
-					  out_dir=f"data/segmented/split/monolingual/{lang}")
+					  path=f'data/in-domain/segmented/pre_split/{lang}/segmented*.txt',
+					  out_dir=f"data/in-domain/segmented/split/monolingual/{lang}")
+
+
+
+		if len(glob.glob(f"data/out-of-domain/HTR/segmented/pre_split/{lang}/*.txt")) != 0:
+			os.makedirs(f"data/out-of-domain/HTR/segmented/split/monolingual/{lang}", exist_ok=True)
+			create_corpus(delimiter = delimiter,
+						  path=f'data/out-of-domain/HTR/segmented/pre_split/{lang}/*.txt',
+						  out_dir=f"data/out-of-domain/HTR/segmented/split/monolingual/{lang}",
+				  mode="test")
+
+		if lang in reverse_lang_dict:
+			print(lang)
+			if len(glob.glob(f"data/out-of-domain/other_langs/segmented/pre_split/{reverse_lang_dict[lang]}/*.txt")) != 0:
+				os.makedirs(f"data/out-of-domain/other_langs/segmented/split/monolingual/{lang}", exist_ok=True)
+				create_corpus(delimiter = delimiter,
+						  path=f'data/out-of-domain/other_langs/segmented/pre_split/{reverse_lang_dict[lang]}/*.txt',
+						  out_dir=f"data/out-of-domain/other_langs/segmented/split/monolingual/{lang}",
+				  mode="test")
 
 if __name__ == '__main__':
 	main()
