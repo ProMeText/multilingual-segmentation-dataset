@@ -54,7 +54,6 @@ It includes:
 ### **Lancelot en prose** (anonymous)  
   French, 13th–15th century.  
   Chunks randomly sampled from different manuscript witnesses, notably *BnF, Ms. fr. 751* and *BnF, Ms. fr. 111*.  
-  Language: Old French.
 
 ### **Ab Urbe Condita**, Livy — *Castilian translation by Pero López de Ayala*  
   Castilian, late 14th century.  
