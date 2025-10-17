@@ -4,11 +4,6 @@
 </p>
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16992629.svg)](https://doi.org/10.5281/zenodo.16992629)
-[![GitHub release](https://img.shields.io/github/v/release/ProMeText/multilingual-segmentation-dataset?include_prereleases&label=Release)](https://github.com/ProMeText/multilingual-segmentation-dataset/releases)
-[![Last Commit](https://img.shields.io/github/last-commit/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/commits/main)
-[![Issues](https://img.shields.io/github/issues/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/issues)
-[![Slides](https://img.shields.io/badge/slides-Llcd2025-blue)](./docs/slides-llcd2025.pdf)
 
 # ✂️ Multilingual Segmentation Dataset
 
@@ -103,7 +98,7 @@ See [segmentation pipeline documentation](docs/segmentation_processing_pipeline.
 ## 📊 Corpus Size
 
 Below we present the data corresponding to the most recent version of the corpus size.  
-Older versions can be consulted in the [release tags](https://github.com/ProMeText/multilingual-segmentation-dataset/releases).
+Older versions can be consulted in the release tags
 The current version of the corpus includes segmented excerpts in **seven historical languages**, prepared for sentence segmentation tasks.  
 
 Each excerpt is annotated using the pound sign (`£`) to mark **segment boundaries**, typically corresponding to sentences or syntactic units.  
@@ -140,14 +135,9 @@ The most up-to-date segmented data are stored in the repository under:
 data/segmented/
 ```
 - This folder contains the **current working version** of the segmented texts.  
-- For **frozen snapshots** corresponding to published versions (e.g. baseline, augmented), please refer to the [release tags](https://github.com/ProMeText/multilingual-segmentation-dataset/releases).
 
 ## 🙏 Credits
 We gratefully acknowledge the following scholars for their contributions of source material or expertise:
-
-- **Peter Stokes & Mark Faulkner** – Guidance on available Middle English corpora  
-- **Sadurní Martí** – Support in identifying Medieval Catalan corpora  
-- **Andrea Menozzi** – Insights into available Medieval Italian corpora
 
 
 ## 🚧 Project Status
@@ -163,12 +153,12 @@ Please note:
 ## 🔗 Related Projects
 This repository is part of a broader ecosystem of tools and corpora developed for the study of medieval multilingual textual traditions:
 
-- [Aquilign](https://github.com/ProMeText/Aquilign)  
+- Aligner
   A clause-level multilingual alignment engine based on contextual embeddings (LaBSE), designed specifically for premodern texts.
 
-- [Corpus Temporis App](https://github.com/ProMeText/CorpusTemporis)  
+- XXX app
   A Streamlit-based application for managing and structuring metadata of medieval multilingual texts.  
-  It provides the metadata that accompanies this dataset and supports its use in the [Aquilign multilingual aligner](https://github.com/ProMeText/Aquilign).
+  It provides the metadata that accompanies this dataset and supports its use in the XXX aligner.
 
 
 ## 🔮 Future Directions
@@ -180,7 +170,6 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 ---
 
 ## 📫 Contact & Contributions
-- [Open an issue or pull request](https://github.com/ProMeText/Multilingual_Aegidius/issues)
 
 - For academic collaboration, please reach out via GitHub Discussions
 
@@ -191,39 +180,15 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 Please cite as:  
 
 **APA**  
-Ing, L., Gille Levenson, M., & Macedo, C. (2025). *Multilingual Segmentation Dataset for Historical Prose (13th–16th c.)* (Version 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16992629  
 
 **BibTeX**  
-```bibtex
-@dataset{ing2025multilingual,
-  author       = {Ing, L. and Gille Levenson, M. and Macedo, C.},
-  title        = {Multilingual Segmentation Dataset for Historical Prose (13th--16th c.)},
-  year         = {2025},
-  publisher    = {Zenodo},
-  version      = {1.0},
-  doi          = {10.5281/zenodo.16992629},
-  url          = {https://doi.org/10.5281/zenodo.16992629},
-  license      = {Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International}
-}
-```
 ----
 ## 🧾 Talks & Slides 
 
-### 🎤 *Colloque Langues et Langage à la croisée des Disciplines (LLcD 2025)*  
-**_Training Sentence Segmenters on Medieval Languages_**  
-👥 *Lucence Ing, Matthias Gille Levenson, Carolina Macedo*  
-📽️ [View presentation slides (PDF)](./docs/slides_llcd25-1.pdf)
+
 
 ## 💰 Funding
 
-This work benefited from national funding managed by the **Agence Nationale de la Recherche** under the *Investissements d'avenir* programme with the reference **ANR-21-ESRE-0005 (Biblissima+)**.
-
-> Ce travail a bénéficié d'une aide de l’État gérée par l’**Agence Nationale de la Recherche** au titre du programme d’**Investissements d’avenir** portant la référence **ANR-21-ESRE-0005 (Biblissima+)**.
-
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/915c871f-fbaa-45ea-8334-2bf3dde8252d" alt="Biblissima+ Logo" width="600"/>
-</p>
 
 ## 📄 Licensing
 
