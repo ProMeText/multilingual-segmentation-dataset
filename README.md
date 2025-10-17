@@ -1,11 +1,8 @@
 
-<p align="center">
-  <img src="assets/multiling_banner.png" alt="Multilingual Segmentation Dataset Banner" width="100%">
-</p>
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-# ✂️ Multilingual Segmentation Dataset
+# ✂️ Aligning Medieval Romance Text Dataset Repository
 
 > **From manuscripts to models: a multilingual corpus for sentence segmentation in historical prose.**
 
