@@ -125,7 +125,15 @@ def clean_text(example, delimiter):
 
 
 
-def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train"):
+def filter_corpus(corpus, lang):
+	filtered = []
+	for example in corpus:
+		if example[1] == lang:
+			filtered.append(example)
+
+	return filtered
+
+def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train", lang=None):
 	all_texts = glob.glob(path)
 	corpus, langs = read_texts(all_texts, delimiter)
 
@@ -137,6 +145,8 @@ def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train"):
 	elif mode == "test":
 		proportion = {"train": 0, "test": 1, "dev": 0}
 	train, dev, test = split_texts(corpus, proportion)
+	if lang is not None:
+		train, dev, test = filter_corpus(train, lang), filter_corpus(dev, lang), filter_corpus(test, lang)
 	train_stats = produce_stats(train, delimiter)
 	dev_stats = produce_stats(dev, delimiter)
 	test_stats = produce_stats(test, delimiter)
@@ -213,15 +223,16 @@ def main():
 
 
 	langs = create_corpus(delimiter=delimiter,
-						  path='data/in-domain/segmented/pre_split/*/segmented*.txt',
-						  out_dir="data/in-domain/segmented/split/multilingual")
+						  path='data/training_data/segmented/pre_split/*/segmented*.txt',
+						  out_dir="data/training_data/segmented/split/multilingual")
 
 	for lang in langs:
 
-		os.makedirs(f"data/in-domain/segmented/split/monolingual/{lang}", exist_ok=True)
+		os.makedirs(f"data/training_data/segmented/split/monolingual/{lang}", exist_ok=True)
 		create_corpus(delimiter = delimiter,
-					  path=f'data/in-domain/segmented/pre_split/{lang}/segmented*.txt',
-					  out_dir=f"data/in-domain/segmented/split/monolingual/{lang}")
+					  path=f'data/training_data/segmented/pre_split/*/segmented*.txt',
+					  out_dir=f"data/training_data/segmented/split/monolingual/{lang}",
+					  lang=lang)
 
 
 
