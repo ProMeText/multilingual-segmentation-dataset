@@ -213,15 +213,15 @@ def main():
 
 
 	langs = create_corpus(delimiter=delimiter,
-						  path='data/in-domain/segmented/pre_split/*/segmented*.txt',
-						  out_dir="data/in-domain/segmented/split/multilingual")
+						  path='data/training_data/segmented/pre_split/*/segmented*.txt',
+						  out_dir="data/training_data/segmented/split/multilingual")
 
 	for lang in langs:
 
-		os.makedirs(f"data/in-domain/segmented/split/monolingual/{lang}", exist_ok=True)
+		os.makedirs(f"data/training_data/segmented/split/monolingual/{lang}", exist_ok=True)
 		create_corpus(delimiter = delimiter,
-					  path=f'data/in-domain/segmented/pre_split/{lang}/segmented*.txt',
-					  out_dir=f"data/in-domain/segmented/split/monolingual/{lang}")
+					  path=f'data/training_data/segmented/pre_split/{lang}/segmented*.txt',
+					  out_dir=f"data/training_data/segmented/split/monolingual/{lang}")
 
 
 
