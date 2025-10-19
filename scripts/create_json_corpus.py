@@ -46,7 +46,6 @@ def build_dictionnary(name:str,
 			"example": text,
 			"lang": lang_dict[lang] if lang in lang_dict else lang,
 		})
-
 	return dictionnary
 
 
@@ -125,15 +124,38 @@ def clean_text(example, delimiter):
 
 
 
-def filter_corpus(corpus, lang):
+def filter_by_lang(corpus, lang):
 	filtered = []
-	for example in corpus:
-		if example[1] == lang:
+	for example in corpus["examples"]:
+		if example["lang"] == lang:
 			filtered.append(example)
 
 	return filtered
 
-def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train", lang=None):
+
+def filter_corpus(corpus, lang=None, delimiter=None, out_dir=None, name=None):
+	corpus = read_json(corpus)
+	if lang is not None:
+		corpus = filter_by_lang(corpus, lang)
+	print(corpus)
+	corpus_stats = produce_stats(corpus, delimiter)
+
+	try:
+		os.mkdir(out_dir)
+	except FileExistsError:
+		pass
+	corpus_dict = build_dictionnary(name=name,
+									examples=corpus,
+									langs=[lang],
+									delimiter=delimiter,
+									examples_number=corpus_stats["num_examples"],
+									segments_number=corpus_stats["num_segments"],
+									chars=corpus_stats["num_chars"],
+									words=corpus_stats["num_tokens"]
+									)
+	serialize_json(corpus_dict, out_dir + f"/{name}.json")
+
+def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train"):
 	all_texts = glob.glob(path)
 	corpus, langs = read_texts(all_texts, delimiter)
 
@@ -145,8 +167,6 @@ def create_corpus(delimiter:str, path:str, out_dir:str, mode:str="train", lang=N
 	elif mode == "test":
 		proportion = {"train": 0, "test": 1, "dev": 0}
 	train, dev, test = split_texts(corpus, proportion)
-	if lang is not None:
-		train, dev, test = filter_corpus(train, lang), filter_corpus(dev, lang), filter_corpus(test, lang)
 	train_stats = produce_stats(train, delimiter)
 	dev_stats = produce_stats(dev, delimiter)
 	test_stats = produce_stats(test, delimiter)
@@ -207,50 +227,36 @@ def serialize_json(dictionnary, path):
 	with open(path, 'w') as f:
 		json.dump(dictionnary, f)
 
+
+def read_json(path):
+	with open(path, 'r') as f:
+		return json.load(f)
+
 def main():
 	delimiter = "£"
 
 	os.makedirs(f"data/out-of-domain/other_langs/segmented/split/multilingual", exist_ok=True)
 	os.makedirs(f"data/out-of-domain/HTR/segmented/split/multilingual", exist_ok=True)
+
+	# On crée le hors domaine: autres langues
 	create_corpus(delimiter=delimiter,
 						  path='data/out-of-domain/other_langs/segmented/pre_split/*/*.txt',
 						  out_dir="data/out-of-domain/other_langs/segmented/split/multilingual",
-				  mode="test")
+				  		  mode="test")
+
+	# Puis le HTR
 	create_corpus(delimiter=delimiter,
 						  path='data/out-of-domain/HTR/segmented/pre_split/*/*.txt',
 						  out_dir="data/out-of-domain/HTR/segmented/split/multilingual",
-				  mode="test")
+				           mode="test")
 
-
-	langs = create_corpus(delimiter=delimiter,
+	# On crée le in-domain
+	create_corpus(delimiter=delimiter,
 						  path='data/training_data/segmented/pre_split/*/segmented*.txt',
 						  out_dir="data/training_data/segmented/split/multilingual")
 
-	for lang in langs:
-
-		os.makedirs(f"data/training_data/segmented/split/monolingual/{lang}", exist_ok=True)
-		create_corpus(delimiter = delimiter,
-					  path=f'data/training_data/segmented/pre_split/*/segmented*.txt',
-					  out_dir=f"data/training_data/segmented/split/monolingual/{lang}",
-					  lang=lang)
 
 
-
-		if len(glob.glob(f"data/out-of-domain/HTR/segmented/pre_split/{lang}/*.txt")) != 0:
-			os.makedirs(f"data/out-of-domain/HTR/segmented/split/monolingual/{lang}", exist_ok=True)
-			create_corpus(delimiter = delimiter,
-						  path=f'data/out-of-domain/HTR/segmented/pre_split/{lang}/*.txt',
-						  out_dir=f"data/out-of-domain/HTR/segmented/split/monolingual/{lang}",
-				  mode="test")
-
-		if lang in reverse_lang_dict:
-			print(lang)
-			if len(glob.glob(f"data/out-of-domain/other_langs/segmented/pre_split/{reverse_lang_dict[lang]}/*.txt")) != 0:
-				os.makedirs(f"data/out-of-domain/other_langs/segmented/split/monolingual/{lang}", exist_ok=True)
-				create_corpus(delimiter = delimiter,
-						  path=f'data/out-of-domain/other_langs/segmented/pre_split/{reverse_lang_dict[lang]}/*.txt',
-						  out_dir=f"data/out-of-domain/other_langs/segmented/split/monolingual/{lang}",
-				  mode="test")
 
 if __name__ == '__main__':
 	main()
