@@ -4,7 +4,6 @@ import os
 import random
 import re
 
-random.seed(1234)
 import glob
 
 lang_dict = {"pro": "ca",
@@ -233,6 +232,7 @@ def read_json(path):
 		return json.load(f)
 
 def main():
+	random.seed(1234)
 	delimiter = "£"
 
 	os.makedirs(f"data/out-of-domain/other_langs/segmented/split/multilingual", exist_ok=True)
