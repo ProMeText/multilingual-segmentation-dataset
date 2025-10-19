@@ -43,7 +43,7 @@ def build_dictionnary(name:str,
 	for example in examples:
 		text, lang = example
 		dictionnary["examples"].append({
-			"example": text,
+			"example": text.strip(),
 			"lang": lang_dict[lang] if lang in lang_dict else lang,
 		})
 	return dictionnary
