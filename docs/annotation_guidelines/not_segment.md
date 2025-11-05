@@ -111,7 +111,7 @@ even if their referential anchor remains implicit or distant.
 In embedded or interrupted structures, **syntactic separation** overrides the appositive link.
 
 
-*Example*  
+*Examples (no segmentation):*  
 > £E dona Orraca, **sua filha del rey**, lhe fazia muyta honrra.. 🚫 *no segmentation applied*  
 
 > £Mas, da desaveença £que ouve antre mĩ e Moluca, **o senhor de Calçom,** 🚫 *no segmentation applied*
@@ -131,7 +131,8 @@ Appositions **are segmented** in the following cases:
 > (embalçat... foragitat...)  └─ intervening clause 
 > ─ don mirayl de les coses humanals  └─ detached / segmented apposition ✅
      
-      
+- **Prosodically independent apposition** 
+> £E il conte di Fondi, **£nipote che·ffu di papa Bonifazio VIII,** £entrò in San Germano colle'nsegne del re d'Ungheria ✅
 
 ---
 
