@@ -142,56 +142,53 @@ Segmenting incises allows the model to clearly identify reporting clauses, maint
 
 > £'Alexander,' £**quod̛ he,** £'es a warrer man̛ & a wyse,
 
-
 ## 5. Reported Speech
 
 Reported speech appears in two main forms:
 
 1. **Direct speech** – the speaker’s words are quoted verbatim.  
-   → Typically introduced by a *verb of saying* and marked by punctuation or syntactic cues.
+   → Typically introduced by a *reporting verb*.  
 2. **Indirect speech** – the speaker’s words are paraphrased or subordinated, usually introduced by *that* / *que*.
 
 Both forms involve **speech markers** — lexical or verbal cues that attribute speech or thought.
 
 
-### 🔹 Annotation Guidelines
+### Annotation Notes
 
-- **Speech markers** (e.g. *dixit, said, dist*) are annotated according to their **syntactic dependency**:  
-  - In **direct speech**, the marker and the utterance belong to the **same discourse segment**.  
-  - In **indirect speech**, segmentation occurs **before** the reported clause if it introduces a new propositional unit.
+- The **token following a verb of saying** systematically functions as a **delimiter**, whether it introduces **direct** or **indirect** discourse.  
+  > £A la postremería *dixo* : £“**Yo hire a Iherusalem la çibdat.”**  
+  > £E despues que esto ovo fecho, *dixo* £**que se queria tornar para su tierra.**
 
-- **Every direct or indirect speech unit** is segmented as an **independent discourse unit**, distinct from the narrative frame.
+- When the **subject** follows the reporting verb, segmentation occurs **after the subject**:  
+  > *£E dixo el Rey : £¿**Commo fue eso ?**
+
+- When the verb of saying occurs parenthetically (in incise), it is kept within the same segment:
+  > **£señor, £dixo Bores, £yo no puedo agora alla tornar.”**
+  
+- **Interjections**, **adverbs of assertion** (*certes, certo, ciertamente, por verdad*, etc.) and **formulaic invocations** (*par Dieu*, *por Dios*, etc.) mark the **onset of a speech act** and are segmented as separate discourse units.
 
 
-💡 **Annotation Note**
-- The **token following a verb of saying** marks a **segmentation boundary** in both direct and indirect discourse.  
-- **Interjections** and **adverbs of assertion** (*certes, certo, ciertamente, por verdad*, etc.) mark the **onset of a speech act** and are segmented.  
-- **Formulaic expressions** (*par Dieu*, *por Dios*, etc.) are treated as a **single token** when they occur at the **beginning of speech**.
-
-
-### Examples
+*Examples*
 
 #### **Direct Speech**
-> .£he depois £**disse a el rey archileus** .£**bem ves tu £que nõ he rezam £que nos te tomemos en nossa merçee**
+> .£he depois *disse* a el rey archileus .£**bem ves tu £que nõ he rezam £que nos te tomemos en nossa merçee**
 
-> £Et ela li disse: «£Di'-me adoncha lo vostro consegio».£Et elo disse: «£Dama, qui apresso un meyo£
+> £Et ela li *disse*: «**£Di'-me adoncha lo vostro consegio**». £Et elo disse: «**£Dama, £qui apresso un meyo**
 
-> £Al quale lo can respoxe: «£Acciò che non possa offendere queli£che passa davanti la mia ca'
+> £Al quale lo can *respoxe*: «£**Acciò che non possa offendere queli £che passa davanti la mia ca'**
 
-> £Que cousa é ?£disse el-rei. –£Esto vos direi eu, £disse el. £Vós sabedes £que nos albergastes
+> £**Que cousa é ?** £*disse* el-rei. –£**Esto vos direi eu**, £*disse* el. **£Vós sabedes £que nos albergastes**
 
-- *disse el-rei.* is a **speech marker**, introducing a new utterance.  
-- The quoted clause is annotated as a **new segment**, representing a distinct discourse act.
 
 #### **Indirect Speech**
 
-> £Quando Erec entendeu £que a justar lhi convĩĨa, £**disse que lhi nom era mester**,
+> £Quando Erec entendeu £que a justar lhi convĩĨa,  £*disse* £**que lhi nom era mester**,
 
-> £But the labourer, £that was named Papirion, £said to his maister £**that he shold denye his cause hardily**
+> £But the labourer, £that was named Papirion, £*said* to his maister £**that he shold denye his cause hardily**
 
-> £And forthwyth stepte in £**and sayd that he hymself £was culpable £of the deth of this man**
+> £And forthwyth stepte in £and *sayd* £**that he hymself was culpable of the deth of this man**
 
-> £E Jugurta, oÿt lo manament dels legats,£**respòs que a él no li ere res major ne pus** 
+> £E Jugurta, oÿt lo manament dels legats, £*respòs*  £**que a él no li ere res major ne pus** 
 
 
 
@@ -210,54 +207,37 @@ Both forms involve **speech markers** — lexical or verbal cues that attribute 
 ----
 ## 6. Finite and Circumstantial Structures
 
-### 🔹 Definition and Scope
+In segmentation, both **finite** and **circumstantial** structures are treated as relevant discourse units.
+A **finite clause**  expresses a complete syntactic proposition, whereas a  **circumstantial clause** introduces a temporal, causal, conditional, or concessive relation that often bears its own **semantic and rhetorical autonomy** within the discourse.
 
-In segmentation, both **finite** and **circumstantial** structures are considered relevant units.  
-A **finite clause** expresses a complete syntactic proposition, while a **circumstantial clause** introduces a temporal, causal, conditional, or concessive relation that often carries its own **semantic and rhetorical autonomy**.
-
----
 
 ### Annotation Guidelines
 
-- **Finite clauses** mark independent syntactic and rhetorical units → **always segmented**.
-- **Circumstantial and non-finite clauses** (temporal, causal, conditional, etc.) are segmented as they introduce a new **temporal**, **logical**, or **rhetorical** boundary. 
-- The segmentation is **semantic and functional**, not based on subordination hierarchy.
-- Circumstantial markers (e.g., *quant*, *aprés*, *si*) are annotated as **segment onsets**. [See lexical_inventory](lexical_inventory.md)
-
-
-
-#### **Circumstantial structure**
->  £Quant Agloual se fust parti  £il entra en la forest. 
-→ The temporal clause *Quant Agloual se fust parti* opens a new discourse frame (temporal), thus receives its own segment.
-
-#### **Multiple circumstantial clauses**
->  £Aprés ce que li rois fu venus  £et quant il ot parlé as barons  £il monta a cheval.
-→ Each circumstantial clause is segmented, as each introduces a new temporal or sequential frame.
-
-
----
+- **Finite clauses** represent **independent syntactic and rhetorical units** and are therefore **always segmented**.  
+- **Circumstantial** and **non-finite clauses** (temporal, causal, conditional, concessive, etc.) are **segmented** when they introduce a new **temporal**, **logical**, or **rhetorical boundary** in the discourse.  
+- **Circumstantial markers** (e.g., *quant*, *aprés*, *si*) are annotated as **onset tokens** of the corresponding discourse segment ([see the table below](#main-conjunctions-and-conjunctive-phrases-introducing-circumstantial-clauses)).
 
 
 ### 6.1. Main Clauses
 
 Main (finite) clauses are **independent and self-contained syntactic units**.  
-They form the backbone of discourse segmentation and are always assigned an **independent segment**.
+They form the structural backbone of discourse segmentation and are and are always assigned an **independent segment**.
 
-> £**Li rois monta a cheval** £et s’en ala vers la cité.  
-> £**E lo rey se’n tornà en sa ciutat ab gran alegria.**
+> £**E il conte di Fondi**, £nipote che·ffu di papa Bonifazio VIII,
 
-When a main clause is **interrupted or divided** by subordinate or embedded material,  
-each **detached part** of the main clause should be **segmented separately**:
-
-> £**E il conte di Fondi**, £nipote che·ffu di papa Bonifazio VIII,  
 > £**entrò in San Germano colle 'nsegne del re d'Ungheria** £e con gente d'arme.
 
-> £E, quando o alaão assi he bem trilhado £e, às vegadas, £quando o cavalo empeça en elle, £**caae.**
----
+- When a main clause is **interrupted or split** by subordinate or embedded material,
+each **discontinuous segment** of the main clause should be **annotated as a separate discourse unit**.
 
-### 6.2. Ablative absolute and Absolute participal Clauses
-Absolute or detached constructions express a circumstance external to the syntactic frame of the main clause.  
-They are segmented as autonomous discourse units because they introduce parallel or background information.
+> £**E dom Lopo Diaz** £que era dentro, £quando vyo que se non podia sayr, £**tomou hũũ froque e hũa aguilhada** £e, descalço come lavrador, £**e assi se sayu da villa £e se foy per antr'elles** £que o non conheceo nẽ hũũ.
+
+> £E, quando o alaão assi he bem trilhado £e, às vegadas, quando o cavalo empeça en elle, £**caae.**
+---
+### 6.2. Ablative Absolute and Absolute Participial Clauses
+
+**Absolute** or **detached constructions** express a circumstance that is **external to the syntactic frame** of the main clause.  
+They are segmented as **autonomous discourse units** because they convey **background** or **parallel information**, often setting the temporal, causal, or situational context for the main event.
 
 >  £**Licenziata adunque dalla nuova reina la lieta brigata,**
 
@@ -268,14 +248,18 @@ They are segmented as autonomous discourse units because they introduce parallel
 > £**Oydo todo esto por el rey Arauigo**
 
 ---
-
 ### 6.3. Gerundive or Participial Clauses
-Gerundive or participial clauses are **segmented** as they convey **simultaneous, causal, or circumstantial** information distinct from the main predication. Their subject is usually **shared** with the main clause.
 
+**Gerundive** or **participial clauses** are **always segmented**, as they introduce **simultaneous**, **causal**, or other **circumstantial** information distinct from the main predication. Although their **subject** is usually **shared with the main clause**, they convey an **independent semantic event** that specifies **manner**, **time**, or **reason** relative to the main action.
 
-> £sperando di venderlo al gran Turco per molto maggior prezzo
+*Examples*
+> £**havyng pety and compassyon of hys handwerke and hys creatur** £turnyd helth into sekenesse...
 
->  £navegant ab pròsper vent
+> £**largiente et te laborante**, £perducta est usus tibi pallii concessio.
+
+> £**sperando di venderlo al gran Turco per molto maggior prezzo**
+
+>  £**navegant ab pròsper vent**
 
 > £**Estando Abemaffa ẽ Vallença,** £pos seu amor cõ dous cavalleiros da vylla
 ---
@@ -286,19 +270,22 @@ Infinitival clauses are **non-finite verbal structures** that may function as co
 
 ### Annotation Guidelines
 
-- When the infinitive expresses a **circumstantial relation** (purpose, result, cause, or condition), it is **segmented**, since it introduces a new rhetorical act.  
+-  When the infinitive phrase is **introduced by a preposition**, the **preposition** itself is annotated as the **segment onset**.
 
-- When the infinitive phrase is **absolute or detached** (standing as an independent syntactic group), it is **segmented** as an autonomous unit.  
-
--  When the infinitive phrase is **introduced by a preposition**, the **preposition** itself is annotated as the segmentation marker.
+- **Latin-specific cues for identification:**  
+  - An infinitival clause often **begins with an accusative subject**, or  
+  - **directly with an infinitive verb** when the subject is implicit.  
 
 *Examples*
+> £Coepit enim £**veterem Urbis gloriam deperditam deplorare,** £**et temporum injurias detestari,**
 
 > £**por oyr** tan grandes loores del cauallero dela roca partida
 
 > £**per possedere** l’amore de tanta donna cum legitimo nodo.
 
 > £él e la sua muler penseren de la Verge £**a lausar** devotament,
+
+> £**Et oÿ chanter les clers et sonner les cloches**, £si fu moult esmeus de pitié.
 
 ### 6.5. Circumstantial Clauses
 
@@ -371,18 +358,18 @@ Typical subtypes include:
 > £mas el bien entendia £que el rrey lo fazia **£por que ele moriesse alla**
 
 -------
-### Main Prepositions and Conjunctions Introducing Circumstantial Clauses
+### Main Conjunctions and Conjunctive Phrases Introducing Circumstantial Clauses 
 
 | **Type of Clause** | **Latin** | **English** | **French** | **Italian** | **Catalan** | **Castilian** | **Portuguese** |
 |--------------------|------------|--------------------|----------------|--------------------|--------------|----------------------|------------------------|
-| **Causal** | *quia*, *quoniam*, *nam*, *enim*, *propter quod* | *for*, *for that*, *because* | *car*, *por ce que*, *puis que* |*conciosiaché*, *però che*, *imperò che*, *poi che*, *perché* | *car/cor*, *per ço que*, *perquè*, *pus que / pux que* | *ca*, *porque*, *por ende*, *pues (que)*, *por quanto* | *ca*, *porque*, *por ende* |
-| **Temporal** | *cum*, *postquam*, *ubi*, *quando* | *when*, *after that*, *as soon as* | *quant*, *aprés ce que*, *des que*, *lors que* | *quando*, *poi che*, *dopo che*, *mentre che* | *tantost*, *can*, *fins que*, *tro que*, *mentre que* | *cuando*, *aprés que*, *en quanto*, *desque*, *mientra*, *fast (que)* | *quando*, *depois que*, *logo que* |
-| **Conditional** | *si*, *nisi*, *dum* (in some uses) | *if*, *and if*, *but if*, *unless* | *se*, *et se*, *mes se*, *s’il* | *se*, *qualora*, *purché* | *can*, *si*, *e si*, *mas si* | *si*, *e si*, *mas si* | *se*, *e se*, *caso que* |
-| **Concessive** | *quamvis*, *etsi*, *licet* | *though*, *although*, *even if* | *bien que*, *encore que*, *quant que* | *benché*, *sebbene*, *ancorché* | *jatsie que*, *si bé (que)*, *encara que*, *malgrat que* | *maguer*, *aunque (bien)*, *aun que*, *bien que* | *ainda que*, *posto que*, *embora* |
-| **Adversative / Contrastive** | *sed*, *verum*, *tamen*, *autem* | *but*, *however*, *yet*, *nevertheless* | *mais*, *pourtant*, *toutefois*, *neantmoins* | *ma*, *però*, *tuttavia*, *nondimeno* | *mas/mes*, *emperó*, *entin*, *nogensmenys* | *mas*, *sino*, *pero*, *empero*, *sin embargo*, *antes* | *mas*, *porém*, *todavia*, *entretanto* |
-| **Resultative / Consecutive** | *ita... ut*, *sic... ut*, *adeo... ut* | *so... that*, *so that* | *si... que*, *tant... que*, *tel... que* | *laonde*, *imperciò*, *sicché*, *tanto che*, *così che* | *tant... que*, *tan... que*, *de manera que*, *doncs / adonchs* | *tan... que*, *por/en/de manera que* | *tão... que*, *assi que*, *de maneira que*, *de guisa que* |
-| **Comparative** | *sicut*, *velut*, *quemadmodum* | *as*, *as if*, *like as* | *comme*, *ainsi comme*, *autant comme* | *come*, *siccome*, *quasi che* | *com*, *segons*, *axí com*, *aytant (que)* | *como*, *así como*, *tal como*, *segun*| *como*, *assim como*, *tal como* |
-| **Final (Purpose)** | *ut*, *ne*, *quo*, *ad hoc ut* | *so that*, *that*, *in order that* | *pour ce que*, *afin que*, *que* | *acciocché*, *perché*, *che*, *per tal que*m *per/a asó que* | *perquè*, *a fi que* | *porque*, *a fin que*, *para que* | *para que*, *a fim que* |
+| **Causal** | *quia*, *quoniam*, *nam*, *et/enim*, *(propter) quod* | *for*, *for that*, *because* | *car*, *por ce que*, *puis que* |*conciosiaché*, *però che*, *imperò che*, *poi che*, *perché* | *car/cor*, *per ço que*, *perquè*, *pus que / pux que* | *ca*, *porque*, *por ende*, *pues (que)*, *por quanto* | *ca*, *porque*, *pois*, *por ende*, *porquuoanto* |
+| **Temporal** | *cum*, *post/antequam*, *dum*, *quando(cumque)*, *cumque* | *when*, *after that*, *as soon as* | *tantost que*, *aprés ce que*, *tant que*, *depuis que* | *quando*, *poi che*, *dopo che*, *mentre che* , *indi*| *tantost*, *can*, *fins que*, *tro que*, *mentre que* | *cuando*, *aprés que*, *en quanto*, *desque*, *mientra*, *h/fasta (que)* | *quando*, *depois que*, *logo que*, *mentre que*, *des hora* |
+| **Conditional** | *si*, *nisi*, *dummodo*, *etiamsi* | *if*, *and if*, *but if*, *unless* | *si/se/s'*, *mes se* | *se*, *qualora*, *purché* | *can*, *si*, *e si*, *mas si* | *si*, *sin que*, *sino* | *se*, *se nom*, *fora que* |
+| **Concessive** | *quamvis*, *etsi*, *licet* | *though*, *although*, *even if* | *nonpourquant*, *combien que*, *quant que*| *benché*, *sebbene*, *ancorché*, *quantunque*, ** | *jatsie que*, *si bé (que)*, *encara que*, *malgrat que* | *comoquier que*, *aunque (bien)*, *maguer*, *bien que* | *ainda que*, *posto que* ,*todavia*, *conquanto* |
+| **Adversative / Contrastive** | *sed*, *verum*, *tamen*, *autem* | *but*, *however*, *yet*, *nevertheless* | *mais/mes*, *fors que*, *toutefois*, *neantmoins* | *ma*, *però*, *tuttavia*, *nondimeno*, *anzi* | *mas/mes*, *emperó*, *entin*, *nogensmenys* | *mas*, *sino*, *pero*, *empero*  | *mas*, *porém*, *todavia*, *salvo (que)*, *antes* |
+| **Resultative / Consecutive** | *ita... ut*, *sic... ut*, *ideo(que)*, *sicque* | *so... that*, *so that* | *siques*, *tant... que*, *en telle maniere que* | *laonde*, *imperciò*, *sicché*, *tanto che*, *così che*, *talché* | *tant... que*, *tan... que*, *de manera que*, *doncs / adonchs* | *tanto... que*, *por/en/de manera que* | *tão... que*, *assi que*, *de maneira que*, *de guisa que* |
+| **Comparative** | *sicut*, *velut*, *quemadmodum*, *quam* | *as*, *as if*, *like as* | *comme*, *ainsi comme*, *si comme* | *come*, *siccome*, *quasi che* | *com*, *segons*, *axí com*, *aytant (que)* | *como*, *así como*, *tal como*| *como*, *assim como*, *bem como* |
+| **Final (Purpose)** | *ut*, *ne*, *ad hoc quod* | *so that*, *that*, *in order that* | *pour ce que*, *a ce que* | *affinché*,*acciocché*, *perché*, *che* | *perquè*, *per/a asó que*  | *porque*, *para que* | *para que*, *por que* |
 
 ---
 ## 7. Completive and Relative Clauses
@@ -401,12 +388,14 @@ They express **propositional content**, often reporting speech, thought, or perc
 - If the completive clause expresses a **full propositional content** (e.g., reported speech or assertion), it is **segmented**.  
 - If the completive clause is **semantically weak** (e.g., part of a cognitive or modal expression like *il semble que*, *il faut que*), it may remain **unsegmented**.
 
-
 *Examples*
 
 > £lo qual li respòs £**que no sabia la via**
 
 > £a significar lo sacriffici £**que Jesuchrist feu de si matex** £a morir per son poble.
+
+> £Quando começou a anoitecer, £aveo £**que rei Mars passou per ante a câmara** £u Galaaz jazia
+
 
 ---
 
