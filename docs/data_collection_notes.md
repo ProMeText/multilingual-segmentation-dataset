@@ -1,10 +1,10 @@
-# 🌐 Data Collection and Source Tracking
+# Data Collection and Source Tracking
 
 This document summarizes key notes on **text acquisition**, **language-specific sourcing variability**, and **metadata management** across the Multilingual Segmentation Corpus.
 
 ---
 
-## 🌍 Data Collection Variability Across Languages
+## Data Collection Variability Across Languages
 
 The process of text acquisition varied considerably depending on the language.
 
@@ -22,17 +22,17 @@ This variability required a **flexible, language-sensitive approach** to both **
 
 ---
 
-## 🧾 Source Tracking & Metadata
+## Source Tracking & Metadata
 
 To ensure **transparency**, **consistency**, and **reproducibility**, an internal application form was created to standardize metadata collection for each text in the segmentation corpus.
 
 This form captured key details such as:
 
-- 📌 **Source type** (digital edition, manuscript, OCR, etc.)  
-- 📚 **Edition or manuscript reference** (bibliographic citation)  
-- 🌍 **Linguistic variety** and **chronological range**  
-- 🗂️ **Format and structure** of the original file  
-- 📝 **Reuse/licensing conditions**
+-  **Source type** (digital edition, manuscript, OCR, etc.)  
+-  **Edition or manuscript reference** (bibliographic citation)  
+-  **Linguistic variety** and **chronological range**  
+-  **Format and structure** of the original file  
+-  **Reuse/licensing conditions**
 
 Although the form itself is not public, we provide access to the **processed metadata** and the **scripts used during compilation**.
 
@@ -40,10 +40,10 @@ Although the form itself is not public, we provide access to the **processed met
 
 ## 🔗 Resources
 
-- 📂 **Data Processing Repository – [`Corpus Temporis App`](https://github.com/ProMeText/CorpusTemporis)**  
+- **Data Processing Repository – [`Corpus Temporis App`](https://github.com/ProMeText/CorpusTemporis)**  
   Streamlit app and scripts used to structure, validate, and convert incoming texts and metadata.
 
-- 📊 **Compiled Metadata Table – [`data.csv`](https://github.com/ProMeText/CorpusTemporis/blob/main/data.csv)**  
+- **Compiled Metadata Table – [`data.csv`](https://github.com/ProMeText/CorpusTemporis/blob/main/data.csv)**  
   A centralized CSV listing all processed texts with:
   - Language  
   - Title  
@@ -54,4 +54,4 @@ Although the form itself is not public, we provide access to the **processed met
 
 ---
 
-📬 For contributions or metadata corrections, feel free to open an issue or pull request.
+ For contributions or metadata corrections, feel free to open an issue or pull request.
