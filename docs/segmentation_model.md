@@ -1,4 +1,4 @@
-# 🧠 Multilingual Sentence Segmenter for Historical Texts
+# Multilingual Sentence Segmenter for Historical Texts
 
 This document introduces a pretrained **BERT-based sentence segmentation model**, fine-tuned on the *Multilingual Segmentation Dataset* (13th–16th c.).  
 The model is specifically designed for **historical prose texts** in **medieval Romance languages**, **Latin**, and **Middle English**, and is used to improve segmentation quality in downstream alignment tasks (e.g. with [Aquilign](https://github.com/ProMeText/Aquilign)).
@@ -14,17 +14,17 @@ In both cases, the BERT-based approach outperforms regex-based segmentation base
 
 ### 📄 This document provides:
 
-- 🔧 Model architecture and training setup  
-- 🏋️ Training instructions and command-line usage  
-- 📁 Input format and data schema  
-- 🌐 Language codes and delimiter conventions  
+-  Model architecture and training setup  
+-  Training instructions and command-line usage  
+-  Input format and data schema  
+-  Language codes and delimiter conventions  
 
 > 📎 For annotation principles, see the [Segmentation Guidelines](https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/docs/annotation_guidelines)  
 > 📎 For access to training data, consult the [Multilingual Segmentation Data repository](https://github.com/carolisteia/multilingual-segmentation-dataset/tree/main/data)
 
 ---
 
-## 🧠 Model Availability
+## Model Availability
 
 We provide a **pretrained multilingual BERT-based sentence segmentation model**, fine-tuned on the full *Multilingual Segmentation Corpus* (13th–16th c.), covering **seven historical languages** and optimized for **prose texts**.
 
@@ -33,7 +33,7 @@ We provide a **pretrained multilingual BERT-based sentence segmentation model**,
 The model is implemented with Hugging Face’s `AutoModelForTokenClassification`, trained to predict `£` delimiters corresponding to sentence or clause boundaries.  
 Initial training focused on **French**, **Castilian**, and **Italian**, and was later generalized across the full language set.
 
-📦 Available on Hugging Face:  
+ Available on Hugging Face:  
 👉 [`ProMeText/aquilign-multilingual-segmenter`](https://huggingface.co/ProMeText/aquilign-multilingual-segmenter)
 
 > Looking for **monolingual models**?  
@@ -42,7 +42,7 @@ Initial training focused on **French**, **Castilian**, and **Italian**, and was 
 ---
 
 
-### 📊 Performance Highlights
+### Performance Highlights
 
 Evaluations below are based on the *Lancelot en prose* corpus (used in early training stages). Results from the broader *Multilingual Aegidius* corpus will be added soon.
 
@@ -54,17 +54,17 @@ Evaluations below are based on the *Lancelot en prose* corpus (used in early tra
 
 The model significantly improves **segment boundary detection** and reduces **alignment errors** in multilingual pipelines such as [Aquilign](https://github.com/ProMeText/Aquilign).
 
-📄 See [*Textual Transmission without Borders* (CHR 2024)](https://ceur-ws.org/Vol-3834/paper104.pdf) for evaluation details.
+ See [*Textual Transmission without Borders* (CHR 2024)](https://ceur-ws.org/Vol-3834/paper104.pdf) for evaluation details.
 
 ---
 
-## 🏋️‍♀️ Training the Segmenter
+##  Training the Segmenter
 
 The model is trained using Hugging Face’s `BertForTokenClassification` on historical data annotated with custom sentence delimiters (`£`).
 
 ---
 
-### 🔧 Example Command
+### Example Command
 
 ```bash
 python3 train_tokenizer.py \
@@ -91,7 +91,7 @@ python3 train_tokenizer.py \
 
 ---
 
-## 🗂 Input Format
+##  Input Format
 
 Training data must follow a specific **JSON schema** with a metadata header and a list of examples:
 
@@ -112,7 +112,7 @@ Training data must follow a specific **JSON schema** with a metadata header and 
 
 ```
 
-### 🔑 Required fields
+###  Required fields
 
 The `metadata` block must include the following fields:
 
@@ -127,7 +127,7 @@ Each entry in the `"examples"` list must contain:
 
 ---
 
-## 📌 Language Codes
+##  Language Codes
 
 Use standard **ISO 639-1** codes as identifiers for supported languages:
 
@@ -148,13 +148,13 @@ This mapping is also used for the **regex-based segmentation baseline**.
 
 ---
 
-📎 **Note**: This training setup assumes access to segmentation data under the following directory:
+ **Note**: This training setup assumes access to segmentation data under the following directory:
 
 ```bash
 multilingual-segmentation-data/data/Multilingual_Aegidius/segmented/split/
 ```
 
-## ✅ Summary
+## Summary
 
 This segmentation model is designed to support robust sentence boundary detection in **historical multilingual texts**, particularly in Latin and Romance languages from the 13th–16th centuries.
 
