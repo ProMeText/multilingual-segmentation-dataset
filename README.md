@@ -6,7 +6,6 @@
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Paper](https://img.shields.io/badge/paper-LREC2026-blue)](https://doi.org/10.63317/32HUZUUOKPFR)
 [![Dataset](https://img.shields.io/badge/dataset-Zenodo-blue)](https://doi.org/10.5281/zenodo.16992629)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.16992629-blue)](https://doi.org/10.5281/zenodo.16992629)
 [![GitHub release](https://img.shields.io/github/v/release/ProMeText/multilingual-segmentation-dataset?include_prereleases&label=Release)](https://github.com/ProMeText/multilingual-segmentation-dataset/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/commits/main)
 
