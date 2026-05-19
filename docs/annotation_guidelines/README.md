@@ -1,5 +1,5 @@
 
-# ✂️ Segmentation Criteria
+# Segmentation Criteria
 > ⚠️ **Note:** This is **version 1.0** of the segmentation guidelines. These rules may evolve as the dataset grows and new languages are incorporated.
 
 
