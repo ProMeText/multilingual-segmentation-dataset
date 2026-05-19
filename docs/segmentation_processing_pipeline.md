@@ -1,11 +1,11 @@
-# 🛠️ Segmentation Processing Pipeline
+# Segmentation Processing Pipeline
 
 This document describes the data preparation pipeline used to build the multilingual segmentation dataset.  
 It details the steps taken from raw text collection to the production of segmented, model-ready files.
 
 ---
 
-## 📥 1. Collect Raw Texts
+##  1. Collect Raw Texts
 
 Texts were collected from a wide range of sources, including digital editions, OCR outputs, and manually transcribed files.  
 Preferred formats included:
@@ -16,7 +16,7 @@ Preferred formats included:
 
 ---
 
-## 🧹 2. Clean and Normalize
+##  2. Clean and Normalize
 
 All files underwent **basic cleaning**, mostly using **regular expressions**, to normalize:
 
@@ -24,12 +24,12 @@ All files underwent **basic cleaning**, mostly using **regular expressions**, to
 - inconsistent whitespace and line breaks
 - encoding anomalies (e.g., non-UTF-8)
 
-> ⚠️ **Note:** This step does **not** involve orthographic normalization.  
+>  **Note:** This step does **not** involve orthographic normalization.  
 Original spelling, punctuation, and diacritics were preserved to maintain historical variation.
 
 ---
 
-## ✂️ 3. Segment Texts
+##  3. Segment Texts
 
 Segmentation was performed using a **hybrid approach** combining:
 
@@ -38,7 +38,7 @@ Segmentation was performed using a **hybrid approach** combining:
 
 ---
 
-## 🏷️ 4. Annotate Boundaries
+## 4. Annotate Boundaries
 
 Segment boundaries are marked using the `£` symbol.  
 The `£` delimiter is consistent across formats (`.txt`, `.json`) and enables straightforward tokenization for machine learning tasks.  
@@ -46,7 +46,7 @@ It also supports binary labeling of tokens: `1` for a segmentation point (i.e., 
 
 ---
 
-## 📂 5. Organize in `pre_split/`
+##  5. Organize in `pre_split/`
 
 Files with annotated segments (using `£`) are stored in the `pre_split/` folder.  
 They are **not yet split** into `train/dev/test`.  
@@ -57,7 +57,7 @@ Formats:
 
 ---
 
-## 🔀 6. Split into Train/Dev/Test
+## 6. Split into Train/Dev/Test
 
 Files are then partitioned into the `split/` folder, with the following structure:
 
@@ -68,7 +68,7 @@ Files are then partitioned into the `split/` folder, with the following structur
 
 ---
 
-## 🖼️ Visual Summary
+##  Visual Summary
 
 <p align="center">
 <img src="../assets/segmentation_pipeline2.png" alt="Segmentation pipeline" width="60%">
@@ -76,7 +76,7 @@ Files are then partitioned into the `split/` folder, with the following structur
 
 ---
 
-## 📁 Output Folder Summary
+##  Output Folder Summary
 
 - `raw/`: Cleaned, unsegmented text
 - `segmented/pre_split/`: Fully segmented excerpts, not partitioned
@@ -84,7 +84,7 @@ Files are then partitioned into the `split/` folder, with the following structur
 
 ---
 
-## 📎 Related Files
+##  Related Files
 
 - [`word_delimiters.json`](word_delimiters.json) – Language-specific word boundary rules  
 - [`segmentation_criteria.md`](segmentation_criteria.md) – Sentence segmentation principles and heuristics  
