@@ -4,40 +4,40 @@
 </p>
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Paper](https://img.shields.io/badge/paper-LREC2026-blue)](https://doi.org/10.63317/32HUZUUOKPFR)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16992629.svg)](https://doi.org/10.5281/zenodo.16992629)
 [![GitHub release](https://img.shields.io/github/v/release/ProMeText/multilingual-segmentation-dataset?include_prereleases&label=Release)](https://github.com/ProMeText/multilingual-segmentation-dataset/releases)
 [![Last Commit](https://img.shields.io/github/last-commit/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/commits/main)
 [![Issues](https://img.shields.io/github/issues/ProMeText/multilingual-segmentation-dataset)](https://github.com/ProMeText/multilingual-segmentation-dataset/issues)
-[![Slides](https://img.shields.io/badge/slides-Llcd2025-blue)](./docs/slides-llcd2025.pdf)
 
-# ✂️ Multilingual Segmentation Dataset
+# Multilingual Segmentation Dataset
 
 > **From manuscripts to models: a multilingual corpus for sentence segmentation in historical prose.**
 
 This dataset gathers carefully segmented excerpts from a wide range of textual genres — including narrative, didactic, legal, theological, and scholarly prose — spanning seven Romance and Latin languages (13th–16th c.).  
 Segment boundaries reflect both historical syntax and editorial conventions, making the corpus suitable for training and evaluating sentence segmentation models, as well as for cross-linguistic and diachronic analysis in NLP and digital philology.
 
-## 📚 Documentation
+## Documentation
 
-- ✂️ **Segmentation Criteria**  
+- **Segmentation Criteria**  
   ➡️ [`docs/annotation_guidelines/segmentation_criteria_en.md`](docs/annotation_guidelines/segmentation_criteria_en.md)
 
-- 🧪 **Model Architecture & Training**  
+-  **Model Architecture & Training**  
   ➡️ [`docs/segmentation_model.md`](docs/segmentation_model.md)
 
-- 🔧 **Processing Pipeline (Raw → Segmented)**  
+-  **Processing Pipeline (Raw → Segmented)**  
   ➡️ [`docs/segmentation_processing_pipeline.md`](docs/segmentation_processing_pipeline.md)
 
-- 🧾 **Annotated Examples**  
+-  **Annotated Examples**  
   ➡️ [`docs/segmentation_exemples.md`](docs/segmentation_exemples.md)
 
-- 🌍 **Data Collection & Source Tracking**  
+-   **Data Collection & Source Tracking**  
   ➡️ [`docs/data_collection_and_source_tracking.md`](docs/data_collection_notes.md)
 
-- 🔤 **Delimiter Configuration (per language)**  
+-  **Delimiter Configuration (per language)**  
   ➡️ [`docs/annotation_guidelines/main-word-delimiters.json`](docs/annotation_guidelines/main-word-delimiters.json)
 
-## 📖 Overview
+## Overview
 
 This dataset was developed to train a multilingual sentence segmentation model, used as a pre-processing step in the automatic alignment of historical texts with [**Aquilign**](https://github.com/ProMeText/aquilign), a multilingual alignment tool developed by our team.  
 Once the BERT-based models are trained and selected, they are integrated into the alignment workflow to segment texts based on learned boundary recognition — a critical step preceding alignment itself.
@@ -57,7 +57,7 @@ Segmented data are stored under `data/segmented/`, with language-specific files 
 - `data/segmented/split/multilingual/` — multilingual train/dev/test splits  
 
 
-## 🧾 Summary
+## Summary
 
 | Category           | Details                                                                 |
 |--------------------|-------------------------------------------------------------------------|
@@ -67,7 +67,7 @@ Segmented data are stored under `data/segmented/`, with language-specific files 
 | **Segmentation**    | Manual sentence segmentation using language-specific criteria          |
 | **License**         | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) – annotations and segmentation metadata only |
 
-## 🎯 Purpose
+## Purpose
 
 This dataset aims to support the training of machine learning models that can detect sentence and segment boundaries in non-standardized historical texts.
 
@@ -77,13 +77,13 @@ Reliable segmentation is essential for:
 - enhancing the **accessibility** and reusability of medieval sources,
 - enabling **cross-linguistic comparison** and advancing **philological and historical-linguistic research**.
 
-📄 For full segmentation principles, see the detailed [Segmentation Guidelines](docs/segmentation_criteria_en.md).
+ For full segmentation principles, see the detailed [Segmentation Guidelines](docs/segmentation_criteria_en.md).
 
 ➡️ For model training instructions, architecture, and evaluation, see  
 [**Model Documentation**](docs/segmentation_model.md).
 
 
-## 🔄 Processing Pipeline
+## Processing Pipeline
 
 The segmentation pipeline involves the following steps, from raw historical texts to segmented training data.
 
@@ -95,12 +95,12 @@ See [segmentation pipeline documentation](docs/segmentation_processing_pipeline.
 
 
 
-## 🌐 Data Collection Variability Across Languages
-📦 For notes on text acquisition, sourcing variation, and metadata standardization, see  
+## Data Collection Variability Across Languages
+ For notes on text acquisition, sourcing variation, and metadata standardization, see  
 ➡️ [docs/data_collection_notes.md](docs/data_collection_notes.md)
 
 
-## 📊 Corpus Size
+## Corpus Size
 
 Below we present the data corresponding to the most recent version of the corpus size.  
 Older versions can be consulted in the [release tags](https://github.com/ProMeText/multilingual-segmentation-dataset/releases).
@@ -122,7 +122,7 @@ The corpus does **not include part-of-speech tagging or syntactic annotation** �
 | **Total** | 412,888.0 | 69,510.0 | 5.94 |
 ---
 
-### 🗒️ Legend:
+### Legend:
 - **Tokens**: Total number of tokens (excluding the `£` symbol and punctuation).
 - **Segments (`£`)**: Number of segment boundaries marked by `£`.
 - **Avg. Tokens per Segment**: Average number of tokens per segment (`Tokens ÷ Segments`).
@@ -132,7 +132,7 @@ The corpus does **not include part-of-speech tagging or syntactic annotation** �
 
 > ℹ️ This corpus focuses on **sentence segmentation only**. It does **not include POS tagging, syntactic trees, or named entity annotations**.
 
-## 📂 Data Location
+## Data Location
 
 The most up-to-date segmented data are stored in the repository under:
 
@@ -142,7 +142,7 @@ data/segmented/
 - This folder contains the **current working version** of the segmented texts.  
 - For **frozen snapshots** corresponding to published versions (e.g. baseline, augmented), please refer to the [release tags](https://github.com/ProMeText/multilingual-segmentation-dataset/releases).
 
-## 🙏 Credits
+## Credits
 We gratefully acknowledge the following scholars for their contributions of source material or expertise:
 
 - **Peter Stokes & Mark Faulkner** – Guidance on available Middle English corpora  
@@ -150,7 +150,7 @@ We gratefully acknowledge the following scholars for their contributions of sour
 - **Andrea Menozzi** – Insights into available Medieval Italian corpora
 
 
-## 🚧 Project Status
+## Project Status
 
 This corpus is part of an **ongoing project**. While it is already being used for segmentation and alignment tasks, **further improvements, refinements, and corrections are expected**.  
 We welcome feedback, error reports, and contributions to help improve the resource over time.
@@ -171,7 +171,7 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
   It provides the metadata that accompanies this dataset and supports its use in the [Aquilign multilingual aligner](https://github.com/ProMeText/Aquilign).
 
 
-## 🔮 Future Directions
+## Future Directions
 - Extend language coverage  
 - Evaluate segmentation models  
 - Broaden genre and period diversity  
@@ -179,14 +179,14 @@ This repository is part of a broader ecosystem of tools and corpora developed fo
 
 ---
 
-## 📫 Contact & Contributions
+## Contact & Contributions
 - [Open an issue or pull request](https://github.com/ProMeText/Multilingual_Aegidius/issues)
 
 - For academic collaboration, please reach out via GitHub Discussions
 
   
 ---
-## 📚 How to Cite this Dataset
+## How to Cite this Dataset
 
 Please cite as:  
 
@@ -207,14 +207,30 @@ Ing, L., Gille Levenson, M., & Macedo, C. (2025). *Multilingual Segmentation Dat
 }
 ```
 ----
-## 🧾 Talks & Slides 
+
+## LREC 2026 paper
+**APA**  
+Ing, L., Gille Levenson, M., & Macedo, C. (2026). Phrase-level segmentation on medieval corpora for aligning multilingual texts. In Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026). https://doi.org/10.63317/32HUZUUOKPFR
+
+**BibTeX**  
+```bibtex
+@inproceedings{ing2026phrase,
+  title     = {Phrase-Level Segmentation on Medieval Corpora for Aligning Multilingual Texts},
+  author    = {Ing, Lucence and Gille Levenson, Matthias and Macedo, Carolina},
+  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  year      = {2026},
+  doi       = {10.63317/32HUZUUOKPFR}
+}
+```
+---
+## Talks & Slides 
 
 ### 🎤 *Colloque Langues et Langage à la croisée des Disciplines (LLcD 2025)*  
 **_Training Sentence Segmenters on Medieval Languages_**  
-👥 *Lucence Ing, Matthias Gille Levenson, Carolina Macedo*  
-📽️ [View presentation slides (PDF)](./docs/slides_llcd25-1.pdf)
+ *Lucence Ing, Matthias Gille Levenson, Carolina Macedo*  
+ [View presentation slides (PDF)](./docs/slides_llcd25-1.pdf)
 
-## 💰 Funding
+## Funding
 
 This work benefited from national funding managed by the **Agence Nationale de la Recherche** under the *Investissements d'avenir* programme with the reference **ANR-21-ESRE-0005 (Biblissima+)**.
 
@@ -225,7 +241,7 @@ This work benefited from national funding managed by the **Agence Nationale de l
   <img src="https://github.com/user-attachments/assets/915c871f-fbaa-45ea-8334-2bf3dde8252d" alt="Biblissima+ Logo" width="600"/>
 </p>
 
-## 📄 Licensing
+## Licensing
 
 All annotations, segmentations, and metadata are released under [**CC BY-NC-SA 4.0**](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 > ⚠️ Original textual content may be subject to source-specific licenses. Refer to the `sources` and `corpus` columns in the metadata CSV.   
