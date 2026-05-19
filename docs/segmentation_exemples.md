@@ -1,4 +1,4 @@
-# 🔎 Annotated Segmentation Examples
+# Annotated Segmentation Examples
 
 This page presents representative examples of sentence segmentation using the `£` delimiter across multiple languages included in the corpus.
 
@@ -7,7 +7,7 @@ These annotations serve as the **ground truth** for model training and evaluatio
 
 Below are representative examples from three languages in the corpus.
 
-> 🔍 *The examples below are shortened excerpts selected for illustration purposes only. They do not represent full source texts.*
+>  *The examples below are shortened excerpts selected for illustration purposes only. They do not represent full source texts.*
 
 ---
 
