@@ -4,6 +4,7 @@
 </p>
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC--BY--NC--SA--4.0-red.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Model: Segmenter](https://img.shields.io/badge/Model-Segmenter-yellow)](https://huggingface.co/ProMeText/aquilign-multilingual-segmenter)
 [![Paper](https://img.shields.io/badge/paper-LREC2026-blue)](https://doi.org/10.63317/32HUZUUOKPFR)
 [![Dataset](https://img.shields.io/badge/dataset-Zenodo-blue)](https://doi.org/10.5281/zenodo.16992629)
 
